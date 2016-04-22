@@ -5,6 +5,11 @@
 import cStringIO
 import dpkt
 
+#################################################
+# 修改自dpkt.http,调整为不解析请求体和响应体          #
+#################################################
+
+
 
 def parse_headers(f):
     """Return dict of HTTP headers parsed from a file object."""

@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # coding=utf-8
 
+
+#################################################
+# 把http.times文件导入到数据库                     #
+#################################################
+
+
 import re
 import sqlite3
 
@@ -10,6 +16,11 @@ PATTERN_REQREP = re.compile(
 
 
 def init_tables(conn):
+    """
+    初始化数据表,如果数据存在,就会把他删掉,再重新初始化
+    :param conn:
+    :return:
+    """
     cursor = conn.cursor()
     cursor.execute("DROP TABLE IF EXISTS tbl_conn;")
     cursor.execute("DROP TABLE IF EXISTS tbl_reqrep;")
@@ -53,6 +64,12 @@ def init_tables(conn):
 
 
 def insert_valid_conn(line, conn):
+    """
+    如果line是一个conn数据,就把他加到数据库里面
+    :param line:
+    :param conn:
+    :return:
+    """
     m = PATTERN_CONN.match(line)
     if not m:
         return
@@ -88,6 +105,12 @@ def insert_valid_conn(line, conn):
 
 
 def insert_valid_reqrep(line, conn):
+    """
+    如果line是一个reqrep数据,就把它加到数据库里面
+    :param line:
+    :param conn:
+    :return:
+    """
     m = PATTERN_REQREP.match(line)
     if not m:
         return
@@ -128,6 +151,12 @@ def insert_valid_reqrep(line, conn):
 
 
 def httptimes2db(file, conn):
+    """
+    读取http.times文件的内容,按照顺序把数据加入到数据库中去
+    :param file:  http.times文件
+    :param conn:  数据库
+    :return:
+    """
     while True:
         line = file.readline()
         if not line:

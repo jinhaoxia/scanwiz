@@ -7,6 +7,11 @@ import os
 import json
 
 
+#################################################
+# 根据文件名,起始位置,长度,获取header                #
+#################################################
+
+
 def get_request_headers(dir, label, req_idx, req_len):
     client, server = tuple(label.split('2'))
 
