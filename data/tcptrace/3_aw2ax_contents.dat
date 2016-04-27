@@ -1,0 +1,9 @@
+GET /inf/gen?api_key=a0241ed0d922e7286303ea5818292a76&data=https%3A%2F%2Fpassport.weibo.cn%2Fsignin%2Fqrcode%2Fscan%3Fqr%3DQRID-xd-1ATv84-42YT9o-z4SjrUD9KVYKpDC6Suyj7d953732%26sinainternalbrowser%3Dtopnav%26showmenu%3D0&datetime=1461308632&deadline=0&level=M&logo=http%3A%2F%2Fu1.sinaimg.cn%2Fupload%2F2014%2F05%2F27%2Fweibo-logo.png&output_type=img&redirect=0&sign=c9996d697c1b69e20058061b9530cbd5&size=180&start_time=0&title=sso&type=url HTTP/1.1
+Host: v2.qr.weibo.cn
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://weibo.com/
+Connection: keep-alive
+

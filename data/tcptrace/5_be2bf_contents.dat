@@ -1,0 +1,31 @@
+GET /dl-weekly-online-training-sessions HTTP/1.1
+Host: librarians.acm.org
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://dl.acm.org/dl.cfm?CFID=606865024&CFTOKEN=89714281
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: _gat_UA-76155856-1=1; _ga=GA1.2.764802145.1459862531
+
+GET /sites/all/modules/jscrollpane/scripts/jscrollpane.init.js?P HTTP/1.1
+Host: librarians.acm.org
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://librarians.acm.org/dl-weekly-online-training-sessions
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: _gat_UA-76155856-1=1; _ga=GA1.2.764802145.1459862531; SESS12ea53abe62958600e4e345c8e015380=627ec9eff788bb369947d4ce8c6f8a23
+
+GET /sites/all/modules/cufon/js/cufon-yui.js?P HTTP/1.1
+Host: librarians.acm.org
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://librarians.acm.org/dl-weekly-online-training-sessions
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: _gat_UA-76155856-1=1; _ga=GA1.2.764802145.1459862531; SESS12ea53abe62958600e4e345c8e015380=627ec9eff788bb369947d4ce8c6f8a23
+

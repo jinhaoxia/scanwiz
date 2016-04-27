@@ -1,0 +1,95 @@
+GET /widgets/validate/jquery.validate.min.js HTTP/1.1
+Host: yjs.hdu.edu.cn
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://yjs.hdu.edu.cn/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: lzstat_uv=17596706032374242737|931085; JSESSIONID=80C7B44C9DF833D43752C57403E02A49; route=ef303e4f13c54f74b8ceff8939aad8ed
+
+GET /images/login_xuexiao.png HTTP/1.1
+Host: yjs.hdu.edu.cn
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://yjs.hdu.edu.cn/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: lzstat_uv=17596706032374242737|931085; JSESSIONID=80C7B44C9DF833D43752C57403E02A49; route=ef303e4f13c54f74b8ceff8939aad8ed
+
+GET /images/login_ttop.png HTTP/1.1
+Host: yjs.hdu.edu.cn
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://yjs.hdu.edu.cn/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: lzstat_uv=17596706032374242737|931085; JSESSIONID=80C7B44C9DF833D43752C57403E02A49; route=ef303e4f13c54f74b8ceff8939aad8ed
+
+GET /images/login_tleft.png HTTP/1.1
+Host: yjs.hdu.edu.cn
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://yjs.hdu.edu.cn/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: lzstat_uv=17596706032374242737|931085; JSESSIONID=80C7B44C9DF833D43752C57403E02A49; route=ef303e4f13c54f74b8ceff8939aad8ed
+
+GET /images/login_tdialog.png HTTP/1.1
+Host: yjs.hdu.edu.cn
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://yjs.hdu.edu.cn/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: lzstat_uv=17596706032374242737|931085; JSESSIONID=80C7B44C9DF833D43752C57403E02A49; route=ef303e4f13c54f74b8ceff8939aad8ed
+
+GET /widgets/jquery/jquery-1.8.2.min.js HTTP/1.1
+Host: yjs.hdu.edu.cn
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://yjs.hdu.edu.cn/core!main.action
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: lzstat_uv=17596706032374242737|931085; route=ef303e4f13c54f74b8ceff8939aad8ed; JSESSIONID=218250F577CB6C116EFF5E793D932BB2
+If-None-Match: W/"93436-1456708367481"
+If-Modified-Since: Mon, 29 Feb 2016 01:12:47 GMT
+
+GET /widgets/easyui/plugins/jquery.iframeWin.js HTTP/1.1
+Host: yjs.hdu.edu.cn
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://yjs.hdu.edu.cn/core!main.action
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: lzstat_uv=17596706032374242737|931085; route=ef303e4f13c54f74b8ceff8939aad8ed; JSESSIONID=218250F577CB6C116EFF5E793D932BB2
+If-None-Match: W/"2210-1456708367290"
+If-Modified-Since: Mon, 29 Feb 2016 01:12:47 GMT
+
+GET /images/title.png HTTP/1.1
+Host: yjs.hdu.edu.cn
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://yjs.hdu.edu.cn/core!main.action
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: lzstat_uv=17596706032374242737|931085; route=ef303e4f13c54f74b8ceff8939aad8ed; JSESSIONID=218250F577CB6C116EFF5E793D932BB2
+
+GET /monitor/statemonitor!stuEnterStateMonitor.action HTTP/1.1
+Host: yjs.hdu.edu.cn
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://yjs.hdu.edu.cn/core!main.action
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: lzstat_uv=17596706032374242737|931085; route=ef303e4f13c54f74b8ceff8939aad8ed; JSESSIONID=218250F577CB6C116EFF5E793D932BB2
+

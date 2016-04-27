@@ -1,0 +1,50 @@
+GET /modules/user/user.css?P HTTP/1.1
+Host: librarians.acm.org
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://librarians.acm.org/dl-weekly-online-training-sessions
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: _gat_UA-76155856-1=1; _ga=GA1.2.764802145.1459862531; SESS12ea53abe62958600e4e345c8e015380=627ec9eff788bb369947d4ce8c6f8a23
+
+GET /sites/all/modules/jscrollpane/styles/jScrollPane.css?P HTTP/1.1
+Host: librarians.acm.org
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://librarians.acm.org/dl-weekly-online-training-sessions
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: _gat_UA-76155856-1=1; _ga=GA1.2.764802145.1459862531; SESS12ea53abe62958600e4e345c8e015380=627ec9eff788bb369947d4ce8c6f8a23
+
+GET /sites/all/themes/acmdl/sidebars.css?P HTTP/1.1
+Host: librarians.acm.org
+Connection: keep-alive
+Accept: text/css,*/*;q=0.1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://librarians.acm.org/dl-weekly-online-training-sessions
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: _gat_UA-76155856-1=1; _ga=GA1.2.764802145.1459862531; SESS12ea53abe62958600e4e345c8e015380=627ec9eff788bb369947d4ce8c6f8a23
+
+GET /sites/all/modules/google_analytics/googleanalytics.js?P HTTP/1.1
+Host: librarians.acm.org
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://librarians.acm.org/dl-weekly-online-training-sessions
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: _gat_UA-76155856-1=1; _ga=GA1.2.764802145.1459862531; SESS12ea53abe62958600e4e345c8e015380=627ec9eff788bb369947d4ce8c6f8a23
+
+GET /sites/all/modules/thickbox/thickbox.js?P HTTP/1.1
+Host: librarians.acm.org
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://librarians.acm.org/dl-weekly-online-training-sessions
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: _gat_UA-76155856-1=1; _ga=GA1.2.764802145.1459862531; SESS12ea53abe62958600e4e345c8e015380=627ec9eff788bb369947d4ce8c6f8a23
+

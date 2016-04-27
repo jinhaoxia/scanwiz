@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Set-Cookie: SUE=deleted; Domain=.weicaifu.com; Expires=Fri, 22-Apr-2016 07:04:13 GMT; Path=/
+Set-Cookie: SUP=deleted; Domain=.weicaifu.com; Expires=Fri, 22-Apr-2016 07:04:13 GMT; Path=/
+Set-Cookie: SSOLoginState=1461308652231; Domain=.weicaifu.com; Expires=Sun, 12-Aug-2063 14:08:23 GMT; Path=/
+Set-Cookie: ALF=1492844651; Domain=.weicaifu.com; Expires=Sun, 12-Aug-2063 14:08:23 GMT; Path=/
+Content-Type: text/plain;charset=ISO-8859-1
+Content-Length: 79
+Date: Fri, 22 Apr 2016 07:04:12 GMT
+Server: nginx
+
+sinaSSOController.doCrossDomainCallBack({'retcode':0,'scriptId':'ssoscript0'});

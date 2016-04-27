@@ -1,0 +1,9 @@
+GET /pagead/imgad?id=CICAgKDTxcyoKBCsAhj6ATIIGJgaodDov-8 HTTP/1.1
+Host: static.googleadsserving.cn
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+Referer: http://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-7090564139599510&format=300x250&output=html&h=250&slotname=5639759299&adk=1951033985&w=300&lmt=1460126097&loeid=19188001&avail_w=300&flash=21.0.0&url=http%3A%2F%2Fwww.oschina.net%2Fnews%2F72304%2Fddos-billgates-linux&wgl=1&dt=1460126097253&bpp=19&bdt=506&fdt=24&idt=213&shv=r20160405&cbv=r20151006&saldr=aa&correlator=5907734276825&frm=20&ga_vid=1646200797.1460126098&ga_sid=1460126098&ga_hid=1950868855&ga_fc=0&pv=2&iag=3&icsg=2&nhd=1&dssz=2&mdo=0&mso=0&u_tz=480&u_his=1&u_java=0&u_h=800&u_w=1280&u_ah=777&u_aw=1241&u_cd=24&u_nplug=4&u_nmime=5&dff=verdana&dfs=13&adx=698&ady=1022&biw=891&bih=627&eid=4087319&oid=3&ref=http%3A%2F%2Fwww.oschina.net%2F&rx=0&eae=0&fc=80&pc=1&brdim=211%2C23%2C211%2C23%2C1241%2C23%2C996%2C777%2C905%2C641&vis=1&rsz=%7C%7Co%7C&abl=CS&ppjl=f&pfx=0&fu=1032&bc=1&ifi=1&xpc=V30UvU0pIG&p=http%3A//www.oschina.net&dtd=266
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+

@@ -1,0 +1,9 @@
+GET /crop.0.0.180.180.50/85c652a2jw1e6qwxn2jp2j2050050t94.jpg HTTP/1.1
+Host: tva1.sinaimg.cn
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://weibo.com/
+Connection: keep-alive
+

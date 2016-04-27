@@ -1,0 +1,10 @@
+GET /471x350 HTTP/1.1
+Host: placehold.it
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Referer: http://staticieeexplore.ieee.org/assets/css/styles.css?cv=20160419_000000
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: __cfduid=d4cd1012c71d0e9c44c5c5a2c5ca7fa8b1449754072
+

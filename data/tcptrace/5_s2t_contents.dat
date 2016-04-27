@@ -1,0 +1,11 @@
+GET /dl.cfm?CFID=606865024&CFTOKEN=89714281 HTTP/1.1
+Host: dl.acm.org
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.86 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: __atssc=google%3B4; __atuvc=0%7C13%2C0%7C14%2C0%7C15%2C3%7C16%2C2%7C17; DEEPCHK=1; cffp_mm=134; _gali=port; CFID=606865024; CFTOKEN=89714281; IP_CLIENT=1795640; SITE_CLIENT=1094432; _ga=GA1.2.764802145.1459862531; _gat_UA-76155856-1=1
+

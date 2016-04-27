@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 22 Apr 2016 07:04:18 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 155
+Connection: keep-alive
+Api-Server-IP: 10.75.28.78
+
+try{STK_146130865361214({"code":1,"data":{"dm_unread":1,"dm":1,"remind_settings":{"msgbox":1},"app_message":[],"total_unread":1,"messages":1}});}catch(e){}

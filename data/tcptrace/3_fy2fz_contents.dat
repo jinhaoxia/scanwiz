@@ -1,0 +1,11 @@
+GET /musicplayer_alipoll.json?callback=musicplay_alipoll HTTP/1.1
+Host: rank.music.sina.com.cn
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://weibo.com/u/5903925518/home
+Cookie: U_TRS1=000000e2.8c363002.56d92c09.4dd2668b; SINAGLOBAL=218.75.123.186_1457077786.862777; UOR=www.baidu.com,blog.sina.com.cn,; ULV=1459922615098:3:2:2:60.12.8.177_1459922611.556840:1459922610678; vjuids=293bdcad0.1534fd2405a.0.19d30ece69cb9; vjlast=1459922612; SGUID=1459922611974_92675902; __utma=269849203.1176787839.1459922620.1459922620.1459922620.1; __utmz=269849203.1459922620.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWQn.rwfFWr7YcrMDhUhUh_; lxlrttp=1459905586; SUB=_2A256Hby7DeTxGeNH61EY8ivJyjSIHXVZaqlzrDV_PUNbuNAPLU7-kW9LHetiJYfzwUAGSaKxh4GqNQh1GzkcDw..; Apache=218.75.123.186_1461308473.706249; ULOGIN_IMG=gz-11b01666ad4e3e35e02ce6039d0ce0663a26; SUS=SID-5903925518-1461308651-XD-owpf7-8fdd7953d68a9b5630ed7b727d40810d; SUE=es%3D7f1088ba82a6d11b83fcf05de4fe57e1%26ev%3Dv1%26es2%3Dc000395299968c5301d06aa11e712dd3%26rs0%3DTgQkEm3IrMaQr8KExD4ZgIn1fbpqM96Sq9OdmX9yMLjEqpbuz9eeCLrSFm3ZWxW4J2A8%252B7V4bLNzxTxv5W5Sobddy%252F3l9kiwvWLbseYSc9wk1h1jztK5%252BtVk8eSSsfA0c8eyQi41bM5E7zG%252Bl7hpSEieQjHXo8ITY02IR7LOBnU%253D%26rv%3D0; SUP=cv%3D1%26bt%3D1461308651%26et%3D1461395051%26d%3D40c3%26i%3D810d%26us%3D1%26vf%3D0%26vt%3D0%26ac%3D2%26st%3D2%26lt%3D1%26uid%3D5903925518%26user%3Dyangxue%2540zjjcxy.cn%26ag%3D4%26name%3Dyangxue%2540zjjcxy.cn%26nick%3Dseclab_test%26sex%3D1%26ps%3D0%26email%3D%26dob%3D%26ln%3Dyangxue%2540zjjcxy.cn%26os%3D%26fmp%3D%26lcp%3D; ALF=1492844651; sso_info=v02m6alo5qztbOZlo2smJaJn52GlbOdgpm1mpaQvY2TpLCMs6SyjZOUsY6AwMA=
+Connection: keep-alive
+If-Modified-Since: Wed, 01 Jul 2015 07:42:04 GMT
+

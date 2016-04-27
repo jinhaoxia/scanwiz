@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 22 Apr 2016 07:04:11 GMT
+Content-Type: text/javascript; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+Cache-Control: no-cache, must-revalidate
+Expires: Sat, 26 Jul 1997 05:00:00 GMT
+Pragma: no-cache
+P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Set-Cookie: SSOLoginState=1461308651; path=/; domain=weibo.cn
+Set-Cookie: ALF=1463900651; expires=Sunday, 22-May-16 07:04:11 GMT; path=/; domain=.weibo.cn
+DPOOL_HEADER: mars27
+SINA-LB:aGEuNjIuZzEuYngubGIuc2luYW5vZGUuY29t
+SINA-TS:ZWFmYWRlY2UgMCAwIDAgOSAyCg==
+
+85
+window.sinaSSOController.doCrossDomainCallBack && sinaSSOController.doCrossDomainCallBack({"retcode":20000000,"msg":"","data":null});
+0
+

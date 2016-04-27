@@ -1,0 +1,10 @@
+GET /news/66372/201604/66372-20160408153758609-23649243.jpg HTTP/1.1
+Host: images2015.cnblogs.com
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+Referer: http://www.oschina.net/news/72304/ddos-billgates-linux
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: __gads=ID=ff1fe0a97ef3fff2:T=1438423235:S=ALNI_MbO6HAh_US-jM5Abvzc9j8BuZdC9g; lzstat_uv=29407768652410794562|782184; Hm_lvt_cc17b07fc9529e3d80b4482c9ce09086=1452828860; __utma=226521935.1880043781.1438423235.1456727599.1456734652.4; __utmz=226521935.1456727599.3.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); _ga=GA1.2.1880043781.1438423235
+

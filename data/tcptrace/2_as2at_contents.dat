@@ -1,0 +1,11 @@
+GET /pagead/osd.js HTTP/1.1
+Host: pagead2.googlesyndication.com
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+X-Client-Data: CJS2yQEIpbbJAQjBtskBCP2VygE=
+Referer: http://www.oschina.net/news/72304/ddos-billgates-linux
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+If-None-Match: 8923144151378263881
+

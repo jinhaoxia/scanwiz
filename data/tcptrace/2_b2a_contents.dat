@@ -1,0 +1,36 @@
+HTTP/1.1 302 Moved Temporarily
+Server: bfe/1.0.8.14
+Date: Fri, 08 Apr 2016 14:34:49 GMT
+Content-Type: text/html
+Content-Length: 161
+Connection: Keep-Alive
+Location: https://www.baidu.com/
+Expires: Sat, 09 Apr 2016 14:34:49 GMT
+Cache-Control: max-age=86400
+Cache-Control: private
+
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>bfe/1.0.8.14</center>
+</body>
+</html>
+HTTP/1.1 302 Moved Temporarily
+Server: bfe/1.0.8.14
+Date: Fri, 08 Apr 2016 14:34:51 GMT
+Content-Type: text/html
+Content-Length: 161
+Connection: Keep-Alive
+Location: https://www.baidu.com/
+Expires: Sat, 09 Apr 2016 14:34:51 GMT
+Cache-Control: max-age=86400
+Cache-Control: private
+
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>bfe/1.0.8.14</center>
+</body>
+</html>

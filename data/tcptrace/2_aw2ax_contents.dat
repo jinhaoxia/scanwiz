@@ -1,0 +1,31 @@
+GET /paas_osc HTTP/1.1
+Host: git.oschina.net
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+Referer: http://www.oschina.net/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: oscid=PdBdGIQoqZn2CxKO5vjnsNgShQK9Ucvl310q7MNJd6AwpleG2RX%2FLAlqtotdyIpCCo8Zb6%2F2S9Ig4rIbRkOJdKF92xXzvKoiDklZO4EI6kBamX1PJ9D7Sw%3D%3D; remote_way=http; user_locale=zh-CN; remember_user_token=BAhbB1sGaQNlBwFJIiIkMmEkMTAkR3NNT0pqVUVEcHVvTjNudEl3ZEVSZQY6BkVU--50af5d6a573bfa3e1505aa292dceeb6c9f9314b7
+
+GET /assets/application-42539b05a15bb11872f88e4f5cd3db8e.js HTTP/1.1
+Host: git.oschina.net
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+Referer: http://git.oschina.net/paas_osc
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: oscid=PdBdGIQoqZn2CxKO5vjnsNgShQK9Ucvl310q7MNJd6AwpleG2RX%2FLAlqtotdyIpCCo8Zb6%2F2S9Ig4rIbRkOJdKF92xXzvKoiDklZO4EI6kBamX1PJ9D7Sw%3D%3D; remote_way=http; user_locale=zh-CN; remember_user_token=BAhbB1sGaQNlBwFJIiIkMmEkMTAkR3NNT0pqVUVEcHVvTjNudEl3ZEVSZQY6BkVU--50af5d6a573bfa3e1505aa292dceeb6c9f9314b7; git_osc_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJWI1ZWRmMmVlYjBlZDdmNWNlOWJlZWVhNjMwYzBlMTk2BjsAVEkiGXdhcmRlbi51c2VyLnVzZXIua2V5BjsAVFsHWwZpA2UHAUkiIiQyYSQxMCRHc01PSmpVRURwdW9OM250SXdkRVJlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMS9IS24zaW05Z0xBWnNmZkVQMXFmRm8vWUp6R0oyUlFISjJuZHh1dGJ2Q1k9BjsARg%3D%3D--1807f72e570bff3443a8f1190a458beded4f05d2
+
+GET /paas_osc_intro_ala.png HTTP/1.1
+Host: git.oschina.net
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+Referer: http://git.oschina.net/paas_osc
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: oscid=PdBdGIQoqZn2CxKO5vjnsNgShQK9Ucvl310q7MNJd6AwpleG2RX%2FLAlqtotdyIpCCo8Zb6%2F2S9Ig4rIbRkOJdKF92xXzvKoiDklZO4EI6kBamX1PJ9D7Sw%3D%3D; remote_way=http; user_locale=zh-CN; remember_user_token=BAhbB1sGaQNlBwFJIiIkMmEkMTAkR3NNT0pqVUVEcHVvTjNudEl3ZEVSZQY6BkVU--50af5d6a573bfa3e1505aa292dceeb6c9f9314b7; git_osc_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJWI1ZWRmMmVlYjBlZDdmNWNlOWJlZWVhNjMwYzBlMTk2BjsAVEkiGXdhcmRlbi51c2VyLnVzZXIua2V5BjsAVFsHWwZpA2UHAUkiIiQyYSQxMCRHc01PSmpVRURwdW9OM250SXdkRVJlBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMS9IS24zaW05Z0xBWnNmZkVQMXFmRm8vWUp6R0oyUlFISjJuZHh1dGJ2Q1k9BjsARg%3D%3D--1807f72e570bff3443a8f1190a458beded4f05d2
+

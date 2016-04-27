@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Content-Type: image/gif
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Transfer-Encoding: chunked
+Date: Fri, 08 Apr 2016 14:34:57 GMT
+Server: apache
+
+0
+
+HTTP/1.1 200 OK
+Content-Type: image/gif
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Transfer-Encoding: chunked
+Date: Fri, 08 Apr 2016 14:35:00 GMT
+Server: apache
+
+0
+

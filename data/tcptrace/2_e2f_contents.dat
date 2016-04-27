@@ -1,0 +1,10 @@
+GET /img/hot3.png?t=1451961935000 HTTP/1.1
+Host: www.oschina.net
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+Referer: http://www.oschina.net/news/72304/ddos-billgates-linux
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en,zh-CN;q=0.8,zh;q=0.6
+Cookie: oscid=PdBdGIQoqZn2CxKO5vjnsNgShQK9Ucvl310q7MNJd6AwpleG2RX%2FLAlqtotdyIpCCo8Zb6%2F2S9Ig4rIbRkOJdKF92xXzvKoiDklZO4EI6kBamX1PJ9D7Sw%3D%3D; aliyungf_tc=AQAAAHZFKkGcnAkAuntL2hV65o+SNkf8
+

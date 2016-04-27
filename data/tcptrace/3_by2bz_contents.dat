@@ -1,0 +1,13 @@
+POST /sso/login.php?client=ssologin.js(v1.4.18) HTTP/1.1
+Host: login.sina.com.cn
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://weibo.com/
+Cookie: U_TRS1=000000e2.8c363002.56d92c09.4dd2668b; SINAGLOBAL=218.75.123.186_1457077786.862777; UOR=www.baidu.com,blog.sina.com.cn,; ULV=1459922615098:3:2:2:60.12.8.177_1459922611.556840:1459922610678; vjuids=293bdcad0.1534fd2405a.0.19d30ece69cb9; vjlast=1459922612; SGUID=1459922611974_92675902; __utma=269849203.1176787839.1459922620.1459922620.1459922620.1; __utmz=269849203.1459922620.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); SUBP=0033WrSXqPxfM72wWs9jqgMF55529P9D9Who6HsUULxZZQb7ri31zrPY; lxlrttp=1459905586; SUB=_2AkMgRUMIdcPhrAFVmvsRzGrjao1H-jjGiefBAH-8JVRhHRh97D6svD_9buH0I1l0KXq3Oc0gZCCSKg..; Apache=218.75.123.186_1461308473.706249; ULOGIN_IMG=gz-11b01666ad4e3e35e02ce6039d0ce0663a26
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 618
+
+entry=weibo&gateway=1&from=&savestate=7&useticket=1&pagerefer=&vsnf=1&su=eWFuZ3h1ZSU0MHpqamN4eS5jbg%3D%3D&service=miniblog&servertime=1461308657&nonce=REUJ1F&pwencode=rsa2&rsakv=1330428213&sp=733c7265b75476e514b31966c09fe39e80c798bad43bb297d39b778f85a86f2bac98487c2ae354648e457323d29a767230735089db7f827ce03aa45f532a4e52032c275b1fc72d0def3d9fa4353685e5699dad02058b8a9cbca61656ea2c3923fa0ef6e38cda29441244888033e8a6da9a111a9f7549d3c5785e668cd060ff06&sr=1440*900&encoding=UTF-8&prelt=86&url=http%3A%2F%2Fweibo.com%2Fajaxlogin.php%3Fframelogin%3D1%26callback%3Dparent.sinaSSOController.feedBackUrlCallBack&returntype=META
