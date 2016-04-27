@@ -1,0 +1,4 @@
+data/tcptrace/*
+.idea
+*.pyc
+**/.DS_Store
