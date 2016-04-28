@@ -93,6 +93,10 @@ def insert_valid_reqrep(pcap_id, line, conn):
     method, url, version = m.group(12), m.group(13), m.group(14)
     content_type = m.group(15)
 
+
+    if pcap_id == '8':
+        print pcap_id, type(pcap_id)
+
     cursor = conn.cursor()
     cursor.execute(
         'INSERT INTO '
@@ -142,7 +146,7 @@ def httptimes2db(pcap_id, file, conn):
 if __name__ == '__main__':
 
     db_name = sys.argv[1]
-    pcap_id = sys.argv[2]
+    pcap_id = int(sys.argv[2])
     tcptrace_result_dir = sys.argv[3]
 
     http_times_file = os.path.join(tcptrace_result_dir, '%s_http.times' % pcap_id)

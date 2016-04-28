@@ -4,6 +4,10 @@
     <database-info product="SQLite" version="3.6.23.1" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="pure"/>
     <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
     <schema name="" catalog=""/>
+    <table name="sqlite_sequence" schema="" catalog="" type="TABLE">
+      <column name="name" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="seq" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+    </table>
     <table name="tbl_conn" schema="" catalog="" type="TABLE">
       <column name="label" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
       <column name="client_addr" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
@@ -17,7 +21,6 @@
       <column name="pcap_id" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
     </table>
     <table name="tbl_reqrep" schema="" catalog="" type="TABLE">
-      <column name="reqrep_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
       <column name="label" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
       <column name="ts1" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
       <column name="ts2" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
@@ -32,7 +35,13 @@
       <column name="content_type" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
       <column name="response_code" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
       <column name="version" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
-      <column name="pcap_id" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="x_url" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="x_content_type" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="x_status_code" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="x_location" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="x_request_headers" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="x_response_headers" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="pcap_id" sqlType="INT" precision="0" scale="-1" nullable="true" jdbcType="4"/>
     </table>
   </data-source>
 </component>

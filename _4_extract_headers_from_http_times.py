@@ -12,7 +12,7 @@ import json
 #################################################
 
 
-def get_request_headers(dir, pcap_id, label, req_idx, req_len):
+def get_request(dir, pcap_id, label, req_idx, req_len):
     client, server = tuple(label.split('2'))
 
     # 打开客户端发送的数据,找到请求,处理完后关闭
@@ -25,10 +25,10 @@ def get_request_headers(dir, pcap_id, label, req_idx, req_len):
     req = http.Request()
     req.unpack(req_str, False)
 
-    return req.headers
+    return req
 
 
-def get_response_headers(dir, pcap_id, label, res_idx, res_len):
+def get_response(dir, pcap_id, label, res_idx, res_len):
     client, server = tuple(label.split('2'))
 
     # 打开服务器发送的数据,找到响应,处理完后关闭
@@ -41,7 +41,7 @@ def get_response_headers(dir, pcap_id, label, res_idx, res_len):
     res = http.Response()
     res.unpack(res_str, False)
 
-    return res.headers
+    return res
 
 
 if __name__ == '__main__':

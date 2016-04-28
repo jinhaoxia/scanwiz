@@ -531,7 +531,7 @@ utick 1460126093.757472 1250
 atext 1460126093.757472 1250
 Serv SYN
 ltext 1460126096.905896 1254 white
-/static/api/js/share.js?v=89860593.js?cdnversion=405589 HTTP/1.1text/javascript
+/static/api/js/share.js?v=89860593.js?cdnversion=405589 HTTP/1.1‘ÁW
 diamond 1460126096.905896 1254
 larrow 1460126096.916456 1254
 rarrow 1460126096.916882 1254

@@ -3,8 +3,8 @@
 import sys
 import os
 import sqlite3
-import _4_extract_headers_from_http_times
 import pprint
+from _4_extract_headers_from_http_times import get_request, get_response
 
 
 #################################################
@@ -23,7 +23,6 @@ def feed_for_reqrep_of_all_conn(conn, pcap_id):
     labels = cursor.fetchall()
     cursor.close()
     for label in labels:
-        print label[0]
         feed_for_reqrep_of_one_conn(conn, label[0], pcap_id)
     pass
 
@@ -47,17 +46,17 @@ def feed_for_reqrep_of_one_conn(conn, conn_label, pcap_id):
 
     cursor = conn.cursor()
 
-    for rll in rlls:
-        cursor.execute("UPDATE tbl_reqrep SET request_idx=?, response_idx=? WHERE ROWID = ?",
-                       (request_idx, response_idx, rll[0]))
-        request_idx += rll[1]
-        response_idx += rll[2]
+    for rowid, request_len, response_len in rlls:
+        cursor.execute(
+            "UPDATE tbl_reqrep SET request_idx=?, response_idx=? WHERE ROWID = ?",
+            (request_idx, response_idx, rowid)
+        )
+        request_idx += request_len
+        response_idx += response_len
 
     cursor.close()
     conn.commit()
 
-request_headers = list()
-response_headers = list()
 
 def show_headers_of_all_reqrep(conn, pcap_id, dir):
     """
@@ -72,24 +71,45 @@ def show_headers_of_all_reqrep(conn, pcap_id, dir):
         (pcap_id,))
     rrs = cursor.fetchall()
     cursor.close()
-    for rr in rrs:
-        rowid, label, request_idx, request_len, response_idx, response_len = rr
-        request = _4_extract_headers_from_http_times.get_request_headers(dir, pcap_id, label, request_idx, request_len)
-        response = _4_extract_headers_from_http_times.get_response_headers(dir, pcap_id, label, response_idx,
-                                                                           response_len)
-        # pprint.pprint({
-        #     'rowid': rowid,
-        #     'request': request,
-        #     'response': response
-        # })
-        global  request_headers, response_headers
-        request_headers += request.keys()
-        response_headers += response.keys()
+
+    cursor = conn.cursor()
+
+    for rowid, label, request_idx, request_len, response_idx, response_len in rrs:
+        request = get_request(dir, pcap_id, label, request_idx, request_len)
+        response = get_response(dir, pcap_id, label, response_idx, response_len)
+
+        cursor.execute \
+                (
+                "UPDATE tbl_reqrep SET x_request_headers = ?, x_response_headers = ? WHERE rowid = ?",
+                [
+                    repr(request.headers),
+                    repr(response.headers),
+                    rowid
+                ]
+            )
+        cursor.execute \
+                (
+                "UPDATE tbl_reqrep "
+                "SET "
+                "  x_url = ?,"
+                "  x_content_type = ?,"
+                "  x_status_code = ?"
+                "WHERE "
+                " ROWID = ?",
+                [
+                    "%s %s %s" % (request.method, request.headers.get('host'), request.uri),
+                    response.headers.get('content-type'),
+                    response.headers.get('location'),
+                    rowid
+                ]
+            )
+    cursor.close()
+    conn.commit()
 
 
 if __name__ == '__main__':
     db_name = sys.argv[1]
-    pcap_id = sys.argv[2]
+    pcap_id = int(sys.argv[2])
     tcptrace_result_dir = sys.argv[3]
 
     http_times_file_path = os.path.join(tcptrace_result_dir, "%s_http.times" % pcap_id)
@@ -99,6 +119,4 @@ if __name__ == '__main__':
     feed_for_reqrep_of_all_conn(conn, pcap_id)
     show_headers_of_all_reqrep(conn, pcap_id, tcptrace_result_dir)
 
-    print set(request_headers)
-    print
-    print set(response_headers)
+

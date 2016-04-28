@@ -13,5 +13,6 @@ output_dir=$2
 [[ -d "$output_dir" ]] || mkdir "$output_dir"
 
 while read pcap_id pcap_file pcap_comment; do
+  rm -f ${output_dir}/${pcap_id}_*
   tcptrace -n --csv -xhttp -f'port=80' --output_dir=$output_dir --output_prefix=${pcap_id}_ $pcap_file
 done < $pcap_files
