@@ -1,9 +1,0 @@
-GET /sso/crossdomain?action=login&savestate=1&callback=sinaSSOController.doCrossDomainCallBack&scriptId=ssoscript2&client=ssologin.js(v1.4.18)&_=1461308652159 HTTP/1.1
-Host: passport.weibo.cn
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0
-Accept: */*
-Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
-Accept-Encoding: gzip, deflate
-Referer: http://login.sina.com.cn/sso/login.php?client=ssologin.js(v1.4.18)
-Connection: keep-alive
-

@@ -1,748 +1,0 @@
-HTTP/1.1 200 OK
-Date: Wed, 27 Apr 2016 06:50:02 GMT
-Server: Apache/2.2.11 (Unix) DAV/2 PHP/5.2.9 SVN/1.6.2 mod_ssl/2.2.11 OpenSSL/0.9.7a mod_jk/1.2.26 mod_python/3.3.1 Python/2.4.4
-Last-Modified: Wed, 16 Mar 2011 16:23:15 GMT
-ETag: "2590a22-2729-49e9bf63aa2c0"
-Accept-Ranges: bytes
-Content-Length: 10025
-Cache-Control: max-age=1209600
-Expires: Wed, 11 May 2016 06:50:02 GMT
-Content-Type: text/css
-
-/* $Id: system.css,v 1.48.2.1 2010/11/14 14:16:29 goba Exp $ */
-
-/*
-** HTML elements
-*/
-body.drag {
-  cursor: move;
-}
-th.active img {
-  display: inline;
-}
-tr.even, tr.odd {
-  background-color: #eee;
-  border-bottom: 1px solid #ccc;
-  padding: 0.1em 0.6em;
-}
-tr.drag {
-  background-color: #fffff0;
-}
-tr.drag-previous {
-  background-color: #ffd;
-}
-td.active {
-  background-color: #ddd;
-}
-td.checkbox, th.checkbox {
-  text-align: center;
-}
-tbody {
-  border-top: 1px solid #ccc;
-}
-tbody th {
-  border-bottom: 1px solid #ccc;
-}
-thead th {
-  text-align: left; /* LTR */
-  padding-right: 1em; /* LTR */
-  border-bottom: 3px solid #ccc;
-}
-
-/*
-** Other common styles
-*/
-.breadcrumb {
-  padding-bottom: .5em
-}
-div.indentation {
-  width: 20px;
-  height: 1.7em;
-  margin: -0.4em 0.2em -0.4em -0.4em; /* LTR */
-  padding: 0.42em 0 0.42em 0.6em; /* LTR */
-  float: left; /* LTR */
-}
-div.tree-child {
-  background: url(../../misc/tree.png) no-repeat 11px center; /* LTR */
-}
-div.tree-child-last {
-  background: url(../../misc/tree-bottom.png) no-repeat 11px center; /* LTR */
-}
-div.tree-child-horizontal {
-  background: url(../../misc/tree.png) no-repeat -11px center;
-}
-.error {
-  color: #e55;
-}
-div.error {
-  border: 1px solid #d77;
-}
-div.error, tr.error {
-  background: #fcc;
-  color: #200;
-  padding: 2px;
-}
-.warning {
-  color: #e09010;
-}
-div.warning {
-  border: 1px solid #f0c020;
-}
-div.warning, tr.warning {
-  background: #ffd;
-  color: #220;
-  padding: 2px;
-}
-.ok {
-  color: #008000;
-}
-div.ok {
-  border: 1px solid #00aa00;
-}
-div.ok, tr.ok {
-  background: #dfd;
-  color: #020;
-  padding: 2px;
-}
-.item-list .icon {
-  color: #555;
-  float: right; /* LTR */
-  padding-left: 0.25em; /* LTR */
-  clear: right; /* LTR */
-}
-.item-list .title {
-  font-weight: bold;
-}
-.item-list ul {
-  margin: 0 0 0.75em 0;
-  padding: 0;
-}
-.item-list ul li {
-  margin: 0 0 0.25em 1.5em; /* LTR */
-  padding: 0;
-  list-style: disc;
-}
-ol.task-list li.active {
-  font-weight: bold;
-}
-.form-item {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-tr.odd .form-item, tr.even .form-item {
-  margin-top: 0;
-  margin-bottom: 0;
-  white-space: nowrap;
-}
-tr.merge-down, tr.merge-down td, tr.merge-down th {
-  border-bottom-width: 0 !important;
-}
-tr.merge-up, tr.merge-up td, tr.merge-up th {
-  border-top-width: 0 !important;
-}
-.form-item input.error, .form-item textarea.error, .form-item select.error {
-  border: 2px solid red;
-}
-.form-item .description {
-  font-size: 0.85em;
-}
-.form-item label {
-  display: block;
-  font-weight: bold;
-}
-.form-item label.option {
-  display: inline;
-  font-weight: normal;
-}
-.form-checkboxes, .form-radios {
-  margin: 1em 0;
-}
-.form-checkboxes .form-item, .form-radios .form-item {
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
-}
-.marker, .form-required {
-  color: #f00;
-}
-.more-link {
-  text-align: right; /* LTR */
-}
-.more-help-link {
-  font-size: 0.85em;
-  text-align: right; /* LTR */
-}
-.nowrap {
-  white-space: nowrap;
-}
-.item-list .pager {
-  clear: both;
-  text-align: center;
-}
-.item-list .pager li {
-  background-image:none;
-  display:inline;
-  list-style-type:none;
-  padding: 0.5em;
-}
-.pager-current {
-  font-weight:bold;
-}
-.tips {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: 0.9em;
-}
-dl.multiselect dd.b, dl.multiselect dd.b .form-item, dl.multiselect dd.b select {
-  font-family: inherit;
-  font-size: inherit;
-  width: 14em;
-}
-dl.multiselect dd.a, dl.multiselect dd.a .form-item {
-  width: 10em;
-}
-dl.multiselect dt, dl.multiselect dd {
-  float: left; /* LTR */
-  line-height: 1.75em;
-  padding: 0;
-  margin: 0 1em 0 0; /* LTR */
-}
-dl.multiselect .form-item {
-  height: 1.75em;
-  margin: 0;
-}
-
-/*
-** Inline items (need to override above)
-*/
-.container-inline div, .container-inline label {
-  display: inline;
-}
-
-/*
-** Tab navigation
-*/
-ul.primary {
-  border-collapse: collapse;
-  padding: 0 0 0 1em; /* LTR */
-  white-space: nowrap;
-  list-style: none;
-  margin: 5px;
-  height: auto;
-  line-height: normal;
-  border-bottom: 1px solid #bbb;
-}
-ul.primary li {
-  display: inline;
-}
-ul.primary li a {
-  background-color: #ddd;
-  border-color: #bbb;
-  border-width: 1px;
-  border-style: solid solid none solid;
-  height: auto;
-  margin-right: 0.5em; /* LTR */
-  padding: 0 1em;
-  text-decoration: none;
-}
-ul.primary li.active a {
-  background-color: #fff;
-  border: 1px solid #bbb;
-  border-bottom: #fff 1px solid;
-}
-ul.primary li a:hover {
-  background-color: #eee;
-  border-color: #ccc;
-  border-bottom-color: #eee;
-}
-ul.secondary {
-  border-bottom: 1px solid #bbb;
-  padding: 0.5em 1em;
-  margin: 5px;
-}
-ul.secondary li {
-  display: inline;
-  padding: 0 1em;
-  border-right: 1px solid #ccc; /* LTR */
-}
-ul.secondary a {
-  padding: 0;
-  text-decoration: none;
-}
-ul.secondary a.active {
-  border-bottom: 4px solid #999;
-}
-
-/*
-** Autocomplete styles
-*/
-/* Suggestion list */
-#autocomplete {
-  position: absolute;
-  border: 1px solid;
-  overflow: hidden;
-  z-index: 100;
-}
-#autocomplete ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-#autocomplete li {
-  background: #fff;
-  color: #000;
-  white-space: pre;
-  cursor: default;
-}
-#autocomplete li.selected {
-  background: #0072b9;
-  color: #fff;
-}
-/* Animated throbber */
-html.js input.form-autocomplete {
-  background-image: url(../../misc/throbber.gif);
-  background-repeat: no-repeat;
-  background-position: 100% 2px; /* LTR */
-}
-html.js input.throbbing {
-  background-position: 100% -18px; /* LTR */
-}
-
-/*
-** Collapsing fieldsets
-*/
-html.js fieldset.collapsed {
-  border-bottom-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
-  margin-bottom: 0;
-  height: 1em;
-}
-html.js fieldset.collapsed * {
-  display: none;
-}
-html.js fieldset.collapsed legend {
-  display: block;
-}
-html.js fieldset.collapsible legend a {
-  padding-left: 15px; /* LTR */
-  background: url(../../misc/menu-expanded.png) 5px 75% no-repeat; /* LTR */
-}
-html.js fieldset.collapsed legend a {
-  background-image: url(../../misc/menu-collapsed.png); /* LTR */
-  background-position: 5px 50%; /* LTR */
-}
-/* Note: IE-only fix due to '* html' (breaks Konqueror otherwise). */
-* html.js fieldset.collapsed legend,
-* html.js fieldset.collapsed legend *,
-* html.js fieldset.collapsed table * {
-  display: inline;
-}
-/* For Safari 2 to prevent collapsible fieldsets containing tables from dissapearing due to tableheader.js. */
-html.js fieldset.collapsible {
-  position: relative;
-}
-html.js fieldset.collapsible legend a {
-  display: block;
-}
-/* Avoid jumping around due to margins collapsing into collapsible fieldset border */
-html.js fieldset.collapsible .fieldset-wrapper {
-  overflow: auto;
-}
-
-/*
-** Resizable text areas
-*/
-.resizable-textarea {
-  width: 95%;
-}
-.resizable-textarea .grippie {
-  height: 9px;
-  overflow: hidden;
-  background: #eee url(../../misc/grippie.png) no-repeat center 2px;
-  border: 1px solid #ddd;
-  border-top-width: 0;
-  cursor: s-resize;
-}
-html.js .resizable-textarea textarea {
-  margin-bottom: 0;
-  width: 100%;
-  display: block;
-}
-
-/*
-** Table drag and drop.
-*/
-.draggable a.tabledrag-handle {
-  cursor: move;
-  float: left; /* LTR */
-  height: 1.7em;
-  margin: -0.4em 0 -0.4em -0.5em; /* LTR */
-  padding: 0.42em 1.5em 0.42em 0.5em; /* LTR */
-  text-decoration: none;
-}
-a.tabledrag-handle:hover {
-  text-decoration: none;
-}
-a.tabledrag-handle .handle {
-  margin-top: 4px;
-  height: 13px;
-  width: 13px;
-  background: url(../../misc/draggable.png) no-repeat 0 0;
-}
-a.tabledrag-handle-hover .handle {
-  background-position: 0 -20px;
-}
-
-/*
-** Teaser splitter
-*/
-.joined + .grippie {
-  height: 5px;
-  background-position: center 1px;
-  margin-bottom: -2px;
-}
-/* Keeps inner content contained in Opera 9. */
-.teaser-checkbox {
-  padding-top: 1px;
-}
-div.teaser-button-wrapper {
-  float: right; /* LTR */
-  padding-right: 5%; /* LTR */
-  margin: 0;
-}
-.teaser-checkbox div.form-item {
-  float: right; /* LTR */
-  margin: 0 5% 0 0; /* LTR */
-  padding: 0;
-}
-textarea.teaser {
-  display: none;
-}
-html.js .no-js {
-  display: none;
-}
-
-/*
-** Progressbar styles
-*/
-.progress {
-  font-weight: bold;
-}
-.progress .bar {
-  background: #fff url(../../misc/progress.gif);
-  border: 1px solid #00375a;
-  height: 1.5em;
-  margin: 0 0.2em;
-}
-.progress .filled {
-  background: #0072b9;
-  height: 1em;
-  border-bottom: 0.5em solid #004a73;
-  width: 0%;
-}
-.progress .percentage {
-  float: right; /* LTR */
-}
-.progress-disabled {
-  float: left; /* LTR */
-}
-.ahah-progress {
-  float: left; /* LTR */
-}
-.ahah-progress .throbber {
-  width: 15px;
-  height: 15px;
-  margin: 2px;
-  background: transparent url(../../misc/throbber.gif) no-repeat 0px -18px;
-  float: left; /* LTR */
-}
-tr .ahah-progress .throbber {
-  margin: 0 2px;
-}
-.ahah-progress-bar {
-  width: 16em;
-}
-
-/*
-** Formatting for welcome page
-*/
-#first-time strong {
-  display: block;
-  padding: 1.5em 0 .5em;
-}
-
-/*
-** To be used with tableselect.js
-*/
-tr.selected td {
-  background: #ffc;
-}
-
-/*
-** Floating header for tableheader.js
-*/
-table.sticky-header {
-  margin-top: 0;
-  background: #fff;
-}
-
-/*
-** Installation clean URLs
-*/
-#clean-url.install {
-  display: none;
-}
-
-/*
-** For anything you want to hide on page load when JS is enabled, so
-** that you can use the JS to control visibility and avoid flicker.
-*/
-html.js .js-hide {
-  display: none;
-}
-
-/*
-** Styles for the system modules page (admin/build/modules)
-*/
-#system-modules div.incompatible {
-  font-weight: bold;
-}
-
-/*
-** Styles for the system themes page (admin/build/themes)
-*/
-#system-themes-form div.incompatible {
-  font-weight: bold;
-}
-
-/*
-** Password strength indicator
-*/
-span.password-strength {
-  visibility: hidden;
-}
-input.password-field {
-  margin-right: 10px; /* LTR */
-}
-div.password-description {
-  padding: 0 2px;
-  margin: 4px 0 0 0;
-  font-size: 0.85em;
-  max-width: 500px;
-}
-div.password-description ul {
-  margin-bottom: 0;
-}
-.password-parent {
-  margin: 0 0 0 0;
-}
-/*
-** Password confirmation checker
-*/
-input.password-confirm {
-  margin-right: 10px; /* LTR */
-}
-.confirm-parent {
-  margin: 5px 0 0 0;
-}
-span.password-confirm {
-  visibility: hidden;
-}
-span.password-confirm span {
-  font-weight: normal;
-}
-HTTP/1.1 200 OK
-Date: Wed, 27 Apr 2016 06:50:03 GMT
-Server: Apache/2.2.11 (Unix) DAV/2 PHP/5.2.9 SVN/1.6.2 mod_ssl/2.2.11 OpenSSL/0.9.7a mod_jk/1.2.26 mod_python/3.3.1 Python/2.4.4
-Last-Modified: Wed, 16 Mar 2011 15:16:50 GMT
-ETag: "2590f4f-6fc-49e9b08b45c80"
-Accept-Ranges: bytes
-Content-Length: 1788
-Cache-Control: max-age=1209600
-Expires: Wed, 11 May 2016 06:50:03 GMT
-Content-Type: text/css
-
-/* $Id: views.css,v 1.11.4.2 2010/03/12 00:25:37 merlinofchaos Exp $ */
-.views-exposed-form .views-exposed-widget {
-  float: left; /* LTR */
-  padding: .5em 1em 0 0; /* LTR */
-}
-
-.views-exposed-form .views-exposed-widget .form-submit {
-  margin-top: 1.6em;
-}
-
-.views-exposed-form .form-item,
-.views-exposed-form .form-submit {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.views-exposed-form label {
-  font-weight: bold;
-}
-
-.views-exposed-widgets {
-  margin-bottom: .5em;
-}
-
-html.js a.views-throbbing,
-html.js span.views-throbbing {
-  background:url(../images/status-active.gif) no-repeat right center;
-  padding-right:18px;
-}
-
-/* administrative hover links */
-
-div.view div.views-admin-links {
-  font-size: xx-small;
-  margin-right: 1em;
-  margin-top: 1em;
-/*  width: 95%; */
-}
-
-.block div.view div.views-admin-links {
-  margin-top: 0;
-}
-
-div.view div.views-admin-links ul {
-  padding-left: 0;
-}
-
-div.view div.views-admin-links li a {
-  color: #ccc;
-}
-
-div.view div.views-admin-links li {
-  padding-bottom: 2px;
-  z-index: 201;
-}
-
-div.view div.views-admin-links-hover a,
-div.view div.views-admin-links:hover a {
-  color: #000;
-}
-
-div.view div.views-admin-links-hover,
-div.view div.views-admin-links:hover {
-  background: transparent;;
-}
-
-div.view div.views-admin-links a:before {
-  content: "[";
-}
-
-div.view div.views-admin-links a:after {
-  content: "]";
-}
-
-div.view div.views-hide {
-  display: none;
-}
-
-/** For IE we add the class via js; for other browsers we rely on :hover **/
-div.view div.views-hide-hover,
-div.view:hover div.views-hide {
-  display: block;
-  position: absolute;
-  z-index: 200;
-}
-
-/* don't do this one in IE */
-div.view:hover div.views-hide {
-  margin-top: -1.5em;
-}
-
-/* Remove the border on tbody that system puts in */
-.views-view-grid tbody {
-  border-top: none;
-}
-
-HTTP/1.1 200 OK
-Date: Wed, 27 Apr 2016 06:50:03 GMT
-Server: Apache/2.2.11 (Unix) DAV/2 PHP/5.2.9 SVN/1.6.2 mod_ssl/2.2.11 OpenSSL/0.9.7a mod_jk/1.2.26 mod_python/3.3.1 Python/2.4.4
-Last-Modified: Wed, 16 Mar 2011 15:14:51 GMT
-ETag: "259c053-19e-49e9b019c90c0"
-Accept-Ranges: bytes
-Content-Length: 414
-Cache-Control: max-age=1209600
-Expires: Wed, 11 May 2016 06:50:03 GMT
-Content-Type: text/css
-
-/*
- * Rollover edit links for blocks
- */
-
-  div.block.with-block-editing
-  {
-    position: relative;
-  }
-
-  div.block.with-block-editing div.edit
-  {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 40;
-    border: 1px solid #eee;
-    padding: 0 2px;
-    font-size: 0.75em;
-    background-color: #fff;
-  }
-
-  div.block.with-block-editing:hover div.edit
-  {
-    display: block;
-  }
-HTTP/1.1 200 OK
-Date: Wed, 27 Apr 2016 06:50:04 GMT
-Server: Apache/2.2.11 (Unix) DAV/2 PHP/5.2.9 SVN/1.6.2 mod_ssl/2.2.11 OpenSSL/0.9.7a mod_jk/1.2.26 mod_python/3.3.1 Python/2.4.4
-Last-Modified: Wed, 17 Aug 2011 19:36:09 GMT
-ETag: "2594392-4127-4aab89ba79c40"
-Accept-Ranges: bytes
-Content-Length: 16679
-Cache-Control: max-age=1209600
-Expires: Wed, 11 May 2016 06:50:04 GMT
-Content-Type: text/css
-
-body { margin: 0; padding: 0px; background: url('images/bg.jpg') repeat-x; background-color: #ffffff; font-family: Verdana, Geneva, sans-serif; }#header { margin: 0; padding: 0px; height: 82px; width: 935px; position: relative; }/**** **** Top Nav **** ****/#main-inner { position: relative; }#navbar #primary { margin: 0px; padding: 0px; background-color: #747474; width: 935px; height: 33px; }#navbar #primary ul { width: 892px; margin: 0px auto 0px auto; }/*#navbar #primary ul li { padding: 6px 63px 6px 0px; }*//** when Library Advisory Board is turned on **/#navbar #primary ul li { padding: 6px 37px 6px 0px; }#navbar #primary ul li a { color: #ffffff; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-size: 13px; }#navbar #primary ul li.last { padding-right: 0px; }#navbar #primary ul li a:hover { color: #acb100; }#navbar #primary ul li.active-trail a { color: #acb100; }/** Table styling **/table.contentTable { border-collapse: collapse; width: 935px; margin: 0px; padding: 0px; }table.contentTable td.leftSidebarCol { margin: 0px; padding: 0px; border-collapse: collapse; background: url('images/leftSidebarBg.jpg') repeat-x; vertical-align: top; width: 163px; background-color: #f5f5f5; }table.contentTable td.centerContentCol { margin: 0px; padding: 0px; background-color: #fcfcfc; border-collapse: collapse; vertical-align: top; width: 528px; }table.contentTable td.centerContentCol #content { min-height: 350px; width: 497px; margin: 0px; padding: 0px; }table.contentTable td.centerContentCol #content #content-inner { position: relative; color: #3e3e3e; margin: 0px; padding: 0px 16px 0px 19px; font-size: 13px; width: 494px; }table.contentTable td.centerContentCol #content #content-inner ul li { margin: 0px; padding: 0px; font-size: 13px; }table.contentTable td.centerContentCol #content #content-inner table { color: #3e3e3e; }table.contentTable td.centerContentCol #content #content-inner a { color: #000000; text-decoration: none; }table.contentTable td.centerContentCol #content #content-inner a:hover { color: #000000; text-decoration: underline; }table.contentTable td.centerContentCol #content #content-inner div.magazineListDiv h3 { color: #acb100; font-size: 13px; }table.contentTable td.centerContentCol #content #content-inner div.magazineListDiv p { color: #3e3e3e; font-size: 13px; width: 474px; padding: 0px 0px 0px 20px; margin: 0px; }table.contentTable td.centerContentCol #content #content-inner div.magazineListDiv p a { color: #000000; font-size: 13px; padding: 0px 0px 0px 20px; text-decoration: none; display: block; margin-bottom: 10px;}table.contentTable td.centerContentCol #content #content-inner div.magazineListDiv p a:hover { text-decoration: underline; }table.contentTable td.heroPhotoCell { margin: 0px; padding: 0px; /*border-collapse: collapse;*/ vertical-align: top; width: 771px; height: 191px; }#hero-photo, #hero-photo-inner, #hero-photo p, #hero-photo img { margin: 0px; padding: 0px; height: 191px; width: 771px; }table.contentTable td.bottomTableSpacerCell { background-color: #fcfcfc; height: 65px; }/**** **** Left Nav **** ****/#sidebar-left { padding-top: 40px; }#sidebar-left #block-menu_block-1 ul.menu { font-size: 12px; margin: 0px; padding: 0px; list-style: none; background-image: none; width: 163px; }#sidebar-left #block-menu_block-1 ul.menu li { list-style: none; background-image: none; list-style-image: none; border-bottom: solid 1px #acb100; margin-left: 8px; margin-right: 20px; }#sidebar-left #block-menu_block-1 ul.menu li.last { border-bottom: none; }#sidebar-left #block-menu_block-1 ul.menu li a { color: #3e3e3e; margin: 0px; padding: 6px 12px 6px 2px; text-decoration: none; display: block; line-height: 120%; }#sidebar-left #block-menu_block-1 ul.menu li a:hover { background-color: #acb100; color: #ffffff; }#sidebar-left #block-menu_block-1 ul.menu li ul li { margin-right: 28px; }/** Deal with first level selected **//** no sublevels **/#sidebar-left #block-menu_block-1 ul.menu li.active a { background-color: #acb100; color: #ffffff; }/** First level open **//** Deal with second level **/#sidebar-left #block-menu_block-1 ul.menu li.expanded ul { margin-top: 4px; }#sidebar-left #block-menu_block-1 ul.menu li.expanded a { background-color: #acb100; color: #ffffff; }#sidebar-left #block-menu_block-1 ul.menu li.expanded ul li { }#sidebar-left #block-menu_block-1 ul.menu li.expanded ul li a { margin-bottom: 0px; color: #3e3e3e; background-color: #ffffff; margin: 0px; padding: 3px 2px 3px 2px; text-decoration: none; display: block; }#sidebar-left #block-menu_block-1 ul.menu li.expanded ul li a:hover { background-color: #ffffff; color: #acb100; }/** Second level open **//** Deal with third level **//*make selected secondary item green*/#sidebar-left #block-menu_block-1 ul.menu li.expanded ul li.active a { color: #acb100; background-color: #ffffff; }/*and its sub navs regular color*/#sidebar-left #block-menu_block-1 ul.menu li.expanded ul li.active ul li a { color: #3e3e3e; background-color: #ffffff; }/*make selected tertiary item green*/#sidebar-left #block-menu_block-1 ul.menu li.expanded ul li.expanded ul li.active a { color: #acb100; background-color: #ffffff; }/*and its parent green*/#sidebar-left #block-menu_block-1 ul.menu li.expanded ul li.expanded a { color: #acb100; background-color: #ffffff; }/*but its siblings normal*/#sidebar-left #block-menu_block-1 ul.menu li.expanded ul li.expanded ul li a { color: #3e3e3e; background-color: #ffffff; }#sidebar-left #block-menu_block-1 ul.menu li.expanded ul li ul li a { margin-bottom: 0px; color: #3e3e3e; background-color: #ffffff; margin: 0px; padding: 3px 12px 3px 4px; text-decoration: none; display: block; }#sidebar-left #block-menu_block-1 ul.menu li.expanded ul li ul li a:hover { background-color: #ffffff; color: #acb100; }/** First level open **//** Second level disabled **/#sidebar-left #block-menu_block-1 ul.menu li.leaf.active-trail ul { margin-top: 4px; }#sidebar-left #block-menu_block-1 ul.menu li.leaf.active-trail a { background-color: #acb100; color: #ffffff; }/**** **** Left Column **** ****/#block-cck_blocks-field_left_sidebar_node_id { width: 125px; margin: 170px auto 0px auto; color: #3e3e3e; font-size: 13px; }#block-cck_blocks-field_left_sidebar_node_id img { margin: 0px auto 0px auto; }#block-cck_blocks-field_left_sidebar_node_id p { margin: 0px auto 0px auto; }/**** **** Faux Breadcrumbs **** ****/#faux_breadcrumbs, #faux_breadcrumbs h1, #faux_breadcrumbs h2 { font-size: 16px; width: 497px; height: 20px; padding: 30px 0px 0px 0px; font-weight: normal; }#parent_item, #parent_item h2 { color: #000000; display: inline; font-weight: normal; }#page_title_item, #page_title_item h1 { color: #acb100; display: inline; font-weight: normal; }/**** **** Right Column **** ****/table.contentTable td.rightContentCol { margin: 0px; padding: 0px; background-color: #fcfcfc; border-collapse: collapse; vertical-align: top; width: 243px; color: #3e3e3e; }table.contentTable td.rightContentCol #sidebar-right { width: 167px; padding: 30px 0px 30px 35px; border-left: solid 1px #acb100; }table.contentTable td.rightContentCol h3 { color: #acb100; font-size: 14px; font-weight: normal; }table.contentTable td.rightContentCol p { color: #3e3e3e; font-size: 13px; }table.contentTable td.rightContentCol a { color: #000000; font-size: 13px; text-decoration: none; }table.contentTable td.rightContentCol a:hover { text-decoration: underline; }/**** **** Footer **** ****/#footerGreenDiv { background-color: #777a05; width: 935px; height: 6px; }#footerTanDiv { background-color: #f5f5f5; color: #000000; font-size: 9px; text-align: center; width: 935px; padding: 3px 0px 3px 0px; }/**** **** Home Page **** ****/a.thickbox { color: #ffffff; font-size: 14px; text-decoration: none; }a.thickbox:hover { text-decoration: underline; }#homePageTopContent { background-color: #d0d0d0; height: 302px; width: 935px; position: relative; }#homePageBottomContent { min-height: 230px; border-top: solid 1px #ffffff; width: 935px; background: #ffffff url('images/homeBottomBg.jpg') no-repeat; display: block; }#homeTabs { display: block; float: left; width: 648px; height: 302px; background-color: #d0d0d0; }#block-views-rss_top_five-block_1 { margin: 0px; padding: 0px; }#block-views-rss_top_five-block_1 .view-display-id-block_1 div { padding: 0px; margin: 0px; }#block-views-rss_top_five-block_1 .viewContainer { background-color: #ffffff; width: 464px; height: 282px; margin: 10px 0px 0px 10px; }#block-views-rss_top_five-block_1 .view-rss-top-five { font-size: 11px; width: 433px; height: 220px; margin: 5px 5px 0px 15px; border: solid 1px #ffffff; overflow: hidden; }#block-views-rss_top_five-block_1 h2 { font-size: 16px; margin: 0px 5px 0px 15px; padding: 10px 0px 10px 0px; font-weight: normal; }#block-views-rss_top_five-block_1 .view-rss-top-five .view-content { margin: 0px auto 0px auto; padding: 0px; display: block; font-size: 13px; }#block-views-rss_top_five-block_1 .view-display-id-block_1 .views-row { color: #666666; font-size: 11px; display: block; margin-bottom: 7px; padding-bottom: 7px; border-bottom: solid 1px #666666; }#block-views-rss_top_five-block_1 .view-display-id-block_1 .views-row-last { border: none; }#block-views-rss_top_five-block_1 .view-display-id-block_1 .views-row a { font-size: 13px; color: #000000; text-decoration: none; }#block-views-rss_top_five-block_1 .view-display-id-block_1 .views-row a:hover { color: #acb100; text-decoration: underline; }#block-views-rss_top_five-block_1 .view-display-id-block_1 .views-field-title { font-weight: bold; padding: 0px; margin: 0px; }#block-views-rss_top_five-block_1 .view-display-id-block_1 .views-field-url, #block-views-rss_top_five-block_1 .view-display-id-block_1 .views-field-body { padding: 0px; margin: 0px; line-height: 132%; }#homeNewsOuter { background-color: #dcdcdc; height: 125px; width: 287px; margin: 0px; padding: 0px; position: absolute; left: 648px; top: 0px; }#newsTitleDiv {  }#homeNewsOuter h2 { display: block; width: 265px; color: #3e3e3e; font-size: 16px; font-weight: normal; padding-top: 6px; padding-bottom: 2px; padding-left: 15px; position: relative; }#homeNewsOuter h2 img { position: absolute; top: 8px; right: 2px; }#homeNews { display: block; width: 280px; height: 85px; position: relative; left: 15px; background-color: #dcdcdc; margin: 0px; padding: 0px; }#homeNews div, #homeNews span, #homeNews p, #homeNews a { margin: 0px; padding: 0px; line-height: 110%; }#homeNews .view-recent-news .views-field-title { color: #000000; font-size: 13px; margin: 0px; padding: 2px 0px 2px 0px; width: 250px; }#homeNews .view-recent-news .views-field-title a { color: #000000; text-decoration: none; margin: 0px; padding: 0px; width: 250px; }#homeNews .view-recent-news .views-field-title a:hover { color: #acb100; text-decoration: underline; }#homeNews .view-recent-news .views-field-teaser { color: #747474; font-size: 11px; margin: 0px; padding: 0px; width: 250px; border-bottom: dotted 1px #333333; }#homeNews .view-recent-news .views-field-teaser p { padding-bottom: 10px; width: 250px; }#homeNews .view-recent-news .views-row-last .views-field-teaser { border-bottom: none; }#homeAd { display: block; width: 252px; height: 90px; overflow: hidden; position: absolute; left: 664px; top: 125px; font-size: 11px; color: #3e3e3e; line-height: 110%; border-top: solid 1px #b1b2b2; }#homeAd h2 { font-size: 14px; color: #acb100; font-weight: normal; margin: 0px; padding: 10px 0px 0px 0px; }#homeAd p { margin: 0px; padding: 0px;  }#homeAd a { font-size: 11px; color: #3e3e3e; text-decoration: none; }#homeAd a:hover { font-size: 11px; color: #3e3e3e; text-decoration: underline; }#homeFollow { display: block; width: 252px; height: 90px; overflow: hidden; position: absolute; left: 664px; top: 223px; font-size: 11px; color: #3e3e3e; line-height: 110%; border-top: solid 1px #b1b2b2; }#homeFollow h2.title { font-weight: normal; margin-top: 5px; margin-bottom: 5px; }#homeFollow a { border: none; }#homeFollow a.facebookIcon { margin-left: 16px; }#homeFollow a.twitterIcon { margin-left: 18px; }#homeFollow a.youTubeIcon { margin-left: 18px; }#homeBottomLeft { display: block; width: 220px; position: relative; font-size: 11px; color: #3e3e3e; line-height: 130%; margin-top: 54px; margin-left: 0px; float: left; margin-bottom: 30px; }#homeBottomCenterA { display: block; width: 234px; position: relative; font-size: 11px; color: #3e3e3e; line-height: 130%; margin-top: 54px; margin-left: 15px; float: left; border-right: solid 1px #e5e5e5; margin-bottom: 30px; }#homeBottomCenterA iframe { margin: 0; padding: 0;}#homeBottomCenterB { display: block; width: 200px; position: relative; font-size: 11px; color: #3e3e3e; line-height: 130%; margin-top: 54px; margin-left: 20px; float: left; margin-bottom: 30px; }#homeBottomRight { display: block; width: 200px; position: relative; font-size: 11px; color: #3e3e3e; line-height: 130%; margin-top: 54px; margin-left: 17px; float: right; padding-left: 20px; border-left: solid 1px #e5e5e5; margin-bottom: 30px; }#homeBottomCenterA iframe, #homeBottomCenterB img, #homeBottomRight img { border: solid 1px #6e6e6e; } #homeBottomLeft h2, #homeBottomCenterA h2, #homeBottomCenterB h2, #homeBottomRight h2 { font-size: 16px; color: #262424; margin: 0px; padding: 0px 0px 7px 0px; }#homeBottomLeft h3, #homeBottomCenterA h3, #homeBottomCenterB h3, #homeBottomRight h3 { font-size: 14px; color: #262424; margin: 0px; padding: 3px 0px 0px 0px; }#homeBottomLeft a, #homeBottomCenterA a, #homeBottomCenterB a, #homeBottomRight a { font-size: 11px; color: #3e3e3e; margin: 0px; padding: 0px; text-decoration: none; }#homeBottomLeft a:hover, #homeBottomCenterA a:hover, #homeBottomCenterB a:hover, #homeBottomRight a:hover { text-decoration: underline; }#homeBottomLeft p, #homeBottomCenter p, #homeBottomRight p { margin: 6px 0px 6px 0px; padding: 0px; }/**** **** Story Page **** ****/#storyContent h1 { font-size: 16px; width: 497px; padding-top: 30px; color: #acb100; font-weight: normal; }/**** **** Press Release Page **** ****//* individual story */#pressReleaseContent h1 { font-size: 16px; width: 497px; padding-top: 30px; color: #acb100; font-weight: normal; }/* listing page */.page-press-releases .centerContentCol .view-header h1 { font-size: 16px; width: 497px; padding: 30px 0px 0px 0px; color: #acb100; font-weight: normal; }.page-press-releases .centerContentCol .view-content h3 { font-size: 16px; width: 497px; padding: 20px 0px 0px 0px; font-weight: normal; }.page-press-releases .centerContentCol .views-field-title span.field-content { display: block; padding: 0px 0px 0px 0px; margin: 0px; }.page-press-releases .centerContentCol .views-field-teaser div.field-content p { padding: 0px; margin: 3px 0px 20px 0px; }/**** **** Press Release Page **** ****//* individual story */#pressReleaseContent h1 { font-size: 16px; width: 497px; padding-top: 30px; color: #acb100; font-weight: normal; }/* listing page */.page-news-archive .centerContentCol .view-header h1 { font-size: 16px; width: 497px; padding: 30px 0px 0px 0px; color: #acb100; font-weight: normal; }.page-news-archive .centerContentCol .view-content h3 { font-size: 16px; width: 497px; padding: 20px 0px 0px 0px; font-weight: normal; }.page-news-archive .centerContentCol .views-field-title span.field-content { display: block; padding: 0px 0px 0px 0px; margin: 0px; }.page-news-archive .centerContentCol .views-field-teaser div.field-content p { padding: 0px; margin: 3px 0px 20px 0px; }/**** **** Misc **** ****/#contactsTable td { vertical-align: top; }.page-recent-news .view-header h1 { color: #acb100; font-size: 16px; width: 497px; height: 20px; padding: 30px 0px 0px 0px; font-weight: normal; }.centeredTable { margin: 7px auto; }/* video view page */.view-Videos .view-content .views-field-title { font-size: 14px; padding-bottom: 15px; }.view-Videos .view-content .views-field-title span.field-content { color: #acb100; }.rightContentCol #block-views-Videos-block_2 h2.title { color: #acb100; font-weight: normal; font-size: 12px; padding-top: 0; margin-top: 0; padding-bottom: 10px; }.rightContentCol .view-Videos .views-field-title { display: block; width: 100px; float: left; color: #60605f; }.rightContentCol .view-Videos .views-field-title a { color: #60605f; }.rightContentCol .view-Videos .views-field-field-youtube-length-value { display: block; width: 32px; float: right; font-size: 12px; color: #60605f; }HTTP/1.1 200 OK
-Date: Wed, 27 Apr 2016 06:50:04 GMT
-Server: Apache/2.2.11 (Unix) DAV/2 PHP/5.2.9 SVN/1.6.2 mod_ssl/2.2.11 OpenSSL/0.9.7a mod_jk/1.2.26 mod_python/3.3.1 Python/2.4.4
-Last-Modified: Thu, 06 May 2010 20:44:14 GMT
-ETag: "2591349-3fbf-485f301684380"
-Accept-Ranges: bytes
-Content-Length: 16319
-Cache-Control: max-age=1209600
-Expires: Wed, 11 May 2016 06:50:04 GMT
-Content-Type: application/x-javascript
-
-/* Copyright (c) 2006 Kelvin Luck (kelvin AT kelvinluck DOT com || http://www.kelvinluck.com) * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)  * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses. *  * See http://kelvinluck.com/assets/jquery/jScrollPane/ * $Id: jScrollPane.js 33 2008-12-10 22:55:28Z kelvin.luck $ *//** * Replace the vertical scroll bars on any matched elements with a fancy * styleable (via CSS) version. With JS disabled the elements will * gracefully degrade to the browsers own implementation of overflow:auto. * If the mousewheel plugin has been included on the page then the scrollable areas will also * respond to the mouse wheel. * * @example jQuery(".scroll-pane").jScrollPane(); * * @name jScrollPane * @type jQuery * @param Object	settings	hash with options, described below. *								scrollbarWidth	-	The width of the generated scrollbar in pixels *								scrollbarMargin	-	The amount of space to leave on the side of the scrollbar in pixels *								wheelSpeed		-	The speed the pane will scroll in response to the mouse wheel in pixels *								showArrows		-	Whether to display arrows for the user to scroll with *								arrowSize		-	The height of the arrow buttons if showArrows=true *								animateTo		-	Whether to animate when calling scrollTo and scrollBy *								dragMinHeight	-	The minimum height to allow the drag bar to be *								dragMaxHeight	-	The maximum height to allow the drag bar to be *								animateInterval	-	The interval in milliseconds to update an animating scrollPane (default 100) *								animateStep		-	The amount to divide the remaining scroll distance by when animating (default 3) *								maintainPosition-	Whether you want the contents of the scroll pane to maintain it's position when you re-initialise it - so it doesn't scroll as you add more content (default true) *								scrollbarOnLeft	-	Display the scrollbar on the left side?  (needs stylesheet changes, see examples.html) *								reinitialiseOnImageLoad - Whether the jScrollPane should automatically re-initialise itself when any contained images are loaded * @return jQuery * @cat Plugins/jScrollPane * @author Kelvin Luck (kelvin AT kelvinluck DOT com || http://www.kelvinluck.com) */(function($) {$.jScrollPane = {	active : []};$.fn.jScrollPane = function(settings){	settings = $.extend({}, $.fn.jScrollPane.defaults, settings);	var rf = function() { return false; };		return this.each(		function()		{			var $this = $(this);			// Switch the element's overflow to hidden to ensure we get the size of the element without the scrollbars [http://plugins.jquery.com/node/1208]			$this.css('overflow', 'hidden');			var paneEle = this;						if ($(this).parent().is('.jScrollPaneContainer')) {				var currentScrollPosition = settings.maintainPosition ? $this.position().top : 0;				var $c = $(this).parent();				var paneWidth = $c.innerWidth();				var paneHeight = $c.outerHeight();				var trackHeight = paneHeight;				$('>.jScrollPaneTrack, >.jScrollArrowUp, >.jScrollArrowDown', $c).remove();				$this.css({'top':0});			} else {				var currentScrollPosition = 0;				this.originalPadding = $this.css('paddingTop') + ' ' + $this.css('paddingRight') + ' ' + $this.css('paddingBottom') + ' ' + $this.css('paddingLeft');				this.originalSidePaddingTotal = (parseInt($this.css('paddingLeft')) || 0) + (parseInt($this.css('paddingRight')) || 0);				var paneWidth = $this.innerWidth();				var paneHeight = $this.innerHeight();				var trackHeight = paneHeight;				$this.wrap(					$('<div></div>').attr(						{'className':'jScrollPaneContainer'}					).css(						{							'height':paneHeight+'px', 							'width':paneWidth+'px'						}					)				);				// deal with text size changes (if the jquery.em plugin is included)				// and re-initialise the scrollPane so the track maintains the				// correct size				$(document).bind(					'emchange', 					function(e, cur, prev)					{						$this.jScrollPane(settings);					}				);							}						if (settings.reinitialiseOnImageLoad) {				// code inspired by jquery.onImagesLoad: http://plugins.jquery.com/project/onImagesLoad				// except we re-initialise the scroll pane when each image loads so that the scroll pane is always up to size...				// TODO: Do I even need to store it in $.data? Is a local variable here the same since I don't pass the reinitialiseOnImageLoad when I re-initialise?				var $imagesToLoad = $.data(paneEle, 'jScrollPaneImagesToLoad') || $('img', $this);				var loadedImages = [];								if ($imagesToLoad.length) {					$imagesToLoad.each(function(i, val)	{						$(this).bind('load', function() {							if($.inArray(i, loadedImages) == -1){ //don't double count images								loadedImages.push(val); //keep a record of images we've seen								$imagesToLoad = $.grep($imagesToLoad, function(n, i) {									return n != val;								});								$.data(paneEle, 'jScrollPaneImagesToLoad', $imagesToLoad);								settings.reinitialiseOnImageLoad = false;								$this.jScrollPane(settings); // re-initialise							}						}).each(function(i, val) {							if(this.complete || this.complete===undefined) { 								//needed for potential cached images								this.src = this.src; 							} 						});					});				};			}			var p = this.originalSidePaddingTotal;						var cssToApply = {				'height':'auto',				'width':paneWidth - settings.scrollbarWidth - settings.scrollbarMargin - p + 'px'			}			if(settings.scrollbarOnLeft) {				cssToApply.paddingLeft = settings.scrollbarMargin + settings.scrollbarWidth + 'px';			} else {				cssToApply.paddingRight = settings.scrollbarMargin + 'px';			}			$this.css(cssToApply);			var contentHeight = $this.outerHeight();			var percentInView = paneHeight / contentHeight;			if (percentInView < .99) {				var $container = $this.parent();				$container.append(					$('<div></div>').attr({'className':'jScrollPaneTrack'}).css({'width':settings.scrollbarWidth+'px'}).append(						$('<div></div>').attr({'className':'jScrollPaneDrag'}).css({'width':settings.scrollbarWidth+'px'}).append(							$('<div></div>').attr({'className':'jScrollPaneDragTop'}).css({'width':settings.scrollbarWidth+'px'}),							$('<div></div>').attr({'className':'jScrollPaneDragBottom'}).css({'width':settings.scrollbarWidth+'px'})						)					)				);								var $track = $('>.jScrollPaneTrack', $container);				var $drag = $('>.jScrollPaneTrack .jScrollPaneDrag', $container);								if (settings.showArrows) {										var currentArrowButton;					var currentArrowDirection;					var currentArrowInterval;					var currentArrowInc;					var whileArrowButtonDown = function()					{						if (currentArrowInc > 4 || currentArrowInc%4==0) {							positionDrag(dragPosition + currentArrowDirection * mouseWheelMultiplier);						}						currentArrowInc ++;					};					var onArrowMouseUp = function(event)					{						$('html').unbind('mouseup', onArrowMouseUp);						currentArrowButton.removeClass('jScrollActiveArrowButton');						clearInterval(currentArrowInterval);					};					var onArrowMouseDown = function() {						$('html').bind('mouseup', onArrowMouseUp);						currentArrowButton.addClass('jScrollActiveArrowButton');						currentArrowInc = 0;						whileArrowButtonDown();						currentArrowInterval = setInterval(whileArrowButtonDown, 100);					};					$container						.append(							$('<a></a>')								.attr({'href':'javascript:;', 'className':'jScrollArrowUp'})								.css({'width':settings.scrollbarWidth+'px'})								.html('Scroll up')								.bind('mousedown', function()								{									currentArrowButton = $(this);									currentArrowDirection = -1;									onArrowMouseDown();									this.blur();									return false;								})								.bind('click', rf),							$('<a></a>')								.attr({'href':'javascript:;', 'className':'jScrollArrowDown'})								.css({'width':settings.scrollbarWidth+'px'})								.html('Scroll down')								.bind('mousedown', function()								{									currentArrowButton = $(this);									currentArrowDirection = 1;									onArrowMouseDown();									this.blur();									return false;								})								.bind('click', rf)						);					var $upArrow = $('>.jScrollArrowUp', $container);					var $downArrow = $('>.jScrollArrowDown', $container);					if (settings.arrowSize) {						trackHeight = paneHeight - settings.arrowSize - settings.arrowSize;						$track							.css({'height': trackHeight+'px', top:settings.arrowSize+'px'})					} else {						var topArrowHeight = $upArrow.height();						settings.arrowSize = topArrowHeight;						trackHeight = paneHeight - topArrowHeight - $downArrow.height();						$track							.css({'height': trackHeight+'px', top:topArrowHeight+'px'})					}				}								var $pane = $(this).css({'position':'absolute', 'overflow':'visible'});								var currentOffset;				var maxY;				var mouseWheelMultiplier;				// store this in a seperate variable so we can keep track more accurately than just updating the css property..				var dragPosition = 0;				var dragMiddle = percentInView*paneHeight/2;								// pos function borrowed from tooltip plugin and adapted...				var getPos = function (event, c) {					var p = c == 'X' ? 'Left' : 'Top';					return event['page' + c] || (event['client' + c] + (document.documentElement['scroll' + p] || document.body['scroll' + p])) || 0;				};								var ignoreNativeDrag = function() {	return false; };								var initDrag = function()				{					ceaseAnimation();					currentOffset = $drag.offset(false);					currentOffset.top -= dragPosition;					maxY = trackHeight - $drag[0].offsetHeight;					mouseWheelMultiplier = 2 * settings.wheelSpeed * maxY / contentHeight;				};								var onStartDrag = function(event)				{					initDrag();					dragMiddle = getPos(event, 'Y') - dragPosition - currentOffset.top;					$('html').bind('mouseup', onStopDrag).bind('mousemove', updateScroll);					if ($.browser.msie) {						$('html').bind('dragstart', ignoreNativeDrag).bind('selectstart', ignoreNativeDrag);					}					return false;				};				var onStopDrag = function()				{					$('html').unbind('mouseup', onStopDrag).unbind('mousemove', updateScroll);					dragMiddle = percentInView*paneHeight/2;					if ($.browser.msie) {						$('html').unbind('dragstart', ignoreNativeDrag).unbind('selectstart', ignoreNativeDrag);					}				};				var positionDrag = function(destY)				{					destY = destY < 0 ? 0 : (destY > maxY ? maxY : destY);					dragPosition = destY;					$drag.css({'top':destY+'px'});					var p = destY / maxY;					$pane.css({'top':((paneHeight-contentHeight)*p) + 'px'});					$this.trigger('scroll');					if (settings.showArrows) {						$upArrow[destY == 0 ? 'addClass' : 'removeClass']('disabled');						$downArrow[destY == maxY ? 'addClass' : 'removeClass']('disabled');					}				};				var updateScroll = function(e)				{					positionDrag(getPos(e, 'Y') - currentOffset.top - dragMiddle);				};								var dragH = Math.max(Math.min(percentInView*(paneHeight-settings.arrowSize*2), settings.dragMaxHeight), settings.dragMinHeight);								$drag.css(					{'height':dragH+'px'}				).bind('mousedown', onStartDrag);								var trackScrollInterval;				var trackScrollInc;				var trackScrollMousePos;				var doTrackScroll = function()				{					if (trackScrollInc > 8 || trackScrollInc%4==0) {						positionDrag((dragPosition - ((dragPosition - trackScrollMousePos) / 2)));					}					trackScrollInc ++;				};				var onStopTrackClick = function()				{					clearInterval(trackScrollInterval);					$('html').unbind('mouseup', onStopTrackClick).unbind('mousemove', onTrackMouseMove);				};				var onTrackMouseMove = function(event)				{					trackScrollMousePos = getPos(event, 'Y') - currentOffset.top - dragMiddle;				};				var onTrackClick = function(event)				{					initDrag();					onTrackMouseMove(event);					trackScrollInc = 0;					$('html').bind('mouseup', onStopTrackClick).bind('mousemove', onTrackMouseMove);					trackScrollInterval = setInterval(doTrackScroll, 100);					doTrackScroll();				};								$track.bind('mousedown', onTrackClick);								$container.bind(					'mousewheel',					function (event, delta) {						initDrag();						ceaseAnimation();						var d = dragPosition;						positionDrag(dragPosition - delta * mouseWheelMultiplier);						var dragOccured = d != dragPosition;						return !dragOccured;					}				);				var _animateToPosition;				var _animateToInterval;				function animateToPosition()				{					var diff = (_animateToPosition - dragPosition) / settings.animateStep;					if (diff > 1 || diff < -1) {						positionDrag(dragPosition + diff);					} else {						positionDrag(_animateToPosition);						ceaseAnimation();					}				}				var ceaseAnimation = function()				{					if (_animateToInterval) {						clearInterval(_animateToInterval);						delete _animateToPosition;					}				};				var scrollTo = function(pos, preventAni)				{					if (typeof pos == "string") {						$e = $(pos, $this);						if (!$e.length) return;						pos = $e.offset().top - $this.offset().top;					}					$container.scrollTop(0);					ceaseAnimation();					var destDragPosition = -pos/(paneHeight-contentHeight) * maxY;					if (preventAni || !settings.animateTo) {						positionDrag(destDragPosition);					} else {						_animateToPosition = destDragPosition;						_animateToInterval = setInterval(animateToPosition, settings.animateInterval);					}				};				$this[0].scrollTo = scrollTo;								$this[0].scrollBy = function(delta)				{					var currentPos = -parseInt($pane.css('top')) || 0;					scrollTo(currentPos + delta);				};								initDrag();								scrollTo(-currentScrollPosition, true);							// Deal with it when the user tabs to a link or form element within this scrollpane				$('*', this).bind(					'focus',					function(event)					{						var $e = $(this);												// loop through parents adding the offset top of any elements that are relatively positioned between						// the focused element and the jScrollPaneContainer so we can get the true distance from the top						// of the focused element to the top of the scrollpane...						var eleTop = 0;												while ($e[0] != $this[0]) {							eleTop += $e.position().top;							$e = $e.offsetParent();						}												var viewportTop = -parseInt($pane.css('top')) || 0;						var maxVisibleEleTop = viewportTop + paneHeight;						var eleInView = eleTop > viewportTop && eleTop < maxVisibleEleTop;						if (!eleInView) {							var destPos = eleTop - settings.scrollbarMargin;							if (eleTop > viewportTop) { // element is below viewport - scroll so it is at bottom.								destPos += $(this).height() + 15 + settings.scrollbarMargin - paneHeight;							}							scrollTo(destPos);						}					}				)												if (location.hash) {					scrollTo(location.hash);				}								// use event delegation to listen for all clicks on links and hijack them if they are links to				// anchors within our content...				$(document).bind(					'click',					function(e)					{						$target = $(e.target);						if ($target.is('a')) {							var h = $target.attr('href');							if (h.substr(0, 1) == '#') {								scrollTo(h);							}						}					}				);								$.jScrollPane.active.push($this[0]);							} else {				$this.css(					{						'height':paneHeight+'px',						'width':paneWidth-this.originalSidePaddingTotal+'px',						'padding':this.originalPadding					}				);				// remove from active list?				$this.parent().unbind('mousewheel');			}					}	)};$.fn.jScrollPane.defaults = {	scrollbarWidth : 10,	scrollbarMargin : 5,	wheelSpeed : 18,	showArrows : false,	arrowSize : 0,	animateTo : false,	dragMinHeight : 1,	dragMaxHeight : 99999,	animateInterval : 100,	animateStep: 3,	maintainPosition: true,	scrollbarOnLeft: false,	reinitialiseOnImageLoad: false};// clean up the scrollTo expandos$(window)	.bind('unload', function() {		var els = $.jScrollPane.active; 		for (var i=0; i<els.length; i++) {			els[i].scrollTo = els[i].scrollBy = null;		}	});})(jQuery);HTTP/1.1 200 OK
-Date: Wed, 27 Apr 2016 06:50:05 GMT
-Server: Apache/2.2.11 (Unix) DAV/2 PHP/5.2.9 SVN/1.6.2 mod_ssl/2.2.11 OpenSSL/0.9.7a mod_jk/1.2.26 mod_python/3.3.1 Python/2.4.4
-Last-Modified: Thu, 11 Aug 2011 18:06:03 GMT
-ETag: "13871e-6a7c-4aa3ea66258c0"
-Accept-Ranges: bytes
-Content-Length: 27260
-Cache-Control: max-age=1209600
-Expires: Wed, 11 May 2016 06:50:05 GMT
-Content-Type: application/x-javascript
-
-/*!
- * The following copyright notice may not be removed under any circumstances.
- * 
- * Copyright:
- * © Dutch Design: Albert-Jan Pool, 1995. Published by FontShop International
- * FontFont release 15
- */
-Cufon.registerFont({"w":187,"face":{"font-family":"DIN","font-weight":400,"font-stretch":"normal","units-per-em":"360","panose-1":"2 0 5 3 0 0 0 0 0 0","ascent":"279","descent":"-81","x-height":"2","bbox":"-5 -290 350 81.3705","underline-thickness":"18.36","underline-position":"-50.04","stemh":"23","stemv":"26","unicode-range":"U+0020-U+007E"},"glyphs":{" ":{"w":89},"!":{"d":"77,-256r-4,184r-22,0r-3,-184r29,0xm78,0r-31,0r0,-30r31,0r0,30","w":113},"\"":{"d":"121,-195r-29,0r0,-61r29,0r0,61xm60,-195r-28,0r0,-61r28,0r0,61","w":152},"#":{"d":"217,-156r-35,0r-8,51r32,0r0,23r-36,0r-13,82r-26,0r13,-82r-58,0r-13,82r-26,0r13,-82r-32,0r0,-23r36,0r8,-51r-33,0r0,-23r36,0r12,-78r27,0r-12,78r57,0r12,-78r27,0r-13,78r32,0r0,23xm156,-156r-58,0r-8,51r57,0","w":235},"$":{"d":"172,-121v46,42,16,125,-56,122r0,40r-22,0r0,-39v-34,-1,-57,-12,-79,-34r19,-18v19,19,38,26,62,27r0,-95v-43,-4,-74,-24,-74,-68v0,-41,27,-68,72,-72r0,-32r22,0r0,32v28,1,47,10,67,28r-18,17v-14,-12,-28,-20,-50,-21r0,93v24,4,46,9,57,20xm96,-144r0,-90v-42,0,-62,49,-36,76v9,9,24,12,36,14xm115,-23v47,2,68,-51,39,-79v-11,-11,-24,-11,-39,-13r0,92","w":214},"%":{"d":"277,-84v0,48,-6,87,-49,87v-43,0,-48,-39,-48,-87v0,-30,20,-48,48,-48v28,0,49,18,49,48xm221,-256r-120,256r-22,0r120,-256r22,0xm121,-210v0,48,-5,86,-49,86v-43,0,-49,-38,-49,-86v0,-30,21,-49,49,-49v28,0,49,19,49,49xm228,-15v33,1,28,-36,28,-68v0,-19,-9,-31,-28,-31v-34,-1,-28,35,-28,67v0,19,8,32,28,32xm72,-142v33,1,28,-36,28,-68v0,-19,-9,-31,-28,-31v-34,-1,-28,36,-28,68v0,19,9,31,28,31","w":299},"&":{"d":"242,0r-35,0r-23,-28v-10,10,-34,30,-75,30v-50,0,-81,-29,-81,-74v0,-39,27,-58,55,-77v-40,-29,-37,-109,29,-109v57,0,75,78,27,99r-19,13r66,79v10,-16,14,-30,14,-59r26,0v0,32,-7,59,-24,79xm105,-163v17,-12,37,-19,37,-41v0,-17,-13,-31,-30,-31v-40,0,-38,43,-7,72xm169,-47r-71,-85v-22,15,-44,30,-44,59v0,59,76,67,115,26","w":266},"'":{"d":"60,-195r-28,0r0,-61r28,0r0,61","w":91},"(":{"d":"59,-36v0,28,11,38,25,52r-17,18v-20,-18,-34,-35,-34,-68v0,-90,-26,-211,34,-256r17,17v-14,15,-25,25,-25,53r0,184","w":107},")":{"d":"41,-290v20,18,34,35,33,68r0,188v1,33,-13,50,-33,68r-19,-19v14,-14,25,-23,25,-51r0,-184v1,-28,-11,-38,-25,-52","w":107},"*":{"d":"147,-170r-11,18r-42,-26r2,49r-21,0r1,-49r-41,26r-11,-18r43,-23r-43,-24r11,-17r41,25r-1,-49r21,0r-2,49r42,-25r11,17r-44,24","w":170},"+":{"d":"169,-84r-63,0r0,63r-24,0r0,-63r-63,0r0,-24r63,0r0,-63r24,0r0,63r63,0r0,24"},",":{"d":"63,23r-31,29r0,-84r31,0r0,55","w":95},"-":{"d":"126,-85r-99,0r0,-24r99,0r0,24","w":153},".":{"d":"66,0r-34,0r0,-34r34,0r0,34","w":97},"\/":{"d":"128,-283r-102,310r-26,0r103,-310r25,0","w":127},"0":{"d":"164,-68v0,42,-30,70,-70,70v-40,0,-70,-28,-70,-70r0,-120v0,-42,30,-70,70,-70v40,0,70,28,70,70r0,120xm94,-21v67,-2,44,-102,44,-165v0,-28,-16,-49,-44,-49v-67,2,-44,102,-44,165v0,28,16,49,44,49"},"1":{"d":"119,0r-26,0r0,-228r-48,43r0,-30r48,-41r26,0r0,256"},"2":{"d":"166,0r-142,0r0,-23r102,-129v27,-30,13,-83,-31,-83v-24,0,-44,13,-44,46r-26,0v0,-40,27,-69,70,-69v65,0,87,72,50,120r-89,115r110,0r0,23"},"3":{"d":"166,-70v0,47,-34,73,-76,73v-40,0,-73,-22,-75,-68r26,0v4,63,99,56,99,-5v0,-33,-18,-52,-56,-50r0,-23v34,1,51,-15,51,-46v0,-31,-20,-47,-45,-47v-27,0,-43,17,-46,43r-26,0v3,-41,33,-66,72,-66v72,0,98,102,36,127v26,10,40,30,40,62"},"4":{"d":"174,-41r-32,0r0,41r-25,0r0,-41r-103,0r0,-23r93,-192r28,0r-93,192r75,0r0,-73r25,0r0,73r32,0r0,23"},"5":{"d":"101,-170v47,-2,65,44,65,85v0,47,-21,89,-71,88v-42,0,-68,-25,-70,-63r26,0v3,26,17,39,44,39v35,0,45,-33,45,-64v0,-31,-6,-62,-43,-62v-22,0,-37,10,-42,25r-24,0r0,-134r130,0r0,23r-106,0r0,81v10,-11,26,-18,46,-18"},"6":{"d":"166,-74v0,44,-27,76,-71,76v-68,1,-84,-72,-55,-131r63,-127r26,0r-57,115v48,-21,94,15,94,67xm140,-73v0,-28,-16,-52,-46,-52v-27,0,-45,20,-45,52v0,31,18,52,45,52v27,0,46,-21,46,-52"},"7":{"d":"170,-233r-89,233r-28,0r89,-233r-89,0r0,40r-26,0r0,-63r143,0r0,23"},"8":{"d":"170,-71v0,43,-34,73,-76,73v-42,0,-76,-30,-76,-73v0,-30,17,-50,39,-62v-58,-27,-36,-125,37,-125v72,0,95,98,37,125v22,12,39,32,39,62xm139,-189v0,-27,-19,-46,-45,-46v-26,0,-45,19,-45,46v0,27,19,45,45,45v26,0,45,-18,45,-45xm144,-71v0,-28,-22,-50,-50,-50v-28,0,-50,22,-50,50v0,28,22,50,50,50v28,0,50,-22,50,-50"},"9":{"d":"93,-258v69,-2,84,72,55,131r-63,127r-27,0r58,-115v-49,19,-94,-16,-94,-68v0,-44,27,-75,71,-75xm139,-184v0,-31,-19,-51,-46,-51v-27,0,-45,20,-45,51v0,28,15,52,45,52v27,0,46,-20,46,-52"},":":{"d":"75,-108r-34,0r0,-34r34,0r0,34xm75,0r-34,0r0,-34r34,0r0,34","w":106},";":{"d":"75,-108r-34,0r0,-34r34,0r0,34xm74,23r-32,29r0,-84r32,0r0,55","w":106},"<":{"d":"350,-84r-284,0r131,131r-34,0r-143,-144r143,-143r34,0r-131,131r284,0r0,25","w":369},"=":{"d":"169,-115r-150,0r0,-24r150,0r0,24xm169,-54r-150,0r0,-24r150,0r0,24"},">":{"d":"350,-97r-144,144r-34,0r132,-131r-284,0r0,-25r284,0r-132,-131r34,0","w":369},"?":{"d":"95,-258v57,0,87,67,51,109v-13,24,-39,38,-36,77r-26,0v-6,-59,52,-70,52,-121v0,-24,-17,-42,-41,-42v-26,0,-42,19,-42,42r-26,0v0,-37,29,-65,68,-65xm113,0r-31,0r0,-30r31,0r0,30","w":178},"@":{"d":"102,-257v74,0,129,9,129,78r0,179r-25,0r0,-20v-42,49,-127,14,-113,-66v-13,-81,69,-113,113,-65v5,-49,-9,-84,-54,-84v-55,0,-106,2,-101,56v5,58,-19,139,21,165r-18,17v-48,-28,-23,-115,-28,-182v-3,-47,28,-78,76,-78xm206,-86v0,-33,-6,-66,-44,-66v-38,0,-44,33,-44,66v0,33,6,66,44,66v38,0,44,-33,44,-66","w":256},"A":{"d":"216,0r-30,0r-20,-58r-112,0r-21,58r-29,0r95,-256r23,0xm158,-82r-47,-135r-49,135r96,0","w":219},"B":{"d":"213,-71v2,84,-94,71,-176,71r0,-256v79,-1,175,-12,172,68v0,27,-16,48,-38,56v24,9,42,30,42,61xm182,-188v0,-56,-65,-43,-118,-44r0,89v54,-1,118,11,118,-45xm186,-72v0,-55,-67,-46,-122,-46r0,94v56,1,122,8,122,-48","w":240},"C":{"d":"55,-128v0,79,9,106,62,106v32,0,55,-21,62,-52r27,0v-8,48,-43,76,-89,76v-66,0,-90,-44,-90,-130v0,-86,23,-130,90,-130v46,0,80,28,89,76r-28,0v-7,-31,-29,-52,-61,-52v-53,0,-62,28,-62,106","w":229},"D":{"d":"125,-256v70,-5,90,63,90,125v0,36,1,79,-25,107v-30,32,-95,22,-153,24r0,-256r88,0xm188,-131v0,-55,-14,-101,-68,-101r-56,0r0,208v43,-1,84,6,107,-19v17,-19,17,-57,17,-88","w":242},"E":{"d":"196,0r-159,0r0,-256r159,0r0,24r-132,0r0,91r113,0r0,24r-113,0r0,93r132,0r0,24","w":216},"F":{"d":"196,-232r-132,0r0,94r113,0r0,25r-113,0r0,113r-27,0r0,-256r159,0r0,24","w":208},"G":{"d":"117,-22v43,0,70,-35,63,-88r-63,0r0,-24r90,0v10,81,-24,136,-90,136v-66,0,-90,-44,-90,-130v0,-86,22,-130,90,-130v49,0,82,31,90,76r-28,0v-7,-32,-30,-52,-62,-52v-53,0,-62,28,-62,106v0,79,9,106,62,106","w":234},"H":{"d":"213,0r-27,0r0,-117r-122,0r0,117r-27,0r0,-256r27,0r0,115r122,0r0,-115r27,0r0,256","w":250},"I":{"d":"64,0r-27,0r0,-256r27,0r0,256","w":101},"J":{"d":"147,-78v6,75,-92,104,-139,57r19,-18v27,32,93,17,93,-42r0,-175r27,0r0,178","w":180},"K":{"d":"229,0r-32,0r-79,-136r-54,64r0,72r-27,0r0,-256r27,0r0,147r120,-147r33,0r-80,99","w":234},"L":{"d":"195,0r-158,0r0,-256r27,0r0,232r131,0r0,24","w":206},"M":{"d":"257,0r-28,0r0,-195r-70,155r-23,0r-72,-155r0,195r-27,0r0,-256r27,0r84,181r81,-181r28,0r0,256","w":293},"N":{"d":"226,0r-25,0r-137,-206r0,206r-27,0r0,-256r26,0r136,205r0,-205r27,0r0,256","w":263},"O":{"d":"117,-258v67,0,90,44,90,130v0,86,-22,130,-90,130v-67,0,-90,-44,-90,-130v0,-86,22,-130,90,-130xm117,-22v51,-9,62,-28,62,-106v0,-79,-9,-97,-62,-106v-52,8,-62,28,-62,106v0,79,11,96,62,106","w":234},"P":{"d":"212,-181v1,72,-70,82,-148,76r0,105r-27,0r0,-256r95,0v47,0,80,29,80,75xm184,-181v0,-60,-63,-51,-120,-51r0,102v57,0,120,9,120,-51","w":226},"Q":{"d":"117,-258v67,0,90,44,90,130v0,49,0,74,-18,96r28,28r-16,17r-29,-29v-75,47,-165,-4,-145,-112v-7,-86,22,-130,90,-130xm55,-128v0,79,10,106,62,106v14,0,26,-5,36,-13r-32,-32r17,-17r31,32v9,-15,10,-35,10,-76v0,-79,-9,-97,-62,-106v-52,8,-62,28,-62,106","w":233},"R":{"d":"216,0r-32,0r-58,-114r-62,0r0,114r-27,0r0,-256r98,0v45,0,76,27,76,71v0,37,-22,62,-55,69xm184,-185v0,-57,-65,-47,-120,-47r0,94v55,0,120,11,120,-47","w":236},"S":{"d":"170,-121v47,47,11,123,-67,123v-39,0,-64,-10,-88,-34r19,-18v32,42,130,39,130,-20v-1,-80,-142,-15,-142,-116v0,-77,114,-93,158,-44r-17,17v-28,-34,-114,-30,-114,26v0,60,93,38,121,66","w":211},"T":{"d":"186,-232r-74,0r0,232r-27,0r0,-232r-74,0r0,-24r175,0r0,24","w":197},"U":{"d":"212,-85v0,51,-37,87,-89,87v-52,0,-90,-36,-90,-87r0,-171r28,0r0,169v0,39,25,65,62,65v37,0,62,-26,62,-65r0,-169r27,0r0,171","w":245},"V":{"d":"194,-256r-85,256r-22,0r-84,-256r29,0r66,207r67,-207r29,0","w":196},"W":{"d":"302,-256r-66,256r-25,0r-57,-205r-57,205r-26,0r-65,-256r29,0r50,206r56,-206r25,0r56,206r51,-206r29,0","w":307},"X":{"d":"193,0r-32,0r-62,-108r-63,108r-31,0r79,-131r-74,-125r32,0r57,101r57,-101r32,0r-74,125","w":198},"Y":{"d":"182,-256r-75,150r0,106r-28,0r0,-106r-76,-150r29,0r61,122r60,-122r29,0","w":185},"Z":{"d":"180,0r-159,0r0,-26r128,-206r-123,0r0,-24r154,0r0,23r-130,209r130,0r0,24","w":200},"[":{"d":"97,27r-64,0r0,-310r64,0r0,23r-38,0r0,264r38,0r0,23","w":112},"\\":{"d":"128,27r-26,0r-102,-309r26,0","w":127},"]":{"d":"80,27r-64,0r0,-23r39,0r0,-265r-39,0r0,-22r64,0r0,310","w":112},"^":{"d":"167,-149r-26,0r-44,-82r-44,82r-27,0r59,-109r24,0","w":193},"_":{"d":"193,59r-193,0r0,-18r193,0r0,18","w":193},"`":{"d":"108,-214r-24,0r-39,-55r31,0","w":180},"a":{"d":"133,-17v-32,35,-115,23,-115,-33v0,-50,59,-55,115,-51v3,-37,-7,-56,-46,-56v-23,0,-34,5,-44,20r-18,-16v31,-46,134,-32,134,33r0,120r-26,0r0,-17xm84,-20v35,0,55,-19,49,-62v-38,0,-89,-7,-89,32v0,21,12,30,40,30","w":189},"b":{"d":"108,-179v51,-2,65,44,65,90v0,46,-13,93,-65,91v-19,0,-36,-4,-50,-23r0,21r-26,0r0,-256r26,0r0,99v14,-18,31,-22,50,-22xm147,-89v0,-35,-5,-67,-44,-67v-39,0,-45,32,-45,67v0,35,6,68,45,68v39,0,44,-33,44,-68","w":196},"c":{"d":"49,-89v-8,62,58,90,93,48r17,17v-49,54,-136,23,-136,-65v0,-88,87,-117,136,-64r-17,17v-34,-42,-101,-14,-93,47","w":176},"d":{"d":"23,-89v0,-45,14,-92,65,-90v19,0,36,4,50,22r0,-99r26,0r0,256r-26,0r0,-21v-14,19,-31,23,-50,23v-51,2,-65,-45,-65,-91xm138,-89v0,-35,-5,-67,-44,-67v-39,0,-45,32,-45,67v0,35,6,68,45,68v39,0,44,-33,44,-68","w":196},"e":{"d":"168,-82r-119,0v-6,62,66,79,98,41r18,16v-48,50,-142,33,-142,-64v0,-57,27,-90,72,-90v50,0,76,38,73,97xm142,-101v8,-58,-69,-75,-88,-30v-4,10,-4,16,-5,30r93,0","w":190},"f":{"d":"102,-156r-38,0r0,156r-26,0r0,-156r-23,0r0,-20r23,0v-5,-52,7,-88,64,-81r0,22v-39,-7,-40,22,-38,59r38,0r0,20","w":113},"g":{"d":"23,-90v0,-46,15,-90,65,-89v19,0,36,4,50,23r0,-21r25,0r0,182v7,71,-90,101,-134,53r17,-17v29,35,99,15,91,-37r0,-27v-14,18,-31,23,-50,23v-49,0,-64,-44,-64,-90xm137,-90v0,-33,-5,-66,-44,-66v-39,0,-44,33,-44,66v0,33,5,66,44,66v39,0,44,-33,44,-66","w":195},"h":{"d":"172,0r-26,0v-5,-59,22,-156,-43,-156v-66,0,-40,96,-45,156r-26,0r0,-256r26,0r0,98v36,-42,114,-19,114,44r0,114","w":202},"i":{"d":"60,-228r-29,0r0,-29r29,0r0,29xm58,0r-26,0r0,-177r26,0r0,177","w":91},"j":{"d":"60,-228r-29,0r0,-29r29,0r0,29xm58,32v1,33,-22,53,-63,48r0,-23v24,2,37,-3,37,-26r0,-207r26,0r0,208","w":91},"k":{"d":"181,0r-32,0r-56,-91r-35,40r0,51r-26,0r0,-256r26,0r0,171r80,-92r33,0r-60,68","w":192},"l":{"d":"95,0v-40,4,-63,-13,-63,-47r0,-209r26,0r0,208v-2,23,13,28,37,26r0,22","w":106},"m":{"d":"163,-150v31,-50,123,-32,123,37r0,113r-26,0v-5,-60,21,-156,-44,-156v-66,0,-39,96,-44,156r-26,0v-5,-59,22,-156,-43,-156v-66,0,-40,96,-45,156r-26,0r0,-177r26,0r0,19v26,-31,86,-27,105,8","w":316},"n":{"d":"58,-158v37,-42,114,-18,114,45r0,113r-26,0v-5,-60,21,-156,-44,-156v-65,0,-39,96,-44,156r-26,0r0,-177r26,0r0,19","w":202},"o":{"d":"95,-179v50,0,73,42,73,90v0,48,-22,91,-73,91v-50,0,-72,-43,-72,-91v0,-48,22,-90,72,-90xm95,-21v35,0,47,-33,47,-68v0,-34,-12,-67,-47,-67v-34,0,-46,33,-46,67v0,34,11,68,46,68","w":190},"p":{"d":"108,-179v51,-2,65,44,65,90v0,46,-13,93,-65,91v-19,0,-36,-5,-50,-23r0,100r-26,0r0,-256r26,0r0,21v14,-19,31,-23,50,-23xm147,-89v0,-35,-5,-67,-44,-67v-39,0,-45,32,-45,67v0,35,6,68,45,68v39,0,44,-33,44,-68","w":196},"q":{"d":"23,-89v0,-45,14,-92,65,-90v19,0,36,4,50,23r0,-21r26,0r0,256r-26,0r0,-100v-14,18,-31,23,-50,23v-51,2,-65,-45,-65,-91xm138,-89v0,-35,-5,-67,-44,-67v-39,0,-45,32,-45,67v0,35,6,68,45,68v39,0,44,-33,44,-68","w":196},"r":{"d":"150,-163r-19,20v-26,-29,-73,-6,-73,34r0,109r-26,0r0,-177r26,0r0,21v18,-26,67,-33,92,-7","w":151},"s":{"d":"160,-52v0,62,-110,70,-145,29r18,-18v21,29,100,31,102,-10v1,-25,-34,-27,-59,-29v-35,-3,-53,-18,-53,-47v0,-57,93,-65,129,-33r-17,17v-22,-20,-88,-21,-86,15v-3,25,33,26,59,28v31,2,52,15,52,48","w":178},"t":{"d":"100,0v-40,5,-64,-15,-63,-48r0,-108r-23,0r0,-20r23,0r0,-55r26,0r0,55r37,0r0,20r-37,0r0,108v-1,21,14,28,37,26r0,22","w":119},"u":{"d":"144,-20v-36,43,-113,20,-113,-44r0,-113r26,0v5,59,-22,156,43,156v65,0,39,-96,44,-156r26,0r0,177r-26,0r0,-20","w":202},"v":{"d":"157,-177r-65,177r-23,0r-65,-177r28,0r48,142r49,-142r28,0","w":160},"w":{"d":"257,-177r-56,177r-24,0r-47,-138r-46,138r-24,0r-56,-177r28,0r41,142r46,-142r22,0r47,142r41,-142r28,0","w":260},"x":{"d":"160,0r-31,0r-43,-69r-43,69r-31,0r60,-90r-58,-87r32,0r40,65r40,-65r32,0r-58,87","w":172},"y":{"d":"157,-177r-81,220v-8,25,-27,35,-58,33r0,-23v39,6,38,-33,50,-57r-64,-173r28,0r49,142r48,-142r28,0","w":160},"z":{"d":"147,0r-129,0r0,-22r99,-132r-94,0r0,-23r124,0r0,22r-99,132r99,0r0,23","w":165},"{":{"d":"53,-128v58,22,-22,143,57,132r0,23v-40,2,-61,-6,-61,-47v0,-38,19,-103,-32,-97r0,-23v80,10,-27,-161,93,-143r0,23v-75,-15,-1,108,-57,132","w":127},"|":{"d":"72,27r-26,0r0,-310r26,0r0,310","w":117},"}":{"d":"17,-283v119,-19,10,142,93,143r0,23v-79,-7,26,162,-93,144r0,-23v75,15,0,-109,58,-132v-33,-8,-23,-64,-23,-104v0,-28,-9,-28,-35,-28r0,-23","w":127},"~":{"d":"18,-95v44,-66,96,27,142,-21r16,16v-45,65,-96,-28,-143,21","w":194},"\u00a0":{"w":89}}});
-/*!
- * The following copyright notice may not be removed under any circumstances.
- * 
- * Copyright:
- * © Dutch Design: Albert-Jan Pool, 1995. Published by FontShop International
- * FontFont release 15
- */
-Cufon.registerFont({"w":191,"face":{"font-family":"DIN","font-weight":500,"font-stretch":"normal","units-per-em":"360","panose-1":"2 0 6 3 0 0 0 0 0 0","ascent":"284","descent":"-76","x-height":"2","bbox":"-7 -290 351 76.2661","underline-thickness":"25.2","underline-position":"-49.32","stemh":"33","stemv":"37","unicode-range":"U+0020-U+007E"},"glyphs":{" ":{"w":86},"!":{"d":"88,-256r-8,180r-29,0r-7,-180r44,0xm86,0r-40,0r0,-39r40,0r0,39","w":119},"\"":{"d":"132,-188r-37,0r0,-68r37,0r0,68xm64,-188r-36,0r0,-68r36,0r0,68","w":159},"#":{"d":"224,-153r-33,0r-7,44r28,0r0,34r-33,0r-12,75r-38,0r11,-75r-49,0r-11,75r-39,0r12,-75r-29,0r0,-34r34,0r8,-44r-30,0r0,-34r35,0r11,-71r38,0r-11,71r49,0r11,-71r38,0r-11,71r28,0r0,34xm153,-153r-49,0r-8,44r50,0","w":241},"$":{"d":"179,-126v45,44,13,129,-57,127r0,40r-29,0r0,-39v-34,-1,-59,-11,-82,-34r26,-25v17,17,36,23,59,24r0,-80v-46,-4,-76,-25,-77,-70v0,-41,28,-71,74,-75r0,-32r29,0r0,32v28,2,50,11,69,29r-25,24v-13,-12,-29,-18,-47,-19r0,77v25,4,49,9,60,21xm96,-149r0,-75v-35,2,-51,40,-29,63v7,8,18,11,29,12xm119,-33v39,-1,56,-41,33,-66v-9,-10,-21,-9,-33,-11r0,77","w":218},"%":{"d":"282,-83v0,48,-8,86,-50,86v-42,0,-51,-37,-51,-86v0,-31,23,-49,51,-49v28,0,50,18,50,49xm226,-256r-120,256r-30,0r121,-256r29,0xm122,-210v0,49,-8,86,-51,86v-42,0,-50,-37,-50,-86v0,-31,22,-49,50,-49v28,0,51,18,51,49xm232,-22v28,1,23,-33,23,-60v0,-16,-8,-26,-23,-26v-28,0,-23,33,-23,60v0,17,8,26,23,26xm71,-149v28,2,23,-32,23,-59v0,-16,-8,-26,-23,-26v-27,0,-22,34,-22,60v0,17,7,25,22,25","w":303},"&":{"d":"246,0r-47,0r-21,-25v-11,10,-32,27,-71,27v-53,0,-83,-30,-83,-76v0,-36,26,-56,51,-73v-39,-30,-34,-111,36,-111v60,0,82,76,34,102r-19,13r54,65v9,-13,14,-29,14,-52r35,0v-1,33,-9,59,-26,79xm106,-166v15,-10,31,-17,31,-35v0,-14,-11,-25,-26,-25v-36,0,-30,38,-5,60xm156,-51r-61,-72v-19,13,-34,24,-34,48v1,48,64,58,95,24","w":262},"'":{"d":"64,-188r-36,0r0,-68r36,0r0,68","w":92},"(":{"d":"68,-44v-1,30,10,38,25,53r-25,25v-21,-18,-37,-40,-37,-76r0,-172v-3,-36,16,-58,37,-76r25,25v-16,15,-26,23,-25,53r0,168","w":114},")":{"d":"46,-290v21,19,41,40,38,76v-6,90,25,206,-38,248r-25,-25v15,-15,26,-23,25,-53r0,-168v1,-30,-10,-38,-25,-53","w":114},"*":{"d":"153,-168r-14,24r-40,-25r2,47r-27,0r1,-47r-40,25r-13,-24r41,-22r-41,-22r13,-23r40,24r-1,-46r27,0r-2,46r40,-24r14,23r-42,22","w":174},"+":{"d":"174,-81r-61,0r0,60r-34,0r0,-60r-61,0r0,-34r61,0r0,-60r34,0r0,60r61,0r0,34"},",":{"d":"70,22r-42,34r0,-98r42,0r0,64","w":97},"-":{"d":"129,-83r-105,0r0,-34r105,0r0,34","w":153},".":{"d":"72,0r-44,0r0,-44r44,0r0,44","w":100},"\/":{"d":"138,-283r-103,310r-35,0r103,-310r35,0","w":136},"0":{"d":"170,-71v0,46,-33,73,-74,73v-41,0,-74,-27,-74,-73r0,-114v0,-46,33,-73,74,-73v41,0,74,27,74,73r0,114xm96,-31v59,-2,37,-97,37,-153v0,-25,-14,-42,-37,-42v-59,3,-37,98,-37,154v0,25,14,41,37,41"},"1":{"d":"128,0r-37,0r0,-216r-50,44r0,-41r50,-43r37,0r0,256"},"2":{"d":"172,0r-149,0r0,-33r98,-120v25,-24,16,-74,-23,-73v-19,0,-38,11,-38,40r-37,0v0,-44,31,-72,75,-72v70,0,91,77,50,127r-81,98r105,0r0,33"},"3":{"d":"172,-72v0,49,-35,75,-78,75v-41,0,-78,-22,-79,-72r37,0v1,27,21,38,42,38v24,0,41,-15,41,-42v0,-28,-16,-44,-49,-42r0,-32v31,2,46,-14,45,-39v0,-26,-16,-40,-37,-40v-22,0,-37,14,-39,37r-37,0v2,-44,35,-70,76,-70v72,0,101,99,42,127v22,10,36,28,36,60"},"4":{"d":"179,-39r-27,0r0,39r-36,0r0,-39r-103,0r0,-34r90,-183r40,0r-90,183r63,0r0,-59r36,0r0,59r27,0r0,34"},"5":{"d":"104,-171v49,-2,68,44,68,85v0,49,-22,89,-75,89v-46,0,-73,-29,-74,-69r36,0v3,23,15,35,38,35v30,0,39,-27,39,-55v0,-31,-8,-53,-38,-53v-21,0,-32,10,-36,23r-34,0r0,-140r139,0r0,32r-105,0r0,68v9,-9,23,-15,42,-15"},"6":{"d":"172,-76v0,47,-32,78,-76,78v-72,0,-87,-79,-57,-140r59,-118r39,0r-55,110v48,-16,90,17,90,70xm135,-75v0,-25,-15,-45,-39,-45v-23,0,-39,17,-39,45v0,27,16,44,39,44v23,0,39,-17,39,-44"},"7":{"d":"175,-224r-85,224r-40,0r86,-224r-78,0r0,41r-35,0r0,-73r152,0r0,32"},"8":{"d":"175,-72v0,46,-35,74,-79,74v-44,0,-79,-28,-79,-74v0,-31,17,-49,35,-60v-17,-10,-31,-29,-31,-56v0,-43,33,-70,75,-70v42,0,75,27,75,70v0,27,-14,46,-31,56v18,11,35,29,35,60xm134,-186v0,-22,-16,-40,-38,-40v-22,0,-38,18,-38,40v0,23,16,38,38,38v22,0,38,-15,38,-38xm138,-73v0,-24,-18,-43,-42,-43v-24,0,-42,19,-42,43v0,24,18,42,42,42v24,0,42,-18,42,-42"},"9":{"d":"96,-258v72,0,87,78,57,139r-59,119r-39,0r55,-110v-48,16,-90,-17,-90,-70v0,-47,32,-78,76,-78xm135,-181v0,-27,-16,-45,-39,-45v-23,0,-39,18,-39,45v0,25,15,44,39,44v23,0,39,-16,39,-44"},":":{"d":"81,-103r-44,0r0,-44r44,0r0,44xm81,0r-44,0r0,-44r44,0r0,44","w":109},";":{"d":"81,-103r-44,0r0,-44r44,0r0,44xm80,22r-42,34r0,-98r42,0r0,64","w":109},"<":{"d":"351,-82r-268,0r124,123r-47,0r-141,-141r141,-141r47,0r-124,124r268,0r0,35","w":369},"=":{"d":"174,-118r-156,0r0,-34r156,0r0,34xm174,-48r-156,0r0,-34r156,0r0,34"},">":{"d":"351,-100r-141,141r-47,0r124,-123r-268,0r0,-35r268,0r-124,-124r47,0","w":369},"?":{"d":"97,-258v59,0,95,70,55,113v-12,22,-37,33,-34,69r-37,0v-6,-57,51,-67,51,-114v0,-20,-14,-36,-35,-36v-22,0,-35,18,-35,37r-36,0v0,-41,30,-69,71,-69xm120,0r-41,0r0,-39r41,0r0,39","w":183},"@":{"d":"106,-257v79,0,136,9,136,84r0,174r-35,-1r0,-18v-42,47,-124,10,-109,-66v-13,-77,64,-111,109,-67v9,-65,-31,-74,-97,-74v-30,0,-54,20,-51,52v6,53,-16,127,18,152r-26,25v-46,-28,-24,-111,-28,-177v-3,-53,30,-84,83,-84xm207,-84v0,-31,-7,-56,-37,-56v-30,0,-36,25,-36,56v0,31,6,55,36,55v30,0,37,-24,37,-55","w":264},"A":{"d":"222,0r-41,0r-18,-51r-101,0r-18,51r-41,0r94,-256r31,0xm152,-85r-39,-113r-40,113r79,0","w":225},"B":{"d":"215,-72v2,87,-98,72,-182,72r0,-256r100,0v48,0,78,27,78,70v0,28,-18,47,-35,54v20,8,39,28,39,60xm172,-185v0,-45,-56,-35,-100,-36r0,73v44,0,100,9,100,-37xm176,-74v0,-46,-58,-39,-104,-39r0,78v46,0,104,8,104,-39","w":238},"C":{"d":"63,-128v0,74,4,95,53,95v28,0,46,-18,52,-44r40,0v-9,51,-46,79,-92,79v-66,0,-92,-50,-92,-130v0,-80,25,-130,92,-130v47,0,83,27,92,78r-40,0v-6,-26,-24,-44,-52,-44v-48,0,-53,23,-53,96","w":226},"D":{"d":"123,-256v70,-5,93,63,93,126v0,37,1,77,-26,106v-31,33,-97,22,-157,24r0,-256r90,0xm120,-35v49,0,57,-37,57,-95v0,-57,-9,-90,-57,-91r-48,0r0,186r48,0","w":239},"E":{"d":"197,0r-164,0r0,-256r164,0r0,35r-125,0r0,74r107,0r0,35r-107,0r0,77r125,0r0,35","w":217},"F":{"d":"197,-221r-125,0r0,78r107,0r0,35r-107,0r0,108r-39,0r0,-256r164,0r0,35","w":210},"G":{"d":"116,-33v37,0,60,-29,55,-72r-55,0r0,-34r94,0v10,85,-24,142,-94,141v-66,-2,-92,-50,-92,-130v0,-80,25,-130,92,-130v54,0,87,35,94,79r-40,0v-6,-28,-25,-45,-54,-45v-48,0,-53,23,-53,96v0,74,4,95,53,95","w":233},"H":{"d":"215,0r-39,0r0,-112r-104,0r0,112r-39,0r0,-256r39,0r0,109r104,0r0,-109r39,0r0,256","w":248},"I":{"d":"72,0r-39,0r0,-256r39,0r0,256","w":105},"J":{"d":"152,-81v4,80,-99,108,-147,58r26,-25v24,29,82,15,82,-36r0,-172r39,0r0,175","w":182},"K":{"d":"233,0r-45,0r-72,-126r-44,51r0,75r-39,0r0,-256r39,0r0,129r105,-129r48,0r-84,100","w":236},"L":{"d":"196,0r-163,0r0,-256r39,0r0,221r124,0r0,35","w":206},"M":{"d":"260,0r-39,0r0,-171r-59,125r-29,0r-61,-125r0,171r-39,0r0,-256r39,0r75,159r74,-159r39,0r0,256","w":292},"N":{"d":"226,0r-35,0r-119,-180r0,180r-39,0r0,-256r36,0r119,180r0,-180r38,0r0,256","w":259},"O":{"d":"116,-258v67,0,101,50,92,130v8,80,-25,130,-92,130v-66,0,-92,-50,-92,-130v0,-80,25,-130,92,-130xm116,-33v47,-9,54,-22,54,-95v0,-74,-7,-86,-54,-96v-47,9,-53,23,-53,96v0,74,6,85,53,95","w":232},"P":{"d":"213,-179v0,67,-64,86,-141,78r0,101r-39,0r0,-256r98,0v50,0,82,32,82,77xm174,-179v0,-49,-54,-43,-102,-42r0,85v48,1,102,7,102,-43","w":226},"Q":{"d":"116,-258v67,0,92,50,92,130v0,44,1,70,-16,93r25,25r-22,22r-25,-26v-77,45,-165,-12,-146,-114v-7,-80,25,-130,92,-130xm63,-128v0,74,6,85,53,95v10,0,19,-3,27,-8r-27,-27r21,-22r25,25v6,-13,8,-30,8,-63v1,-74,-7,-86,-54,-96v-47,9,-53,23,-53,96","w":232},"R":{"d":"220,0r-45,0r-54,-108r-49,0r0,108r-39,0r0,-256r100,0v91,-9,104,129,28,143xm174,-181v0,-47,-55,-41,-102,-40r0,80v47,0,102,7,102,-40","w":235},"S":{"d":"173,-126v45,51,9,128,-71,128v-39,0,-67,-9,-91,-34r26,-25v28,35,117,35,118,-15v2,-57,-90,-31,-117,-62v-42,-48,-9,-124,67,-124v34,0,58,8,80,29r-25,24v-27,-31,-104,-27,-103,20v1,53,91,31,116,59","w":212},"T":{"d":"191,-221r-71,0r0,221r-39,0r0,-221r-70,0r0,-35r180,0r0,35","w":201},"U":{"d":"213,-86v0,53,-40,88,-92,88v-52,0,-91,-35,-91,-88r0,-170r38,0r0,168v0,34,21,55,53,55v32,0,54,-21,54,-55r0,-168r38,0r0,170","w":243},"V":{"d":"201,-256r-85,256r-30,0r-84,-256r40,0r59,186r59,-186r41,0","w":203},"W":{"d":"310,-256r-67,256r-34,0r-52,-180r-52,180r-34,0r-67,-256r41,0r45,183r51,-183r31,0r52,183r45,-183r41,0","w":313},"X":{"d":"204,0r-45,0r-55,-98r-56,98r-44,0r79,-131r-74,-125r44,0r51,91r50,-91r45,0r-74,125","w":208},"Y":{"d":"194,-256r-77,151r0,105r-39,0r0,-105r-76,-151r42,0r54,112r54,-112r42,0","w":195},"Z":{"d":"181,0r-164,0r0,-33r119,-188r-114,0r0,-35r159,0r0,31r-119,190r119,0r0,35","w":198},"[":{"d":"109,27r-78,0r0,-310r78,0r0,33r-41,0r0,244r41,0r0,33","w":124},"\\":{"d":"137,27r-35,0r-102,-307r35,0","w":136},"]":{"d":"94,27r-79,0r0,-33r43,0r0,-245r-43,0r0,-32r79,0r0,310","w":124},"^":{"d":"181,-144r-38,0r-40,-75r-41,75r-38,0r62,-115r34,0","w":205},"_":{"d":"206,62r-206,0r0,-25r206,0r0,25","w":205},"`":{"d":"109,-216r-28,0r-40,-58r41,0","w":180},"a":{"d":"127,-17v-32,36,-118,19,-112,-37v-4,-48,56,-56,112,-52v14,-51,-59,-60,-80,-30r-24,-22v33,-47,140,-33,140,36r0,122r-36,0r0,-17xm85,-28v30,0,47,-16,42,-53v-33,0,-76,-6,-76,27v0,17,11,26,34,26","w":190},"b":{"d":"114,-185v50,-1,65,47,65,94v0,47,-15,96,-66,93v-20,0,-34,-4,-48,-21r0,19r-36,0r0,-256r37,0r0,92v13,-16,29,-21,48,-21xm142,-91v0,-32,-5,-61,-38,-61v-33,0,-38,29,-38,61v0,32,5,60,38,60v33,0,38,-28,38,-60","w":199},"c":{"d":"57,-91v-8,55,47,79,79,43r25,24v-50,50,-141,31,-141,-67v0,-98,90,-118,141,-68r-25,24v-32,-37,-87,-11,-79,44","w":174},"d":{"d":"21,-91v0,-47,14,-95,64,-94v19,0,35,5,48,21r0,-92r37,0r0,256r-36,0r0,-19v-14,17,-28,21,-48,21v-51,2,-65,-45,-65,-93xm133,-91v0,-32,-5,-61,-38,-61v-33,0,-38,29,-38,61v0,32,5,60,38,60v33,0,38,-28,38,-60","w":199},"e":{"d":"175,-81r-119,0v-5,52,64,66,91,33r23,22v-49,50,-150,39,-150,-65v0,-59,30,-94,77,-94v54,0,82,43,78,104xm138,-106v6,-49,-61,-64,-77,-25v-4,8,-5,14,-5,25r82,0","w":194},"f":{"d":"108,-151r-36,0r0,151r-37,0r0,-151r-21,0r0,-28r21,0v-6,-53,13,-85,73,-79r0,31v-34,-6,-40,15,-36,48r36,0r0,28","w":118},"g":{"d":"21,-95v0,-50,15,-90,64,-90v19,0,34,5,48,22r0,-20r35,0r0,182v8,73,-96,102,-142,53r23,-24v25,32,90,14,83,-30r0,-23v-13,16,-28,21,-47,21v-48,0,-64,-41,-64,-91xm132,-95v0,-29,-4,-57,-37,-57v-33,0,-38,28,-38,57v0,29,5,58,38,58v33,0,37,-29,37,-58","w":197},"h":{"d":"176,0r-36,0v-6,-55,21,-152,-37,-152v-58,0,-31,98,-37,152r-37,0r0,-256r37,0r0,92v37,-42,110,-17,110,46r0,118","w":203},"i":{"d":"67,-219r-39,0r0,-38r39,0r0,38xm66,0r-37,0r0,-183r37,0r0,183","w":95},"j":{"d":"67,-219r-39,0r0,-38r39,0r0,38xm66,24v2,35,-28,57,-73,51r0,-32v20,1,36,0,36,-21r0,-205r37,0r0,207","w":95},"k":{"d":"189,0r-45,0r-51,-84r-27,30r0,54r-37,0r0,-256r37,0r0,158r71,-85r44,0r-63,72","w":197},"l":{"d":"101,0v-45,5,-73,-14,-73,-50r0,-206r37,0r0,203v-2,21,15,24,36,22r0,31","w":111},"m":{"d":"166,-158v35,-50,122,-26,122,41r0,117r-36,0v-5,-55,21,-152,-37,-152v-20,0,-38,13,-38,39r0,113r-37,0v-6,-54,21,-151,-36,-152v-58,-1,-33,97,-38,152r-37,0r0,-183r36,0r0,19v26,-29,81,-28,101,6","w":315},"n":{"d":"65,-164v38,-43,112,-15,112,47r0,117r-37,0v-6,-54,21,-151,-36,-152v-58,-1,-33,97,-38,152r-37,0r0,-183r36,0r0,19","w":204},"o":{"d":"96,-185v55,0,77,39,77,94v0,55,-22,93,-77,93v-55,0,-75,-38,-75,-93v0,-55,21,-94,75,-94xm96,-31v31,0,40,-28,40,-60v0,-32,-9,-61,-40,-61v-30,0,-39,29,-39,61v0,31,8,60,39,60","w":193},"p":{"d":"113,-185v50,-1,66,46,66,94v0,46,-14,95,-65,93v-19,0,-35,-5,-48,-21r0,93r-37,0r0,-257r36,0r0,20v14,-17,28,-22,48,-22xm142,-91v0,-32,-5,-61,-38,-61v-33,0,-38,29,-38,61v0,32,5,60,38,60v33,0,38,-28,38,-60","w":199},"q":{"d":"21,-91v0,-48,14,-96,65,-94v20,0,34,5,48,22r0,-20r36,0r0,257r-37,0r0,-93v-13,16,-29,21,-48,21v-50,2,-64,-46,-64,-93xm133,-91v0,-32,-5,-61,-38,-61v-33,0,-38,29,-38,61v0,32,5,60,38,60v33,0,38,-28,38,-60","w":199},"r":{"d":"157,-167r-27,27v-21,-24,-64,-10,-64,29r0,111r-37,0r0,-183r36,0r0,20v17,-25,70,-32,92,-4","w":158},"s":{"d":"164,-56v1,67,-111,75,-152,32r24,-24v15,15,34,19,52,19v39,0,59,-44,16,-47v-44,-3,-83,-10,-83,-53v0,-64,98,-70,136,-35r-23,23v-18,-18,-78,-20,-78,10v0,21,33,22,54,24v34,3,54,19,54,51","w":179},"t":{"d":"105,0v-44,6,-72,-18,-72,-51r0,-100r-20,0r0,-28r20,0r0,-56r37,0r0,56r35,0r0,28r-35,0r0,98v-1,19,14,24,35,22r0,31","w":123},"u":{"d":"139,-18v-39,43,-112,13,-112,-48r0,-117r37,0v6,55,-21,152,37,152v59,0,33,-97,38,-152r36,0r0,183r-36,0r0,-18","w":204},"v":{"d":"167,-183r-67,183r-30,0r-67,-183r39,0r43,129r43,-129r39,0","w":169},"w":{"d":"265,-183r-57,183r-32,0r-42,-127r-43,127r-32,0r-56,-183r39,0r35,129r43,-129r28,0r42,129r35,-129r40,0","w":267},"x":{"d":"173,0r-44,0r-38,-62r-39,62r-44,0r63,-93r-61,-90r45,0r36,60r35,-60r45,0r-60,90","w":181},"y":{"d":"167,-183r-81,219v-9,28,-30,39,-65,36r0,-33v35,7,37,-25,46,-48r-64,-174r39,0r43,129r43,-129r39,0","w":168},"z":{"d":"152,0r-137,0r0,-29r91,-121r-85,0r0,-33r131,0r0,30r-92,120r92,0r0,33","w":168},"{":{"d":"66,-128v59,17,-20,138,64,122r0,33v-46,3,-77,-7,-77,-50v0,-39,17,-98,-37,-89r0,-32v82,15,-11,-149,89,-139r25,0r0,33v-26,0,-40,-2,-40,28v0,37,6,90,-24,94","w":146},"|":{"d":"79,27r-37,0r0,-310r37,0r0,310","w":121},"}":{"d":"93,-233v0,39,-16,97,37,89r0,32v-81,-13,9,147,-88,139r-26,0r0,-33v27,0,41,2,41,-28v0,-37,-6,-90,24,-94v-30,-4,-25,-57,-24,-94v1,-30,-14,-28,-41,-28r0,-33v46,-3,77,6,77,50","w":146},"~":{"d":"15,-100v38,-49,76,-20,122,-8v10,0,17,-2,31,-16r23,23v-38,49,-75,19,-122,8v-10,0,-16,2,-30,16","w":206},"\u00a0":{"w":86}}});

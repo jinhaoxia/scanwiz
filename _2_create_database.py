@@ -36,13 +36,7 @@ def create_tables(conn):
                    "    request_idx INTEGER,\n"
                    "    request_len INTEGER,\n"
                    "    response_idx INTEGER,\n"
-                   "    response_len INTEGER,\n"
-                   "    host TEXT,\n"
-                   "    url TEXT,\n"
-                   "    method TEXT,\n"
-                   "    content_type TEXT,\n"
-                   "    response_code INTEGER,\n"
-                   "    version TEXT\n"
+                   "    response_len INTEGER\n"
                    ");\n")
     cursor.close()
     conn.commit()

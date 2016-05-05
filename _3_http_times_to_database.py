@@ -84,18 +84,12 @@ def insert_valid_reqrep(pcap_id, line, conn):
     if not m:
         return
 
-    # client_addr, client_port = m.group(1), m.group(2)
-    # server_addr, server_port = m.group(3), m.group(4)
     label = m.group(5)
     ts1, ts2, ts3 = m.group(6), m.group(7), m.group(8)
     request_len, response_len = m.group(9), m.group(10)
     response_code = m.group(11)
     method, url, version = m.group(12), m.group(13), m.group(14)
     content_type = m.group(15)
-
-
-    if pcap_id == '8':
-        print pcap_id, type(pcap_id)
 
     cursor = conn.cursor()
     cursor.execute(
@@ -105,19 +99,13 @@ def insert_valid_reqrep(pcap_id, line, conn):
         '        label,'
         '        ts1,ts2,ts3,'
         '        request_len,response_len,'
-        '        response_code,'
-        '        method,url,version,'
-        '        content_type, '
         '        pcap_id'
         '    ) '
-        'VALUES (?,?,?,?,?,?,?,?,?,?,?,?)',
+        'VALUES (?,?,?,?,?,?,?)',
         (
             label,
             ts1, ts2, ts3,
             request_len, response_len,
-            response_code,
-            method, url, version,
-            content_type,
             pcap_id
         )
     )
@@ -144,7 +132,6 @@ def httptimes2db(pcap_id, file, conn):
 
 
 if __name__ == '__main__':
-
     db_name = sys.argv[1]
     pcap_id = int(sys.argv[2])
     tcptrace_result_dir = sys.argv[3]

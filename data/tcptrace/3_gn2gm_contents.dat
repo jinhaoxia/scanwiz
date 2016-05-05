@@ -1,9 +1,0 @@
-HTTP/1.1 200 OK
-Server: nginx
-Date: Fri, 22 Apr 2016 07:04:18 GMT
-Content-Type: application/json;charset=UTF-8
-Content-Length: 144
-Connection: keep-alive
-Api-Server-IP: 10.75.2.226
-
-try{STK_146130865361216({"code":1,"data":{"apps":[],"groups":[{"3967026944582279":0}],"page_friends_to_me":0,"page_group_to_me":0}});}catch(e){}

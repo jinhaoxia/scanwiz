@@ -4,6 +4,9 @@ import sys
 import os
 import sqlite3
 import pprint
+
+from furl import furl
+
 from _4_extract_headers_from_http_times import get_request, get_response
 
 
@@ -78,31 +81,63 @@ def show_headers_of_all_reqrep(conn, pcap_id, dir):
         request = get_request(dir, pcap_id, label, request_idx, request_len)
         response = get_response(dir, pcap_id, label, response_idx, response_len)
 
-        cursor.execute \
-                (
-                "UPDATE tbl_reqrep SET x_request_headers = ?, x_response_headers = ? WHERE rowid = ?",
-                [
-                    repr(request.headers),
-                    repr(response.headers),
-                    rowid
-                ]
-            )
-        cursor.execute \
-                (
-                "UPDATE tbl_reqrep "
-                "SET "
-                "  x_url = ?,"
-                "  x_content_type = ?,"
-                "  x_status_code = ?"
-                "WHERE "
-                " ROWID = ?",
-                [
-                    "%s %s %s" % (request.method, request.headers.get('host'), request.uri),
-                    response.headers.get('content-type'),
-                    response.headers.get('location'),
-                    rowid
-                ]
-            )
+        x_request_method = request.method
+        x_request_host = request.headers.get('host')
+        x_request_uri = request.uri
+        x_request_url = 'http://%s%s' % (x_request_host, x_request_uri)
+        x_request_referer = request.headers.get('referer')
+        x_request_cookie = request.headers.get('cookie')
+        x_response_content_type = response.headers.get('content-type')
+        x_response_status_code = response.status
+        x_response_location = response.headers.get('location')
+        x_response_cache_control = response.headers.get('cache-control')
+        x_response_etag = response.headers.get('etag')
+        x_response_set_cookie = response.headers.get('set-cookie')
+        if x_response_set_cookie:
+            x_response_set_cookie = repr(x_response_set_cookie)
+        if type(x_response_cache_control) is list:
+            x_response_cache_control = x_response_cache_control[0]
+        cursor.execute(
+            "UPDATE tbl_reqrep SET o_request_headers = ?, o_response_headers = ? WHERE rowid = ?",
+            [
+                repr(request.headers),
+                repr(response.headers),
+                rowid
+            ]
+        )
+        cursor.execute(
+            'UPDATE tbl_reqrep\n'
+            'SET\n'
+            '  x_request_method = ?,\n'
+            '  x_request_host = ?,\n'
+            '  x_request_uri = ?,\n'
+            '  x_request_url = ?,\n'
+            '  x_request_referer = ?,\n'
+            '  x_request_cookie = ?,\n'
+            '  x_response_content_type = ?,\n'
+            '  x_response_status_code = ?,\n'
+            '  x_response_location = ?,\n'
+            '  x_response_cache_control = ?,\n'
+            '  x_response_etag = ?,\n'
+            '  x_response_set_cookie = ?\n'
+            'WHERE\n'
+            '  ROWID = ?\n',
+            [
+                x_request_method,
+                x_request_host,
+                x_request_uri,
+                x_request_url,
+                x_request_referer,
+                x_request_cookie,
+                x_response_content_type,
+                x_response_status_code,
+                x_response_location,
+                x_response_cache_control,
+                x_response_etag,
+                x_response_set_cookie,
+                rowid
+            ]
+        )
     cursor.close()
     conn.commit()
 
@@ -118,5 +153,3 @@ if __name__ == '__main__':
     conn = sqlite3.connect(db_name)
     feed_for_reqrep_of_all_conn(conn, pcap_id)
     show_headers_of_all_reqrep(conn, pcap_id, tcptrace_result_dir)
-
-

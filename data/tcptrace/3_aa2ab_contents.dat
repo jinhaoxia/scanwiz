@@ -1,9 +1,0 @@
-GET /adfront/loginadv.php?posid=pos55dc4af3e7219&psid=PDPS000000025446&cip=221.12.173.226&cursor=80&eData=1.29,1&uid=&callback=wbad_14613997273851&rnd=14613136958412 HTTP/1.1
-Host: wbpctips.mobile.sina.cn
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0
-Accept: */*
-Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
-Accept-Encoding: gzip, deflate
-Referer: http://weibo.com/
-Connection: keep-alive
-

@@ -1,0 +1,499 @@
++ db_name=test.db
++ output_dir=data/tcptrace
++ pcap_list=pcap_list.txt
++ seq_output=dataset4spmf.txt
++ map_output=dataset4spmf.map
++ ans_output=dataset4spmf.ans
++ minsup=80%
++ ./_1_to_pcap_to_http.sh pcap_list.txt data/tcptrace
++ tee analysis
++ pcap_files=pcap_list.txt
++ output_dir=data/tcptrace
++ [[ -d data/tcptrace ]]
++ read pcap_id pcap_file pcap_comment
++ rm -f 'data/tcptrace/-6_*'
++ tcptrace -n -xhttp -fport=80 --output_dir=data/tcptrace --output_prefix=-6_ data/pcap/yx_login1.pcap
+PF: Too many open files
++ read pcap_id pcap_file pcap_comment
++ rm -f 'data/tcptrace/7_*'
++ tcptrace -n -xhttp -fport=80 --output_dir=data/tcptrace --output_prefix=7_ data/pcap/yx_login2.pcap
+
+Warning : some extracted files are incomplete!
+          Please see -l output for more detail.
++ read pcap_id pcap_file pcap_comment
++ rm -f 'data/tcptrace/8_*'
++ tcptrace -n -xhttp -fport=80 --output_dir=data/tcptrace --output_prefix=8_ data/pcap/yx_login3.pcap
+
+Warning : some extracted files are incomplete!
+          Please see -l output for more detail.
++ read pcap_id pcap_file pcap_comment
++ rm -f 'data/tcptrace/9_*'
++ tcptrace -n -xhttp -fport=80 --output_dir=data/tcptrace --output_prefix=9_ data/pcap/hx_login1.pcap
+
+Warning : some extracted files are incomplete!
+          Please see -l output for more detail.
++ read pcap_id pcap_file pcap_comment
++ rm -f 'data/tcptrace/10_*'
++ tcptrace -n -xhttp -fport=80 --output_dir=data/tcptrace --output_prefix=10_ data/pcap/seclab_Login2.pcap
+
+Warning : some extracted files are incomplete!
+          Please see -l output for more detail.
++ read pcap_id pcap_file pcap_comment
++ rm -f 'data/tcptrace/-11_*'
++ tcptrace -n -xhttp -fport=80 --output_dir=data/tcptrace --output_prefix=-11_ data/pcap/seclab_login3.pcap
+
+Warning : some extracted files are incomplete!
+          Please see -l output for more detail.
++ read pcap_id pcap_file pcap_comment
++ rm -f 'data/tcptrace/-12_*'
++ tcptrace -n -xhttp -fport=80 --output_dir=data/tcptrace --output_prefix=-12_ data/pcap/seclab_login4.pcap
+
+Warning : some extracted files are incomplete!
+          Please see -l output for more detail.
++ read pcap_id pcap_file pcap_comment
++ ./_2_3_4_5_to_database.sh pcap_list.txt data/tcptrace test.db
++ pcap_files=pcap_list.txt
++ output_dir=data/tcptrace
++ db_name=test.db
++ read pcap_id pcap_file pcap_comment
++ python _3_http_times_to_database.py test.db -6 data/tcptrace
+Traceback (most recent call last):
+  File "_3_http_times_to_database.py", line 141, in <module>
+    file = open(http_times_file)
+IOError: [Errno 2] No such file or directory: 'data/tcptrace/-6_http.times'
++ python _5_append_headers_to_database.py test.db -6 data/tcptrace
+Traceback (most recent call last):
+  File "_5_append_headers_to_database.py", line 152, in <module>
+    file = open(http_times_file_path)
+IOError: [Errno 2] No such file or directory: 'data/tcptrace/-6_http.times'
++ read pcap_id pcap_file pcap_comment
++ python _3_http_times_to_database.py test.db 7 data/tcptrace
++ python _5_append_headers_to_database.py test.db 7 data/tcptrace
++ read pcap_id pcap_file pcap_comment
++ python _3_http_times_to_database.py test.db 8 data/tcptrace
++ python _5_append_headers_to_database.py test.db 8 data/tcptrace
++ read pcap_id pcap_file pcap_comment
++ python _3_http_times_to_database.py test.db 9 data/tcptrace
++ python _5_append_headers_to_database.py test.db 9 data/tcptrace
++ read pcap_id pcap_file pcap_comment
++ python _3_http_times_to_database.py test.db 10 data/tcptrace
++ python _5_append_headers_to_database.py test.db 10 data/tcptrace
++ read pcap_id pcap_file pcap_comment
++ python _3_http_times_to_database.py test.db -11 data/tcptrace
++ python _5_append_headers_to_database.py test.db -11 data/tcptrace
++ read pcap_id pcap_file pcap_comment
++ python _3_http_times_to_database.py test.db -12 data/tcptrace
++ python _5_append_headers_to_database.py test.db -12 data/tcptrace
++ read pcap_id pcap_file pcap_comment
++ ./_7_make_dataset_for_spmf.py test.db dataset4spmf.txt dataset4spmf.map
+DEBUG:root:pcap_id = 7
+DEBUG:root:UrlParts(url='http://weibo.com/', website=u'http://weibo.com/', paths=[''], params=(), values=())
+INFO:root:http://weibo.com/
+INFO:root:UrlParts(url='http://weibo.com/', website=u'http://weibo.com/', paths=[''], params=(), values=())
+INFO:root:0
+DEBUG:root:0 http://weibo.com/
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461739990744', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1461739990744', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461739990744
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461739990744', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1461739990744', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:1
+DEBUG:root:1 http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461739990744
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461740000175', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1461740000175', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t'))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461740000175
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461740000175', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1461740000175', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t'))
+INFO:root:2
+DEBUG:root:2 http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461740000175
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/login.php?client=ssologin.js(v1.4.18)', website=u'http://login.sina.com.cn/', paths=['sso', 'login.php'], params=(u'client',), values=(u'ssologin.js(v1.4.18)',))
+INFO:root:http://login.sina.com.cn/sso/login.php?client=ssologin.js(v1.4.18)
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/login.php?client=ssologin.js(v1.4.18)', website=u'http://login.sina.com.cn/', paths=['sso', 'login.php'], params=(u'client',), values=(u'ssologin.js(v1.4.18)',))
+INFO:root:3
+DEBUG:root:3 http://login.sina.com.cn/sso/login.php?client=ssologin.js(v1.4.18)
+DEBUG:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1493276007&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MjQyMzQwMTE2MA==-1461740007-gz-E744E16EB9E0615086FC6155904F3486&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1493276007', u'ST-MjQyMzQwMTE2MA==-1461740007-gz-E744E16EB9E0615086FC6155904F3486', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:http://passport.weibo.com/wbsso/login?ssosavestate=1493276007&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MjQyMzQwMTE2MA==-1461740007-gz-E744E16EB9E0615086FC6155904F3486&retcode=0
+INFO:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1493276007&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MjQyMzQwMTE2MA==-1461740007-gz-E744E16EB9E0615086FC6155904F3486&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1493276007', u'ST-MjQyMzQwMTE2MA==-1461740007-gz-E744E16EB9E0615086FC6155904F3486', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:4
+DEBUG:root:4 http://passport.weibo.com/wbsso/login?ssosavestate=1493276007&url=http%3A%2F%2Fweibo.com%2Fajaxlogin.php%3Fframelogin%3D1%26callback%3Dparent.sinaSSOController.feedBackUrlCallBack%26sudaref%3Dweibo.com&ticket=ST-MjQyMzQwMTE2MA==-1461740007-gz-E744E16EB9E0615086FC6155904F3486&retcode=0
+DEBUG:root:UrlParts(url='http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com', website=u'http://weibo.com/', paths=['ajaxlogin.php'], params=(u'callback', u'framelogin', u'sudaref'), values=(u'parent.sinaSSOController.feedBackUrlCallBack', u'1', u'weibo.com'))
+INFO:root:http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com
+INFO:root:UrlParts(url='http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com', website=u'http://weibo.com/', paths=['ajaxlogin.php'], params=(u'callback', u'framelogin', u'sudaref'), values=(u'parent.sinaSSOController.feedBackUrlCallBack', u'1', u'weibo.com'))
+INFO:root:5
+DEBUG:root:5 http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com
+DEBUG:root:UrlParts(url='http://weibo.com/?wvr=5&lf=reg', website=u'http://weibo.com/', paths=[''], params=(u'lf', u'wvr'), values=(u'reg', u'5'))
+INFO:root:http://weibo.com/?wvr=5&lf=reg
+INFO:root:UrlParts(url='http://weibo.com/?wvr=5&lf=reg', website=u'http://weibo.com/', paths=[''], params=(u'lf', u'wvr'), values=(u'reg', u'5'))
+INFO:root:6
+DEBUG:root:6 http://weibo.com/?wvr=5&lf=reg
+DEBUG:root:UrlParts(url='http://weibo.com/u/2423401160/home?wvr=5&lf=reg', website=u'http://weibo.com/', paths=['u', '2423401160', 'home'], params=(u'lf', u'wvr'), values=(u'reg', u'5'))
+INFO:root:http://weibo.com/u/2423401160/home?wvr=5&lf=reg
+INFO:root:UrlParts(url='http://weibo.com/u/2423401160/home?wvr=5&lf=reg', website=u'http://weibo.com/', paths=['u', '2423401160', 'home'], params=(u'lf', u'wvr'), values=(u'reg', u'5'))
+INFO:root:7
+DEBUG:root:7 http://weibo.com/u/2423401160/home?wvr=5&lf=reg
+DEBUG:root:UrlParts(url='http://nas.im.api.weibo.com/im/webim.jsp?uid=2423401160&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14617400117932&__rnd=1461740011793', website=u'http://nas.im.api.weibo.com/', paths=['im', 'webim.jsp'], params=(u'__rnd', u'callback', u'connect_count', u'connect_server', u'returntype', u'uid', u'v'), values=(u'1461740011793', u'IM_14617400117932', u'0', u'', u'json', u'2423401160', u'1.1'))
+INFO:root:http://nas.im.api.weibo.com/im/webim.jsp?uid=2423401160&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14617400117932&__rnd=1461740011793
+INFO:root:UrlParts(url='http://nas.im.api.weibo.com/im/webim.jsp?uid=2423401160&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14617400117932&__rnd=1461740011793', website=u'http://nas.im.api.weibo.com/', paths=['im', 'webim.jsp'], params=(u'__rnd', u'callback', u'connect_count', u'connect_server', u'returntype', u'uid', u'v'), values=(u'1461740011793', u'IM_14617400117932', u'0', u'', u'json', u'2423401160', u'1.1'))
+INFO:root:8
+DEBUG:root:8 http://nas.im.api.weibo.com/im/webim.jsp?uid=2423401160&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14617400117932&__rnd=1461740011793
+DEBUG:root:UrlParts(url='http://api.weibo.com/2/emotions.json?source=209678993&callback=IM_14617400125613&__rnd=1461740012561', website=u'http://api.weibo.com/', paths=['2', 'emotions.json'], params=(u'__rnd', u'callback', u'source'), values=(u'1461740012561', u'IM_14617400125613', u'209678993'))
+INFO:root:http://api.weibo.com/2/emotions.json?source=209678993&callback=IM_14617400125613&__rnd=1461740012561
+INFO:root:UrlParts(url='http://api.weibo.com/2/emotions.json?source=209678993&callback=IM_14617400125613&__rnd=1461740012561', website=u'http://api.weibo.com/', paths=['2', 'emotions.json'], params=(u'__rnd', u'callback', u'source'), values=(u'1461740012561', u'IM_14617400125613', u'209678993'))
+INFO:root:9
+DEBUG:root:9 http://api.weibo.com/2/emotions.json?source=209678993&callback=IM_14617400125613&__rnd=1461740012561
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461740013733', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1461740013733', u'6', u'59'))
+INFO:root:http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461740013733
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461740013733', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1461740013733', u'6', u'59'))
+INFO:root:10
+DEBUG:root:10 http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461740013733
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461740013892', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1461740013892', u'6', u'59', u'0'))
+INFO:root:http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461740013892
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461740013892', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1461740013892', u'6', u'59', u'0'))
+INFO:root:11
+DEBUG:root:11 http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461740013892
+DEBUG:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461740014125', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1461740014125', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461740014125
+INFO:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461740014125', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1461740014125', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:12
+DEBUG:root:12 http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461740014125
+DEBUG:root:UrlParts(url='http://s.alitui.weibo.com/widget2.html', website=u'http://s.alitui.weibo.com/', paths=['widget2.html'], params=(), values=())
+INFO:root:http://s.alitui.weibo.com/widget2.html
+INFO:root:UrlParts(url='http://s.alitui.weibo.com/widget2.html', website=u'http://s.alitui.weibo.com/', paths=['widget2.html'], params=(), values=())
+INFO:root:13
+DEBUG:root:13 http://s.alitui.weibo.com/widget2.html
+DEBUG:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=2423401160&ref=PC_topsug&url=http://weibo.com/u/2423401160/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146174000975412', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0', u'STK_146174000975412', u'PC_topsug', u'2423401160', u'http://weibo.com/u/2423401160/home?wvr=5&lf=reg'))
+INFO:root:http://s.weibo.com/ajax/jsonp/gettopsug?uid=2423401160&ref=PC_topsug&url=http://weibo.com/u/2423401160/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146174000975412
+INFO:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=2423401160&ref=PC_topsug&url=http://weibo.com/u/2423401160/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146174000975412', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0', u'STK_146174000975412', u'PC_topsug', u'2423401160', u'http://weibo.com/u/2423401160/home?wvr=5&lf=reg'))
+INFO:root:14
+DEBUG:root:14 http://s.weibo.com/ajax/jsonp/gettopsug?uid=2423401160&ref=PC_topsug&url=http%3A%2F%2Fweibo.com%2Fu%2F2423401160%2Fhome%3Fwvr%3D5%26lf%3Dreg&Mozilla=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010.10%3B%20rv%3A44.0)%20Gecko%2F20100101%20Firefox%2F44.0&_cb=STK_146174000975412
+DEBUG:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461740016747', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1461740016747', u'0', u'6', u'v6_content_home'))
+INFO:root:http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461740016747
+INFO:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461740016747', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1461740016747', u'0', u'6', u'v6_content_home'))
+INFO:root:15
+DEBUG:root:15 http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461740016747
+DEBUG:root:=== 0 -1 1 -1 2 -1 3 -1 4 -1 5 -1 6 -1 7 -1 8 -1 9 -1 10 -1 11 -1 12 -1 13 -1 14 -1 15 -1 -2
+DEBUG:root:=====================
+DEBUG:root:pcap_id = 8
+DEBUG:root:0 http://weibo.com/
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461748256706', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1461748256706', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461748256706
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461748256706', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1461748256706', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:1
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461748256706', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1461748256706', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461748256706
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461748256706', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1461748256706', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:1
+DEBUG:root:1 http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461748256706
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461748265689', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1461748265689', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t'))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461748265689
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461748265689', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1461748265689', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t'))
+INFO:root:2
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461748265689', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1461748265689', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t'))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461748265689
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461748265689', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1461748265689', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t'))
+INFO:root:2
+DEBUG:root:2 http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZTEyMjEyMjElNDAxNjMuY29t&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461748265689
+DEBUG:root:3 http://login.sina.com.cn/sso/login.php?client=ssologin.js(v1.4.18)
+DEBUG:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1493284271&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MjQyMzQwMTE2MA==-1461748271-gz-2B63A2FD4C8061B6145A01C6A3DEA348&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1493284271', u'ST-MjQyMzQwMTE2MA==-1461748271-gz-2B63A2FD4C8061B6145A01C6A3DEA348', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:http://passport.weibo.com/wbsso/login?ssosavestate=1493284271&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MjQyMzQwMTE2MA==-1461748271-gz-2B63A2FD4C8061B6145A01C6A3DEA348&retcode=0
+INFO:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1493284271&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MjQyMzQwMTE2MA==-1461748271-gz-2B63A2FD4C8061B6145A01C6A3DEA348&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1493284271', u'ST-MjQyMzQwMTE2MA==-1461748271-gz-2B63A2FD4C8061B6145A01C6A3DEA348', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:4
+DEBUG:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1493284271&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MjQyMzQwMTE2MA==-1461748271-gz-2B63A2FD4C8061B6145A01C6A3DEA348&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1493284271', u'ST-MjQyMzQwMTE2MA==-1461748271-gz-2B63A2FD4C8061B6145A01C6A3DEA348', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:http://passport.weibo.com/wbsso/login?ssosavestate=1493284271&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MjQyMzQwMTE2MA==-1461748271-gz-2B63A2FD4C8061B6145A01C6A3DEA348&retcode=0
+INFO:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1493284271&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MjQyMzQwMTE2MA==-1461748271-gz-2B63A2FD4C8061B6145A01C6A3DEA348&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1493284271', u'ST-MjQyMzQwMTE2MA==-1461748271-gz-2B63A2FD4C8061B6145A01C6A3DEA348', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:4
+DEBUG:root:4 http://passport.weibo.com/wbsso/login?ssosavestate=1493284271&url=http%3A%2F%2Fweibo.com%2Fajaxlogin.php%3Fframelogin%3D1%26callback%3Dparent.sinaSSOController.feedBackUrlCallBack%26sudaref%3Dweibo.com&ticket=ST-MjQyMzQwMTE2MA==-1461748271-gz-2B63A2FD4C8061B6145A01C6A3DEA348&retcode=0
+DEBUG:root:5 http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com
+DEBUG:root:6 http://weibo.com/?wvr=5&lf=reg
+DEBUG:root:7 http://weibo.com/u/2423401160/home?wvr=5&lf=reg
+DEBUG:root:UrlParts(url='http://nas.im.api.weibo.com/im/webim.jsp?uid=2423401160&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14617482771112&__rnd=1461748277111', website=u'http://nas.im.api.weibo.com/', paths=['im', 'webim.jsp'], params=(u'__rnd', u'callback', u'connect_count', u'connect_server', u'returntype', u'uid', u'v'), values=(u'1461748277111', u'IM_14617482771112', u'0', u'', u'json', u'2423401160', u'1.1'))
+INFO:root:http://nas.im.api.weibo.com/im/webim.jsp?uid=2423401160&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14617482771112&__rnd=1461748277111
+INFO:root:UrlParts(url='http://nas.im.api.weibo.com/im/webim.jsp?uid=2423401160&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14617482771112&__rnd=1461748277111', website=u'http://nas.im.api.weibo.com/', paths=['im', 'webim.jsp'], params=(u'__rnd', u'callback', u'connect_count', u'connect_server', u'returntype', u'uid', u'v'), values=(u'1461748277111', u'IM_14617482771112', u'0', u'', u'json', u'2423401160', u'1.1'))
+INFO:root:8
+DEBUG:root:UrlParts(url='http://nas.im.api.weibo.com/im/webim.jsp?uid=2423401160&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14617482771112&__rnd=1461748277111', website=u'http://nas.im.api.weibo.com/', paths=['im', 'webim.jsp'], params=(u'__rnd', u'callback', u'connect_count', u'connect_server', u'returntype', u'uid', u'v'), values=(u'1461748277111', u'IM_14617482771112', u'0', u'', u'json', u'2423401160', u'1.1'))
+INFO:root:http://nas.im.api.weibo.com/im/webim.jsp?uid=2423401160&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14617482771112&__rnd=1461748277111
+INFO:root:UrlParts(url='http://nas.im.api.weibo.com/im/webim.jsp?uid=2423401160&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14617482771112&__rnd=1461748277111', website=u'http://nas.im.api.weibo.com/', paths=['im', 'webim.jsp'], params=(u'__rnd', u'callback', u'connect_count', u'connect_server', u'returntype', u'uid', u'v'), values=(u'1461748277111', u'IM_14617482771112', u'0', u'', u'json', u'2423401160', u'1.1'))
+INFO:root:8
+DEBUG:root:8 http://nas.im.api.weibo.com/im/webim.jsp?uid=2423401160&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14617482771112&__rnd=1461748277111
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461748277744', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1461748277744', u'6', u'59'))
+INFO:root:http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461748277744
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461748277744', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1461748277744', u'6', u'59'))
+INFO:root:10
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461748277744', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1461748277744', u'6', u'59'))
+INFO:root:http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461748277744
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461748277744', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1461748277744', u'6', u'59'))
+INFO:root:10
+DEBUG:root:10 http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461748277744
+DEBUG:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461748278012', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1461748278012', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461748278012
+INFO:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461748278012', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1461748278012', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:12
+DEBUG:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461748278012', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1461748278012', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461748278012
+INFO:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461748278012', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1461748278012', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:12
+DEBUG:root:12 http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461748278012
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461748278386', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1461748278386', u'6', u'59', u'0'))
+INFO:root:http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461748278386
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461748278386', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1461748278386', u'6', u'59', u'0'))
+INFO:root:11
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461748278386', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1461748278386', u'6', u'59', u'0'))
+INFO:root:http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461748278386
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461748278386', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1461748278386', u'6', u'59', u'0'))
+INFO:root:11
+DEBUG:root:11 http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461748278386
+DEBUG:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461748280755', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1461748280755', u'0', u'6', u'v6_content_home'))
+INFO:root:http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461748280755
+INFO:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461748280755', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1461748280755', u'0', u'6', u'v6_content_home'))
+INFO:root:15
+DEBUG:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461748280755', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1461748280755', u'0', u'6', u'v6_content_home'))
+INFO:root:http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461748280755
+INFO:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461748280755', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1461748280755', u'0', u'6', u'v6_content_home'))
+INFO:root:15
+DEBUG:root:15 http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461748280755
+DEBUG:root:UrlParts(url='http://s.alitui.weibo.com/bottom.html', website=u'http://s.alitui.weibo.com/', paths=['bottom.html'], params=(), values=())
+INFO:root:http://s.alitui.weibo.com/bottom.html
+INFO:root:UrlParts(url='http://s.alitui.weibo.com/bottom.html', website=u'http://s.alitui.weibo.com/', paths=['bottom.html'], params=(), values=())
+INFO:root:16
+DEBUG:root:16 http://s.alitui.weibo.com/bottom.html
+DEBUG:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=2423401160&ref=PC_topsug&url=http://weibo.com/u/2423401160/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146174827479012', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0', u'STK_146174827479012', u'PC_topsug', u'2423401160', u'http://weibo.com/u/2423401160/home?wvr=5&lf=reg'))
+INFO:root:http://s.weibo.com/ajax/jsonp/gettopsug?uid=2423401160&ref=PC_topsug&url=http://weibo.com/u/2423401160/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146174827479012
+INFO:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=2423401160&ref=PC_topsug&url=http://weibo.com/u/2423401160/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146174827479012', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0', u'STK_146174827479012', u'PC_topsug', u'2423401160', u'http://weibo.com/u/2423401160/home?wvr=5&lf=reg'))
+INFO:root:14
+DEBUG:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=2423401160&ref=PC_topsug&url=http://weibo.com/u/2423401160/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146174827479012', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0', u'STK_146174827479012', u'PC_topsug', u'2423401160', u'http://weibo.com/u/2423401160/home?wvr=5&lf=reg'))
+INFO:root:http://s.weibo.com/ajax/jsonp/gettopsug?uid=2423401160&ref=PC_topsug&url=http://weibo.com/u/2423401160/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146174827479012
+INFO:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=2423401160&ref=PC_topsug&url=http://weibo.com/u/2423401160/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146174827479012', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0', u'STK_146174827479012', u'PC_topsug', u'2423401160', u'http://weibo.com/u/2423401160/home?wvr=5&lf=reg'))
+INFO:root:14
+DEBUG:root:14 http://s.weibo.com/ajax/jsonp/gettopsug?uid=2423401160&ref=PC_topsug&url=http%3A%2F%2Fweibo.com%2Fu%2F2423401160%2Fhome%3Fwvr%3D5%26lf%3Dreg&Mozilla=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010.10%3B%20rv%3A44.0)%20Gecko%2F20100101%20Firefox%2F44.0&_cb=STK_146174827479012
+DEBUG:root:UrlParts(url='http://rm.api.weibo.com/2/remind/push_count.json?trim_null=1&with_dm_group=0&with_settings=1&exclude_attitude=1&with_common_cmt=1&with_comment_attitude=1&with_common_attitude=1&with_moments=1&with_dm_unread=1&msgbox=true&with_page_group=1&with_chat_group=1&with_chat_group_notice=1&_pid=1&count=0&source=3818214747&status_type=0&callback=STK_146174827479014', website=u'http://rm.api.weibo.com/', paths=['2', 'remind', 'push_count.json'], params=(u'_pid', u'callback', u'count', u'exclude_attitude', u'msgbox', u'source', u'status_type', u'trim_null', u'with_chat_group', u'with_chat_group_notice', u'with_comment_attitude', u'with_common_attitude', u'with_common_cmt', u'with_dm_group', u'with_dm_unread', u'with_moments', u'with_page_group', u'with_settings'), values=(u'1', u'STK_146174827479014', u'0', u'1', u'true', u'3818214747', u'0', u'1', u'1', u'1', u'1', u'1', u'1', u'0', u'1', u'1', u'1', u'1'))
+INFO:root:http://rm.api.weibo.com/2/remind/push_count.json?trim_null=1&with_dm_group=0&with_settings=1&exclude_attitude=1&with_common_cmt=1&with_comment_attitude=1&with_common_attitude=1&with_moments=1&with_dm_unread=1&msgbox=true&with_page_group=1&with_chat_group=1&with_chat_group_notice=1&_pid=1&count=0&source=3818214747&status_type=0&callback=STK_146174827479014
+INFO:root:UrlParts(url='http://rm.api.weibo.com/2/remind/push_count.json?trim_null=1&with_dm_group=0&with_settings=1&exclude_attitude=1&with_common_cmt=1&with_comment_attitude=1&with_common_attitude=1&with_moments=1&with_dm_unread=1&msgbox=true&with_page_group=1&with_chat_group=1&with_chat_group_notice=1&_pid=1&count=0&source=3818214747&status_type=0&callback=STK_146174827479014', website=u'http://rm.api.weibo.com/', paths=['2', 'remind', 'push_count.json'], params=(u'_pid', u'callback', u'count', u'exclude_attitude', u'msgbox', u'source', u'status_type', u'trim_null', u'with_chat_group', u'with_chat_group_notice', u'with_comment_attitude', u'with_common_attitude', u'with_common_cmt', u'with_dm_group', u'with_dm_unread', u'with_moments', u'with_page_group', u'with_settings'), values=(u'1', u'STK_146174827479014', u'0', u'1', u'true', u'3818214747', u'0', u'1', u'1', u'1', u'1', u'1', u'1', u'0', u'1', u'1', u'1', u'1'))
+INFO:root:17
+DEBUG:root:17 http://rm.api.weibo.com/2/remind/push_count.json?trim_null=1&with_dm_group=0&with_settings=1&exclude_attitude=1&with_common_cmt=1&with_comment_attitude=1&with_common_attitude=1&with_moments=1&with_dm_unread=1&msgbox=true&with_page_group=1&with_chat_group=1&with_chat_group_notice=1&_pid=1&count=0&source=3818214747&status_type=0&callback=STK_146174827479014
+DEBUG:root:UrlParts(url='http://rm.api.weibo.com/2/remind/unread_hint.json?source=3818214747&with_url=1&appkeys=&group_ids=201109250368195726,201109250462824501,201109250368195746,201109250471594478,3455413184301497,3480138362257539,3919311419091742&callback=STK_146174827479016', website=u'http://rm.api.weibo.com/', paths=['2', 'remind', 'unread_hint.json'], params=(u'appkeys', u'callback', u'group_ids', u'source', u'with_url'), values=(u'', u'STK_146174827479016', u'201109250368195726,201109250462824501,201109250368195746,201109250471594478,3455413184301497,3480138362257539,3919311419091742', u'3818214747', u'1'))
+INFO:root:http://rm.api.weibo.com/2/remind/unread_hint.json?source=3818214747&with_url=1&appkeys=&group_ids=201109250368195726,201109250462824501,201109250368195746,201109250471594478,3455413184301497,3480138362257539,3919311419091742&callback=STK_146174827479016
+INFO:root:UrlParts(url='http://rm.api.weibo.com/2/remind/unread_hint.json?source=3818214747&with_url=1&appkeys=&group_ids=201109250368195726,201109250462824501,201109250368195746,201109250471594478,3455413184301497,3480138362257539,3919311419091742&callback=STK_146174827479016', website=u'http://rm.api.weibo.com/', paths=['2', 'remind', 'unread_hint.json'], params=(u'appkeys', u'callback', u'group_ids', u'source', u'with_url'), values=(u'', u'STK_146174827479016', u'201109250368195726,201109250462824501,201109250368195746,201109250471594478,3455413184301497,3480138362257539,3919311419091742', u'3818214747', u'1'))
+INFO:root:18
+DEBUG:root:18 http://rm.api.weibo.com/2/remind/unread_hint.json?source=3818214747&with_url=1&appkeys=&group_ids=201109250368195726,201109250462824501,201109250368195746,201109250471594478,3455413184301497,3480138362257539,3919311419091742&callback=STK_146174827479016
+DEBUG:root:=== 0 -1 1 -1 2 -1 3 -1 4 -1 5 -1 6 -1 7 -1 8 -1 10 -1 12 -1 11 -1 15 -1 16 -1 14 -1 17 -1 18 -1 -2
+DEBUG:root:=====================
+DEBUG:root:pcap_id = 9
+DEBUG:root:0 http://weibo.com/
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1462330896846', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1462330896846', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1462330896846
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1462330896846', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1462330896846', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:1
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1462330896846', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1462330896846', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1462330896846
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1462330896846', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1462330896846', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:1
+DEBUG:root:1 http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1462330896846
+DEBUG:root:5 http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=bmlob3clNDBxcS5jb20=&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1462330902690', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1462330902690', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'bmlob3clNDBxcS5jb20='))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=bmlob3clNDBxcS5jb20=&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1462330902690
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=bmlob3clNDBxcS5jb20=&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1462330902690', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1462330902690', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'bmlob3clNDBxcS5jb20='))
+INFO:root:2
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=bmlob3clNDBxcS5jb20=&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1462330902690', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1462330902690', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'bmlob3clNDBxcS5jb20='))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=bmlob3clNDBxcS5jb20=&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1462330902690
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=bmlob3clNDBxcS5jb20=&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1462330902690', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1462330902690', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'bmlob3clNDBxcS5jb20='))
+INFO:root:2
+DEBUG:root:2 http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=bmlob3clNDBxcS5jb20%3D&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1462330902690
+DEBUG:root:3 http://login.sina.com.cn/sso/login.php?client=ssologin.js(v1.4.18)
+DEBUG:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1493866905&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MTY5MzI3Njg1Mg==-1462330905-xd-547958BC6A199D1D0766595B5AF40C0A&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1493866905', u'ST-MTY5MzI3Njg1Mg==-1462330905-xd-547958BC6A199D1D0766595B5AF40C0A', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:http://passport.weibo.com/wbsso/login?ssosavestate=1493866905&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MTY5MzI3Njg1Mg==-1462330905-xd-547958BC6A199D1D0766595B5AF40C0A&retcode=0
+INFO:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1493866905&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MTY5MzI3Njg1Mg==-1462330905-xd-547958BC6A199D1D0766595B5AF40C0A&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1493866905', u'ST-MTY5MzI3Njg1Mg==-1462330905-xd-547958BC6A199D1D0766595B5AF40C0A', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:4
+DEBUG:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1493866905&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MTY5MzI3Njg1Mg==-1462330905-xd-547958BC6A199D1D0766595B5AF40C0A&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1493866905', u'ST-MTY5MzI3Njg1Mg==-1462330905-xd-547958BC6A199D1D0766595B5AF40C0A', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:http://passport.weibo.com/wbsso/login?ssosavestate=1493866905&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MTY5MzI3Njg1Mg==-1462330905-xd-547958BC6A199D1D0766595B5AF40C0A&retcode=0
+INFO:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1493866905&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-MTY5MzI3Njg1Mg==-1462330905-xd-547958BC6A199D1D0766595B5AF40C0A&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1493866905', u'ST-MTY5MzI3Njg1Mg==-1462330905-xd-547958BC6A199D1D0766595B5AF40C0A', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:4
+DEBUG:root:4 http://passport.weibo.com/wbsso/login?ssosavestate=1493866905&url=http%3A%2F%2Fweibo.com%2Fajaxlogin.php%3Fframelogin%3D1%26callback%3Dparent.sinaSSOController.feedBackUrlCallBack%26sudaref%3Dweibo.com&ticket=ST-MTY5MzI3Njg1Mg==-1462330905-xd-547958BC6A199D1D0766595B5AF40C0A&retcode=0
+DEBUG:root:6 http://weibo.com/?wvr=5&lf=reg
+DEBUG:root:UrlParts(url='http://weibo.com/u/1693276852/home?wvr=5&lf=reg', website=u'http://weibo.com/', paths=['u', '1693276852', 'home'], params=(u'lf', u'wvr'), values=(u'reg', u'5'))
+INFO:root:http://weibo.com/u/1693276852/home?wvr=5&lf=reg
+INFO:root:UrlParts(url='http://weibo.com/u/1693276852/home?wvr=5&lf=reg', website=u'http://weibo.com/', paths=['u', '1693276852', 'home'], params=(u'lf', u'wvr'), values=(u'reg', u'5'))
+INFO:root:19
+DEBUG:root:19 http://weibo.com/u/1693276852/home?wvr=5&lf=reg
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1462330916168', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1462330916168', u'6', u'59'))
+INFO:root:http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1462330916168
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1462330916168', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1462330916168', u'6', u'59'))
+INFO:root:10
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1462330916168', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1462330916168', u'6', u'59'))
+INFO:root:http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1462330916168
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1462330916168', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1462330916168', u'6', u'59'))
+INFO:root:10
+DEBUG:root:10 http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1462330916168
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1462330916360', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1462330916360', u'6', u'59', u'0'))
+INFO:root:http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1462330916360
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1462330916360', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1462330916360', u'6', u'59', u'0'))
+INFO:root:11
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1462330916360', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1462330916360', u'6', u'59', u'0'))
+INFO:root:http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1462330916360
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1462330916360', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1462330916360', u'6', u'59', u'0'))
+INFO:root:11
+DEBUG:root:11 http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1462330916360
+DEBUG:root:UrlParts(url='http://nas.im.api.weibo.com/im/webim.jsp?uid=1693276852&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14623309164172&__rnd=1462330916417', website=u'http://nas.im.api.weibo.com/', paths=['im', 'webim.jsp'], params=(u'__rnd', u'callback', u'connect_count', u'connect_server', u'returntype', u'uid', u'v'), values=(u'1462330916417', u'IM_14623309164172', u'0', u'', u'json', u'1693276852', u'1.1'))
+INFO:root:http://nas.im.api.weibo.com/im/webim.jsp?uid=1693276852&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14623309164172&__rnd=1462330916417
+INFO:root:UrlParts(url='http://nas.im.api.weibo.com/im/webim.jsp?uid=1693276852&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14623309164172&__rnd=1462330916417', website=u'http://nas.im.api.weibo.com/', paths=['im', 'webim.jsp'], params=(u'__rnd', u'callback', u'connect_count', u'connect_server', u'returntype', u'uid', u'v'), values=(u'1462330916417', u'IM_14623309164172', u'0', u'', u'json', u'1693276852', u'1.1'))
+INFO:root:8
+DEBUG:root:UrlParts(url='http://nas.im.api.weibo.com/im/webim.jsp?uid=1693276852&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14623309164172&__rnd=1462330916417', website=u'http://nas.im.api.weibo.com/', paths=['im', 'webim.jsp'], params=(u'__rnd', u'callback', u'connect_count', u'connect_server', u'returntype', u'uid', u'v'), values=(u'1462330916417', u'IM_14623309164172', u'0', u'', u'json', u'1693276852', u'1.1'))
+INFO:root:http://nas.im.api.weibo.com/im/webim.jsp?uid=1693276852&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14623309164172&__rnd=1462330916417
+INFO:root:UrlParts(url='http://nas.im.api.weibo.com/im/webim.jsp?uid=1693276852&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14623309164172&__rnd=1462330916417', website=u'http://nas.im.api.weibo.com/', paths=['im', 'webim.jsp'], params=(u'__rnd', u'callback', u'connect_count', u'connect_server', u'returntype', u'uid', u'v'), values=(u'1462330916417', u'IM_14623309164172', u'0', u'', u'json', u'1693276852', u'1.1'))
+INFO:root:8
+DEBUG:root:8 http://nas.im.api.weibo.com/im/webim.jsp?uid=1693276852&returntype=json&v=1.1&connect_count=0&connect_server=&callback=IM_14623309164172&__rnd=1462330916417
+DEBUG:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1462330916857', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1462330916857', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1462330916857
+INFO:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1462330916857', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1462330916857', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:12
+DEBUG:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1462330916857', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1462330916857', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1462330916857
+INFO:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1462330916857', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1462330916857', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:12
+DEBUG:root:12 http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1462330916857
+DEBUG:root:UrlParts(url='http://api.weibo.com/2/emotions.json?source=209678993&callback=IM_14623309174103&__rnd=1462330917410', website=u'http://api.weibo.com/', paths=['2', 'emotions.json'], params=(u'__rnd', u'callback', u'source'), values=(u'1462330917410', u'IM_14623309174103', u'209678993'))
+INFO:root:http://api.weibo.com/2/emotions.json?source=209678993&callback=IM_14623309174103&__rnd=1462330917410
+INFO:root:UrlParts(url='http://api.weibo.com/2/emotions.json?source=209678993&callback=IM_14623309174103&__rnd=1462330917410', website=u'http://api.weibo.com/', paths=['2', 'emotions.json'], params=(u'__rnd', u'callback', u'source'), values=(u'1462330917410', u'IM_14623309174103', u'209678993'))
+INFO:root:9
+DEBUG:root:UrlParts(url='http://api.weibo.com/2/emotions.json?source=209678993&callback=IM_14623309174103&__rnd=1462330917410', website=u'http://api.weibo.com/', paths=['2', 'emotions.json'], params=(u'__rnd', u'callback', u'source'), values=(u'1462330917410', u'IM_14623309174103', u'209678993'))
+INFO:root:http://api.weibo.com/2/emotions.json?source=209678993&callback=IM_14623309174103&__rnd=1462330917410
+INFO:root:UrlParts(url='http://api.weibo.com/2/emotions.json?source=209678993&callback=IM_14623309174103&__rnd=1462330917410', website=u'http://api.weibo.com/', paths=['2', 'emotions.json'], params=(u'__rnd', u'callback', u'source'), values=(u'1462330917410', u'IM_14623309174103', u'209678993'))
+INFO:root:9
+DEBUG:root:9 http://api.weibo.com/2/emotions.json?source=209678993&callback=IM_14623309174103&__rnd=1462330917410
+DEBUG:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=1693276852&ref=PC_topsug&url=http://weibo.com/u/1693276852/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10_11_3)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36&_cb=STK_146233091452112', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36', u'STK_146233091452112', u'PC_topsug', u'1693276852', u'http://weibo.com/u/1693276852/home?wvr=5&lf=reg'))
+INFO:root:http://s.weibo.com/ajax/jsonp/gettopsug?uid=1693276852&ref=PC_topsug&url=http://weibo.com/u/1693276852/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10_11_3)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36&_cb=STK_146233091452112
+INFO:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=1693276852&ref=PC_topsug&url=http://weibo.com/u/1693276852/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10_11_3)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36&_cb=STK_146233091452112', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36', u'STK_146233091452112', u'PC_topsug', u'1693276852', u'http://weibo.com/u/1693276852/home?wvr=5&lf=reg'))
+INFO:root:14
+DEBUG:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=1693276852&ref=PC_topsug&url=http://weibo.com/u/1693276852/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10_11_3)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36&_cb=STK_146233091452112', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36', u'STK_146233091452112', u'PC_topsug', u'1693276852', u'http://weibo.com/u/1693276852/home?wvr=5&lf=reg'))
+INFO:root:http://s.weibo.com/ajax/jsonp/gettopsug?uid=1693276852&ref=PC_topsug&url=http://weibo.com/u/1693276852/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10_11_3)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36&_cb=STK_146233091452112
+INFO:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=1693276852&ref=PC_topsug&url=http://weibo.com/u/1693276852/home?wvr=5%26lf=reg&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10_11_3)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36&_cb=STK_146233091452112', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36', u'STK_146233091452112', u'PC_topsug', u'1693276852', u'http://weibo.com/u/1693276852/home?wvr=5&lf=reg'))
+INFO:root:14
+DEBUG:root:14 http://s.weibo.com/ajax/jsonp/gettopsug?uid=1693276852&ref=PC_topsug&url=http%3A%2F%2Fweibo.com%2Fu%2F1693276852%2Fhome%3Fwvr%3D5%26lf%3Dreg&Mozilla=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_11_3)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F50.0.2661.94%20Safari%2F537.36&_cb=STK_146233091452112
+DEBUG:root:UrlParts(url='http://rm.api.weibo.com/2/remind/push_count.json?trim_null=1&with_dm_group=0&with_settings=1&exclude_attitude=1&with_common_cmt=1&with_comment_attitude=1&with_common_attitude=1&with_moments=1&with_dm_unread=1&msgbox=true&with_page_group=1&with_chat_group=1&with_chat_group_notice=1&_pid=1&count=0&source=3818214747&status_type=0&callback=STK_146233091452114', website=u'http://rm.api.weibo.com/', paths=['2', 'remind', 'push_count.json'], params=(u'_pid', u'callback', u'count', u'exclude_attitude', u'msgbox', u'source', u'status_type', u'trim_null', u'with_chat_group', u'with_chat_group_notice', u'with_comment_attitude', u'with_common_attitude', u'with_common_cmt', u'with_dm_group', u'with_dm_unread', u'with_moments', u'with_page_group', u'with_settings'), values=(u'1', u'STK_146233091452114', u'0', u'1', u'true', u'3818214747', u'0', u'1', u'1', u'1', u'1', u'1', u'1', u'0', u'1', u'1', u'1', u'1'))
+INFO:root:http://rm.api.weibo.com/2/remind/push_count.json?trim_null=1&with_dm_group=0&with_settings=1&exclude_attitude=1&with_common_cmt=1&with_comment_attitude=1&with_common_attitude=1&with_moments=1&with_dm_unread=1&msgbox=true&with_page_group=1&with_chat_group=1&with_chat_group_notice=1&_pid=1&count=0&source=3818214747&status_type=0&callback=STK_146233091452114
+INFO:root:UrlParts(url='http://rm.api.weibo.com/2/remind/push_count.json?trim_null=1&with_dm_group=0&with_settings=1&exclude_attitude=1&with_common_cmt=1&with_comment_attitude=1&with_common_attitude=1&with_moments=1&with_dm_unread=1&msgbox=true&with_page_group=1&with_chat_group=1&with_chat_group_notice=1&_pid=1&count=0&source=3818214747&status_type=0&callback=STK_146233091452114', website=u'http://rm.api.weibo.com/', paths=['2', 'remind', 'push_count.json'], params=(u'_pid', u'callback', u'count', u'exclude_attitude', u'msgbox', u'source', u'status_type', u'trim_null', u'with_chat_group', u'with_chat_group_notice', u'with_comment_attitude', u'with_common_attitude', u'with_common_cmt', u'with_dm_group', u'with_dm_unread', u'with_moments', u'with_page_group', u'with_settings'), values=(u'1', u'STK_146233091452114', u'0', u'1', u'true', u'3818214747', u'0', u'1', u'1', u'1', u'1', u'1', u'1', u'0', u'1', u'1', u'1', u'1'))
+INFO:root:17
+DEBUG:root:UrlParts(url='http://rm.api.weibo.com/2/remind/push_count.json?trim_null=1&with_dm_group=0&with_settings=1&exclude_attitude=1&with_common_cmt=1&with_comment_attitude=1&with_common_attitude=1&with_moments=1&with_dm_unread=1&msgbox=true&with_page_group=1&with_chat_group=1&with_chat_group_notice=1&_pid=1&count=0&source=3818214747&status_type=0&callback=STK_146233091452114', website=u'http://rm.api.weibo.com/', paths=['2', 'remind', 'push_count.json'], params=(u'_pid', u'callback', u'count', u'exclude_attitude', u'msgbox', u'source', u'status_type', u'trim_null', u'with_chat_group', u'with_chat_group_notice', u'with_comment_attitude', u'with_common_attitude', u'with_common_cmt', u'with_dm_group', u'with_dm_unread', u'with_moments', u'with_page_group', u'with_settings'), values=(u'1', u'STK_146233091452114', u'0', u'1', u'true', u'3818214747', u'0', u'1', u'1', u'1', u'1', u'1', u'1', u'0', u'1', u'1', u'1', u'1'))
+INFO:root:http://rm.api.weibo.com/2/remind/push_count.json?trim_null=1&with_dm_group=0&with_settings=1&exclude_attitude=1&with_common_cmt=1&with_comment_attitude=1&with_common_attitude=1&with_moments=1&with_dm_unread=1&msgbox=true&with_page_group=1&with_chat_group=1&with_chat_group_notice=1&_pid=1&count=0&source=3818214747&status_type=0&callback=STK_146233091452114
+INFO:root:UrlParts(url='http://rm.api.weibo.com/2/remind/push_count.json?trim_null=1&with_dm_group=0&with_settings=1&exclude_attitude=1&with_common_cmt=1&with_comment_attitude=1&with_common_attitude=1&with_moments=1&with_dm_unread=1&msgbox=true&with_page_group=1&with_chat_group=1&with_chat_group_notice=1&_pid=1&count=0&source=3818214747&status_type=0&callback=STK_146233091452114', website=u'http://rm.api.weibo.com/', paths=['2', 'remind', 'push_count.json'], params=(u'_pid', u'callback', u'count', u'exclude_attitude', u'msgbox', u'source', u'status_type', u'trim_null', u'with_chat_group', u'with_chat_group_notice', u'with_comment_attitude', u'with_common_attitude', u'with_common_cmt', u'with_dm_group', u'with_dm_unread', u'with_moments', u'with_page_group', u'with_settings'), values=(u'1', u'STK_146233091452114', u'0', u'1', u'true', u'3818214747', u'0', u'1', u'1', u'1', u'1', u'1', u'1', u'0', u'1', u'1', u'1', u'1'))
+INFO:root:17
+DEBUG:root:17 http://rm.api.weibo.com/2/remind/push_count.json?trim_null=1&with_dm_group=0&with_settings=1&exclude_attitude=1&with_common_cmt=1&with_comment_attitude=1&with_common_attitude=1&with_moments=1&with_dm_unread=1&msgbox=true&with_page_group=1&with_chat_group=1&with_chat_group_notice=1&_pid=1&count=0&source=3818214747&status_type=0&callback=STK_146233091452114
+DEBUG:root:UrlParts(url='http://rm.api.weibo.com/2/remind/unread_hint.json?source=3818214747&with_url=1&appkeys=&group_ids=3667829268393130&callback=STK_146233091452116', website=u'http://rm.api.weibo.com/', paths=['2', 'remind', 'unread_hint.json'], params=(u'appkeys', u'callback', u'group_ids', u'source', u'with_url'), values=(u'', u'STK_146233091452116', u'3667829268393130', u'3818214747', u'1'))
+INFO:root:http://rm.api.weibo.com/2/remind/unread_hint.json?source=3818214747&with_url=1&appkeys=&group_ids=3667829268393130&callback=STK_146233091452116
+INFO:root:UrlParts(url='http://rm.api.weibo.com/2/remind/unread_hint.json?source=3818214747&with_url=1&appkeys=&group_ids=3667829268393130&callback=STK_146233091452116', website=u'http://rm.api.weibo.com/', paths=['2', 'remind', 'unread_hint.json'], params=(u'appkeys', u'callback', u'group_ids', u'source', u'with_url'), values=(u'', u'STK_146233091452116', u'3667829268393130', u'3818214747', u'1'))
+INFO:root:18
+DEBUG:root:UrlParts(url='http://rm.api.weibo.com/2/remind/unread_hint.json?source=3818214747&with_url=1&appkeys=&group_ids=3667829268393130&callback=STK_146233091452116', website=u'http://rm.api.weibo.com/', paths=['2', 'remind', 'unread_hint.json'], params=(u'appkeys', u'callback', u'group_ids', u'source', u'with_url'), values=(u'', u'STK_146233091452116', u'3667829268393130', u'3818214747', u'1'))
+INFO:root:http://rm.api.weibo.com/2/remind/unread_hint.json?source=3818214747&with_url=1&appkeys=&group_ids=3667829268393130&callback=STK_146233091452116
+INFO:root:UrlParts(url='http://rm.api.weibo.com/2/remind/unread_hint.json?source=3818214747&with_url=1&appkeys=&group_ids=3667829268393130&callback=STK_146233091452116', website=u'http://rm.api.weibo.com/', paths=['2', 'remind', 'unread_hint.json'], params=(u'appkeys', u'callback', u'group_ids', u'source', u'with_url'), values=(u'', u'STK_146233091452116', u'3667829268393130', u'3818214747', u'1'))
+INFO:root:18
+DEBUG:root:18 http://rm.api.weibo.com/2/remind/unread_hint.json?source=3818214747&with_url=1&appkeys=&group_ids=3667829268393130&callback=STK_146233091452116
+DEBUG:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1462330918859', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1462330918859', u'0', u'6', u'v6_content_home'))
+INFO:root:http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1462330918859
+INFO:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1462330918859', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1462330918859', u'0', u'6', u'v6_content_home'))
+INFO:root:15
+DEBUG:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1462330918859', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1462330918859', u'0', u'6', u'v6_content_home'))
+INFO:root:http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1462330918859
+INFO:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1462330918859', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1462330918859', u'0', u'6', u'v6_content_home'))
+INFO:root:15
+DEBUG:root:15 http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1462330918859
+DEBUG:root:=== 0 -1 1 -1 5 -1 2 -1 3 -1 4 -1 6 -1 19 -1 10 -1 11 -1 8 -1 12 -1 9 -1 14 -1 17 -1 18 -1 15 -1 -2
+DEBUG:root:=====================
+DEBUG:root:pcap_id = 10
+DEBUG:root:0 http://weibo.com/
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461308632884', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1461308632884', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461308632884
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461308632884', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1461308632884', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:1
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461308632884', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1461308632884', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461308632884
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461308632884', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'client', u'entry', u'rsakt', u'su'), values=(u'1461308632884', u'sinaSSOController.preloginCallBack', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u''))
+INFO:root:1
+DEBUG:root:1 http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=&rsakt=mod&client=ssologin.js(v1.4.18)&_=1461308632884
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZSU0MHpqamN4eS5jbg==&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461308643719', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1461308643719', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'eWFuZ3h1ZSU0MHpqamN4eS5jbg=='))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZSU0MHpqamN4eS5jbg==&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461308643719
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZSU0MHpqamN4eS5jbg==&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461308643719', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1461308643719', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'eWFuZ3h1ZSU0MHpqamN4eS5jbg=='))
+INFO:root:2
+DEBUG:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZSU0MHpqamN4eS5jbg==&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461308643719', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1461308643719', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'eWFuZ3h1ZSU0MHpqamN4eS5jbg=='))
+INFO:root:http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZSU0MHpqamN4eS5jbg==&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461308643719
+INFO:root:UrlParts(url='http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZSU0MHpqamN4eS5jbg==&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461308643719', website=u'http://login.sina.com.cn/', paths=['sso', 'prelogin.php'], params=(u'_', u'callback', u'checkpin', u'client', u'entry', u'rsakt', u'su'), values=(u'1461308643719', u'sinaSSOController.preloginCallBack', u'1', u'ssologin.js(v1.4.18)', u'weibo', u'mod', u'eWFuZ3h1ZSU0MHpqamN4eS5jbg=='))
+INFO:root:2
+DEBUG:root:2 http://login.sina.com.cn/sso/prelogin.php?entry=weibo&callback=sinaSSOController.preloginCallBack&su=eWFuZ3h1ZSU0MHpqamN4eS5jbg%3D%3D&rsakt=mod&checkpin=1&client=ssologin.js(v1.4.18)&_=1461308643719
+DEBUG:root:3 http://login.sina.com.cn/sso/login.php?client=ssologin.js(v1.4.18)
+DEBUG:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1492844651&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-NTkwMzkyNTUxOA==-1461308651-xd-1BFAF5349EB9C0969C47AB929E8E6798&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1492844651', u'ST-NTkwMzkyNTUxOA==-1461308651-xd-1BFAF5349EB9C0969C47AB929E8E6798', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:http://passport.weibo.com/wbsso/login?ssosavestate=1492844651&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-NTkwMzkyNTUxOA==-1461308651-xd-1BFAF5349EB9C0969C47AB929E8E6798&retcode=0
+INFO:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1492844651&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-NTkwMzkyNTUxOA==-1461308651-xd-1BFAF5349EB9C0969C47AB929E8E6798&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1492844651', u'ST-NTkwMzkyNTUxOA==-1461308651-xd-1BFAF5349EB9C0969C47AB929E8E6798', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:4
+DEBUG:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1492844651&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-NTkwMzkyNTUxOA==-1461308651-xd-1BFAF5349EB9C0969C47AB929E8E6798&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1492844651', u'ST-NTkwMzkyNTUxOA==-1461308651-xd-1BFAF5349EB9C0969C47AB929E8E6798', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:http://passport.weibo.com/wbsso/login?ssosavestate=1492844651&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-NTkwMzkyNTUxOA==-1461308651-xd-1BFAF5349EB9C0969C47AB929E8E6798&retcode=0
+INFO:root:UrlParts(url='http://passport.weibo.com/wbsso/login?ssosavestate=1492844651&url=http://weibo.com/ajaxlogin.php?framelogin=1%26callback=parent.sinaSSOController.feedBackUrlCallBack%26sudaref=weibo.com&ticket=ST-NTkwMzkyNTUxOA==-1461308651-xd-1BFAF5349EB9C0969C47AB929E8E6798&retcode=0', website=u'http://passport.weibo.com/', paths=['wbsso', 'login'], params=(u'retcode', u'ssosavestate', u'ticket', u'url'), values=(u'0', u'1492844651', u'ST-NTkwMzkyNTUxOA==-1461308651-xd-1BFAF5349EB9C0969C47AB929E8E6798', u'http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com'))
+INFO:root:4
+DEBUG:root:4 http://passport.weibo.com/wbsso/login?ssosavestate=1492844651&url=http%3A%2F%2Fweibo.com%2Fajaxlogin.php%3Fframelogin%3D1%26callback%3Dparent.sinaSSOController.feedBackUrlCallBack%26sudaref%3Dweibo.com&ticket=ST-NTkwMzkyNTUxOA==-1461308651-xd-1BFAF5349EB9C0969C47AB929E8E6798&retcode=0
+DEBUG:root:5 http://weibo.com/ajaxlogin.php?framelogin=1&callback=parent.sinaSSOController.feedBackUrlCallBack&sudaref=weibo.com
+DEBUG:root:UrlParts(url='http://weibo.com/nguide/interest', website=u'http://weibo.com/', paths=['nguide', 'interest'], params=(), values=())
+INFO:root:http://weibo.com/nguide/interest
+INFO:root:UrlParts(url='http://weibo.com/nguide/interest', website=u'http://weibo.com/', paths=['nguide', 'interest'], params=(), values=())
+INFO:root:20
+DEBUG:root:20 http://weibo.com/nguide/interest
+DEBUG:root:UrlParts(url='http://weibo.com/?uut=fin&from=reg', website=u'http://weibo.com/', paths=[''], params=(u'from', u'uut'), values=(u'reg', u'fin'))
+INFO:root:http://weibo.com/?uut=fin&from=reg
+INFO:root:UrlParts(url='http://weibo.com/?uut=fin&from=reg', website=u'http://weibo.com/', paths=[''], params=(u'from', u'uut'), values=(u'reg', u'fin'))
+INFO:root:21
+DEBUG:root:21 http://weibo.com/?uut=fin&from=reg
+DEBUG:root:UrlParts(url='http://weibo.com/nguide/recommend?ugf=home', website=u'http://weibo.com/', paths=['nguide', 'recommend'], params=(u'ugf',), values=(u'home',))
+INFO:root:http://weibo.com/nguide/recommend?ugf=home
+INFO:root:UrlParts(url='http://weibo.com/nguide/recommend?ugf=home', website=u'http://weibo.com/', paths=['nguide', 'recommend'], params=(u'ugf',), values=(u'home',))
+INFO:root:22
+DEBUG:root:22 http://weibo.com/nguide/recommend?ugf=home
+DEBUG:root:UrlParts(url='http://weibo.com/u/5903925518/home', website=u'http://weibo.com/', paths=['u', '5903925518', 'home'], params=(), values=())
+INFO:root:http://weibo.com/u/5903925518/home
+INFO:root:UrlParts(url='http://weibo.com/u/5903925518/home', website=u'http://weibo.com/', paths=['u', '5903925518', 'home'], params=(), values=())
+INFO:root:23
+DEBUG:root:23 http://weibo.com/u/5903925518/home
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461308655670', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1461308655670', u'6', u'59'))
+INFO:root:http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461308655670
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461308655670', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1461308655670', u'6', u'59'))
+INFO:root:10
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461308655670', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1461308655670', u'6', u'59'))
+INFO:root:http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461308655670
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461308655670', website=u'http://weibo.com/', paths=['aj', 'bubble', 'checkshowbubble'], params=(u'__rnd', u'ajwvr', u'bid'), values=(u'1461308655670', u'6', u'59'))
+INFO:root:10
+DEBUG:root:10 http://weibo.com/aj/bubble/checkshowbubble?ajwvr=6&bid=59&__rnd=1461308655670
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461308655761', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1461308655761', u'6', u'59', u'0'))
+INFO:root:http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461308655761
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461308655761', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1461308655761', u'6', u'59', u'0'))
+INFO:root:11
+DEBUG:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461308655761', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1461308655761', u'6', u'59', u'0'))
+INFO:root:http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461308655761
+INFO:root:UrlParts(url='http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461308655761', website=u'http://weibo.com/', paths=['aj', 'bubble', 'closebubble'], params=(u'__rnd', u'ajwvr', u'bid', u'v'), values=(u'1461308655761', u'6', u'59', u'0'))
+INFO:root:11
+DEBUG:root:11 http://weibo.com/aj/bubble/closebubble?ajwvr=6&bid=59&v=0&__rnd=1461308655761
+DEBUG:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461308656166', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1461308656166', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461308656166
+INFO:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461308656166', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1461308656166', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:12
+DEBUG:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461308656166', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1461308656166', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461308656166
+INFO:root:UrlParts(url='http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461308656166', website=u'http://weibo.com/', paths=['p', 'aj', 'proxy'], params=(u'__rnd', u'api'), values=(u'1461308656166', u'http://contentrecommend.mobile.sina.cn/dot/dot.lua'))
+INFO:root:12
+DEBUG:root:12 http://weibo.com/p/aj/proxy?api=http://contentrecommend.mobile.sina.cn/dot/dot.lua&__rnd=1461308656166
+DEBUG:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461308658679', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1461308658679', u'0', u'6', u'v6_content_home'))
+INFO:root:http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461308658679
+INFO:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461308658679', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1461308658679', u'0', u'6', u'v6_content_home'))
+INFO:root:15
+DEBUG:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461308658679', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1461308658679', u'0', u'6', u'v6_content_home'))
+INFO:root:http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461308658679
+INFO:root:UrlParts(url='http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461308658679', website=u'http://weibo.com/', paths=['aj', 'guide', 'bubblead'], params=(u'__rnd', u'_t', u'ajwvr', u'pageid'), values=(u'1461308658679', u'0', u'6', u'v6_content_home'))
+INFO:root:15
+DEBUG:root:15 http://weibo.com/aj/guide/bubblead?ajwvr=6&pageid=v6_content_home&_t=0&__rnd=1461308658679
+DEBUG:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=5903925518&ref=PC_topsug&url=http://weibo.com/u/5903925518/home&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146130865361212', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0', u'STK_146130865361212', u'PC_topsug', u'5903925518', u'http://weibo.com/u/5903925518/home'))
+INFO:root:http://s.weibo.com/ajax/jsonp/gettopsug?uid=5903925518&ref=PC_topsug&url=http://weibo.com/u/5903925518/home&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146130865361212
+INFO:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=5903925518&ref=PC_topsug&url=http://weibo.com/u/5903925518/home&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146130865361212', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0', u'STK_146130865361212', u'PC_topsug', u'5903925518', u'http://weibo.com/u/5903925518/home'))
+INFO:root:14
+DEBUG:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=5903925518&ref=PC_topsug&url=http://weibo.com/u/5903925518/home&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146130865361212', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0', u'STK_146130865361212', u'PC_topsug', u'5903925518', u'http://weibo.com/u/5903925518/home'))
+INFO:root:http://s.weibo.com/ajax/jsonp/gettopsug?uid=5903925518&ref=PC_topsug&url=http://weibo.com/u/5903925518/home&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146130865361212
+INFO:root:UrlParts(url='http://s.weibo.com/ajax/jsonp/gettopsug?uid=5903925518&ref=PC_topsug&url=http://weibo.com/u/5903925518/home&Mozilla=Mozilla/5.0+(Macintosh%3B+Intel+Mac+OS+X+10.10%3B+rv:44.0)+Gecko/20100101+Firefox/44.0&_cb=STK_146130865361212', website=u'http://s.weibo.com/', paths=['ajax', 'jsonp', 'gettopsug'], params=(u'Mozilla', u'_cb', u'ref', u'uid', u'url'), values=(u'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0', u'STK_146130865361212', u'PC_topsug', u'5903925518', u'http://weibo.com/u/5903925518/home'))
+INFO:root:14
+DEBUG:root:14 http://s.weibo.com/ajax/jsonp/gettopsug?uid=5903925518&ref=PC_topsug&url=http%3A%2F%2Fweibo.com%2Fu%2F5903925518%2Fhome&Mozilla=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010.10%3B%20rv%3A44.0)%20Gecko%2F20100101%20Firefox%2F44.0&_cb=STK_146130865361212
+DEBUG:root:=== 0 -1 1 -1 2 -1 3 -1 4 -1 5 -1 20 -1 21 -1 22 -1 23 -1 10 -1 11 -1 12 -1 15 -1 14 -1 -2
+DEBUG:root:=====================
++ java -jar test_files/spmf.jar run VMSP dataset4spmf.txt 80%
++ tee dataset4spmf.ans
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at ca.pfv.spmf.gui.CommandProcessor.runAlgorithm(CommandProcessor.java:524)
+	at ca.pfv.spmf.gui.Main.processCommandLineArguments(Main.java:89)
+	at ca.pfv.spmf.gui.Main.main(Main.java:50)

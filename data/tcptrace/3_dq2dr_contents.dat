@@ -1,9 +1,0 @@
-GET /interface/f/ttt/v3/pc_win.php?posid=pos51dbbc713bb90&uid=5903925518&callback=IM_14613086541951&__rnd=1461308654195 HTTP/1.1
-Host: wbapp.mobile.sina.cn
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:44.0) Gecko/20100101 Firefox/44.0
-Accept: */*
-Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
-Accept-Encoding: gzip, deflate
-Referer: http://weibo.com/u/5903925518/home
-Connection: keep-alive
-

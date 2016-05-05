@@ -2,18 +2,663 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f236d4fb-e62c-4445-9d67-1c6382863d8d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_6_url_oracle.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_7_make_dataset_for_spmf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_9_pattern_to_url_list.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_104.78.80.61_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_192.168.0.11_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_223.252.199.6_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_54.192.137.202_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_aa2ab_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ab2aa_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ac2ad_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ad2ac_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ai2aj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_aj2ai_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ak2al_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_al2ak_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_am2an_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_an2am_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ao2ap_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ap2ao_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_aq2ar_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ar2aq_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_as2at_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_at2as_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_au2av_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_av2au_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_aw2ax_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ax2aw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ay2az_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_az2ay_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ba2bb_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bb2ba_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bc2bd_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bd2bc_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_be2bf_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bf2be_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bk2bl_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bl2bk_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bm2bn_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bn2bm_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bo2bp_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bp2bo_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bq2br_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_br2bq_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bs2bt_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bt2bs_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bu2bv_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bv2bu_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bw2bx_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_bx2bw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ca2cb_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cb2ca_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cc2cd_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cd2cc_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ce2cf_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cf2ce_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cg2ch_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ch2cg_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ci2cj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cj2ci_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ck2cl_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cl2ck_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cm2cn_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cn2cm_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cs2ct_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ct2cs_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cu2cv_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cv2cu_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cw2cx_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cx2cw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cy2cz_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_cz2cy_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dc2dd_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dd2dc_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_de2df_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_df2de_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dg2dh_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dh2dg_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_di2dj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dj2di_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dk2dl_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dl2dk_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dm2dn_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dn2dm_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_do2dp_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dp2do_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ds2dt_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dt2ds_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_du2dv_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dv2du_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dw2dx_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dx2dw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dy2dz_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_dz2dy_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ea2eb_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_eb2ea_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ec2ed_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ee2ef_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_eg2eh_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ei2ej_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ek2el_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_em2en_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_eo2ep_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ep2eo_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_eq2er_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_es2et_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_eu2ev_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ew2ex_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ey2ez_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fa2fb_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fc2fd_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fe2ff_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fg2fh_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fi2fj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fk2fl_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fm2fn_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fo2fp_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fq2fr_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fs2ft_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fu2fv_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fw2fx_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_fy2fz_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_g2h_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ga2gb_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_gb2ga_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_gc2gd_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ge2gf_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_gf2ge_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_gg2gh_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_gh2gg_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_gi2gj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_gj2gi_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_h2g_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ho2hp_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_hp2ho_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_hq2hr_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_hr2hq_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_hs2ht_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_ht2hs_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_http.times" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_i2j_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_j2i_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_k2l_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_l2k_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_s2t_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_t2s_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_u2v_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_v2u_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_w2x_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_x2w_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_y2z_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/1_z2y_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_192.168.0.11_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_a2b_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_aa2ab_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ab2aa_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ac2ad_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ad2ac_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ae2af_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_af2ae_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ag2ah_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ah2ag_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ai2aj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_aj2ai_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ak2al_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_al2ak_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_am2an_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_an2am_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ao2ap_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ap2ao_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_aq2ar_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ar2aq_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_as2at_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_at2as_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_au2av_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_av2au_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_aw2ax_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ax2aw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_ay2az_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_az2ay_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_b2a_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_c2d_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_d2c_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_e2f_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_f2e_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_g2h_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_h2g_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_http.times" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_i2j_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_j2i_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_k2l_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_l2k_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_m2n_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_n2m_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_o2p_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_p2o_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_q2r_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_r2q_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_s2t_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_t2s_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_u2v_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_v2u_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_w2x_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_x2w_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_y2z_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/2_z2y_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_10.1.60.209_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_23.41.75.27_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_aa2ab_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ab2aa_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ae2af_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_af2ae_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ag2ah_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ah2ag_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ai2aj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_aj2ai_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ak2al_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_al2ak_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ao2ap_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ap2ao_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_as2at_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_at2as_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_av2au_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_aw2ax_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ax2aw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ba2bb_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_bb2ba_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_bu2bv_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_bv2bu_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_by2bz_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_bz2by_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ca2cb_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cb2ca_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cc2cd_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cd2cc_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ce2cf_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cf2ce_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cg2ch_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ch2cg_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cj2ci_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cl2ck_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cm2cn_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cn2cm_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_co2cp_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cp2co_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cq2cr_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cr2cq_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cs2ct_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ct2cs_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cu2cv_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cv2cu_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cw2cx_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cx2cw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cy2cz_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_cz2cy_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_da2db_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_db2da_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_dc2dd_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_dd2dc_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_di2dj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_dj2di_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_dm2dn_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_dn2dm_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_dq2dr_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_dr2dq_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_du2dv_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_dv2du_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_dw2dx_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_dx2dw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_dy2dz_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_dz2dy_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_e2f_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ea2eb_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_eb2ea_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ee2ef_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ef2ee_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ei2ej_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ej2ei_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ek2el_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_el2ek_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_eo2ep_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ep2eo_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_eu2ev_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ev2eu_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ey2ez_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ez2ey_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_f2e_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_fc2fd_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_fd2fc_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_fk2fl_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_fl2fk_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_fq2fr_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_fr2fq_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_fs2ft_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ft2fs_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_fu2fv_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_fv2fu_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_fy2fz_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_fz2fy_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_gc2gd_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_ge2gf_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_gf2ge_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_gg2gh_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_gh2gg_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_gi2gj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_gj2gi_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_gk2gl_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_gl2gk_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_gm2gn_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_gn2gm_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_h2g_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_http.times" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_u2v_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/3_v2u_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_10.1.60.181_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_162.243.128.99_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_223.252.199.6_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_223.252.199.7_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_aa2ab_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_ab2aa_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_ac2ad_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_ad2ac_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_ae2af_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_af2ae_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_ag2ah_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_ah2ag_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_ai2aj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_aj2ai_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_ak2al_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_al2ak_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_am2an_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_an2am_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_ao2ap_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_ap2ao_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_aq2ar_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_ar2aq_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_au2av_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_av2au_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_c2d_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_d2c_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_e2f_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_f2e_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_http.times" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_i2j_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_j2i_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_k2l_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_l2k_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_m2n_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_n2m_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_o2p_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_p2o_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_q2r_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_r2q_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_s2t_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_t2s_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_u2v_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_v2u_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_w2x_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_x2w_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_y2z_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/4_z2y_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_10.1.60.181_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_162.243.128.99_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_223.252.199.6_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_23.102.4.253_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_52.91.242.5_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_61.135.186.152_http.xpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_aw2ax_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ax2aw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ay2az_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_az2ay_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ba2bb_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bb2ba_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bc2bd_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_be2bf_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bf2be_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bg2bh_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bh2bg_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bi2bj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bj2bi_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bk2bl_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bl2bk_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bm2bn_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bn2bm_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bo2bp_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bp2bo_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bq2br_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_br2bq_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bs2bt_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bt2bs_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_by2bz_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_bz2by_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ce2cf_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_cf2ce_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_cg2ch_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ch2cg_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ci2cj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_cj2ci_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ck2cl_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_cl2ck_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_cm2cn_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_cn2cm_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_cw2cx_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_cx2cw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_cy2cz_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_cz2cy_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_da2db_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_db2da_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dc2dd_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dd2dc_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_de2df_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_df2de_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dg2dh_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dh2dg_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_di2dj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dj2di_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dk2dl_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dl2dk_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dm2dn_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dn2dm_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_do2dp_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dp2do_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ds2dt_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dt2ds_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dw2dx_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dx2dw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dy2dz_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_dz2dy_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ea2eb_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_eb2ea_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ec2ed_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ed2ec_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ee2ef_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ef2ee_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_eg2eh_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_eh2eg_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ei2ej_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ej2ei_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ek2el_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_el2ek_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_em2en_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_en2em_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ey2ez_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ez2ey_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fa2fb_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fb2fa_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fc2fd_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fd2fc_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fe2ff_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_ff2fe_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fi2fj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fk2fl_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fl2fk_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fo2fp_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fp2fo_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fq2fr_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fr2fq_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fx2fw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_fz2fy_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_gi2gj_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_gj2gi_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_gq2gr_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_gr2gq_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_gu2gv_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_gw2gx_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_gx2gw_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_http.times" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_k2l_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_m2n_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_s2t_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/tcptrace/5_t2s_contents.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/headers.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pcap_list2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/CHECK_SPMF_WEBPAGE_FOR_DOCUMENTATION.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/ContextMDSequence.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/ContextMDSequenceNoTime.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/DB_FOSHU.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/DB_NegativeUtility.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/DB_Utility.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/DB_UtilityIncremental1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/DB_UtilityIncremental2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/DB_Utility_d2hup.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/DataBase_HUSRM.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/DataBase_HUSRM.txt.copy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/DataBase_USpan.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/MIS.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/configKmeans.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextCFPGrowth.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextCPT.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextCSV.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextClaSP.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextCloSpan.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextIGB.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextIncorrect.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextIndirect.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextInverse.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextItemsetTree.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextPasquier99.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextPrefixSpan.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextPrefixSpan.txt.copy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextPrefixSpanStrings.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextRelim.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextSequencesTimeExtended.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextSequencesTimeExtended_ValuedItems.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextSpade.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextTransactionDB_strings.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextUncertain.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextVME.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/contextZart.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/example_contextZart.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/inputDBScan.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/input_text_clustering.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/jmlr_goKrimp.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/jmlr_goKrimp.lab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/output.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/sar.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/spmf.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/tennis.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/test.arff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/test_goKrimp.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/test_goKrimp.lab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/103135" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/103136" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/103137" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/103138" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/103139" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/104409" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/104410" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/104411" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/104412" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/104413" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/16355" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/16356" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/16357" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/16358" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/16359" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/51156" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/51157" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/51158" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/51159" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/51160" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/60177" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/60178" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/60179" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/60180" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Test/60181" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53349" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53350" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53351" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53352" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53353" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53354" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53355" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53356" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53357" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53358" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53359" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53360" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53361" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53362" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53363" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53364" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53365" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53366" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53367" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Athesim/53368" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104653" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104654" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104655" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104656" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104657" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104658" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104659" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104660" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104661" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104662" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104663" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104664" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104665" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104666" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104667" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104668" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104669" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104670" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104671" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Baseball/104672" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16143" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16144" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16145" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16146" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16147" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16148" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16149" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16150" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16151" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16152" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16165" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16279" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16344" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16345" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16347" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16348" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16351" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16352" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16353" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Crypt/16354" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104649" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104650" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104651" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104652" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104653" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104654" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104655" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104656" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104657" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104658" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104659" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104660" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104661" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104662" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104663" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104664" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104665" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104666" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104667" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Motorcycle/104668" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60157" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60158" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60159" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60160" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60161" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60162" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60163" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60164" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60165" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60166" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60167" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60168" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60169" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60170" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60171" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60172" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60173" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60174" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60175" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/Train/Space/60176" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_files/text_classification_set/output.tsv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.db" afterPath="$PROJECT_DIR$/test.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_1_to_pcap_to_http.sh" afterPath="$PROJECT_DIR$/_1_to_pcap_to_http.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_2_create_database.py" afterPath="$PROJECT_DIR$/_2_create_database.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_3_http_times_to_database.py" afterPath="$PROJECT_DIR$/_3_http_times_to_database.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_4_extract_headers_from_http_times.py" afterPath="$PROJECT_DIR$/_4_extract_headers_from_http_times.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_5_append_headers_to_database.py" afterPath="$PROJECT_DIR$/_5_append_headers_to_database.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/tcptrace/1_192.168.0.11_http.xpl" afterPath="$PROJECT_DIR$/data/tcptrace/1_192.168.0.11_http.xpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/tcptrace/5_10.1.60.181_http.xpl" afterPath="$PROJECT_DIR$/data/tcptrace/5_10.1.60.181_http.xpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/http.py" afterPath="$PROJECT_DIR$/http.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pcap_list.txt" afterPath="$PROJECT_DIR$/pcap_list.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urltree.py" afterPath="$PROJECT_DIR$/urltree.py" />
     </list>
     <ignored path="pcaptcpstream.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,12 +672,14 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pcaptcpstream$urltree.coverage" NAME="urltree Coverage Results" MODIFIED="1461242296266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcaptcpstream$urltree.coverage" NAME="urltree Coverage Results" MODIFIED="1461842663032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcaptcpstream$_6_url_oracle.coverage" NAME="_6_url_oracle Coverage Results" MODIFIED="1462287547198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcaptcpstream$httptimesex.coverage" NAME="httptimesex Coverage Results" MODIFIED="1461226791238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcaptcpstream$feedheader2db.coverage" NAME="feedheader2db Coverage Results" MODIFIED="1461239657088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcaptcpstream$_3_http_times_to_database.coverage" NAME="_3_http_times_to_database Coverage Results" MODIFIED="1461737229036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcaptcpstream$pcaptcpstream.coverage" NAME="pcaptcpstream Coverage Results" MODIFIED="1460278248583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcaptcpstream$httptimes2db.coverage" NAME="httptimes2db Coverage Results" MODIFIED="1461237300573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcaptcpstream$_7_make_dataset_for_spmf.coverage" NAME="_7_make_dataset_for_spmf Coverage Results" MODIFIED="1462348762529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -74,56 +721,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_5_append_headers_to_database.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_5_append_headers_to_database.py">
+      <file leaf-file-name="_9_pattern_to_url_list.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_9_pattern_to_url_list.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
               <folding>
                 <element signature="e#37#47#0" expanded="true" />
-                <marker date="1461829370000" expanded="true" signature="502:528" placeholder="SELECT label... tbl_conn" />
-                <marker date="1461829370000" expanded="true" signature="502:546" placeholder="SELECT label... tbl_conn" />
-                <marker date="1461829370000" expanded="true" signature="950:1054" placeholder="SELECT * FRO... tbl_reqrep" />
-                <marker date="1461829370000" expanded="true" signature="1294:1361" placeholder="UPDATE tbl_r... " />
-                <marker date="1461829370000" expanded="true" signature="1768:1892" placeholder="SELECT reqre... tbl_reqrep" />
-                <marker date="1461829370000" expanded="true" signature="2293:2376" placeholder="UPDATE tbl_r... " />
-                <marker date="1461829370000" expanded="true" signature="2602:2619" placeholder="UPDATE tbl_r... " />
-                <marker date="1461829370000" expanded="true" signature="2602:2806" placeholder="UPDATE tbl_r... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_3_http_times_to_database.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_3_http_times_to_database.py">
+      <file leaf-file-name="pcap_list.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pcap_list.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.29579833">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataset4spmf.ans" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataset4spmf.ans">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-              <folding>
-                <element signature="e#184#194#0" expanded="true" />
-                <marker date="1461829355000" expanded="true" signature="702:742" placeholder="DELETE FROM " />
-                <marker date="1461829355000" expanded="true" signature="777:815" placeholder="DELETE FROM " />
-                <marker date="1461829355000" expanded="true" signature="1376:1685" placeholder="INSERT INTO tbl_conn" />
-                <marker date="1461829355000" expanded="true" signature="1376:1702" placeholder="insert into tbl_conn... " />
-                <marker date="1461829355000" expanded="true" signature="1376:1724" placeholder="insert into tbl_conn... " />
-                <marker date="1461829355000" expanded="true" signature="2693:3036" placeholder="insert into tbl_reqrep... " />
-              </folding>
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_2_create_database.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_2_create_database.py">
+      <file leaf-file-name="_6_url_oracle.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_6_url_oracle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49380532">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1461735375000" expanded="true" signature="107:136" placeholder="DROP TABLE I... " />
-                <marker date="1461735375000" expanded="true" signature="160:191" placeholder="DROP TABLE I... " />
-                <marker date="1461735375000" expanded="true" signature="330:839" placeholder="CREATE TABLE... tbl_conn" />
-                <marker date="1461735375000" expanded="true" signature="889:1638" placeholder="CREATE TABLE... tbl_reqrep" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,13 +800,20 @@
         <option value="$PROJECT_DIR$/httptimes2db.py" />
         <option value="$PROJECT_DIR$/httptimes2headers.py" />
         <option value="$PROJECT_DIR$/_4_append_headers_to_database.py" />
-        <option value="$PROJECT_DIR$/pcap_list.txt" />
-        <option value="$PROJECT_DIR$/_1_to_pcap_to_http.sh" />
         <option value="$PROJECT_DIR$/_4_extract_headers_from_http_times.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6245b710-c3b3-41cb-9c7f-7d3ef4c04329/console.sql" />
         <option value="/SQLite Fragment (_5_append_headers_to_database.py:2642).sql" />
+        <option value="$PROJECT_DIR$/_2_create_database.py" />
         <option value="$PROJECT_DIR$/_3_http_times_to_database.py" />
+        <option value="/SQLite Fragment (_5_append_headers_to_database.py:2601).sql" />
         <option value="$PROJECT_DIR$/_5_append_headers_to_database.py" />
+        <option value="/SQLite Fragment (_7_make_dataset_for_spmf.py:356).sql" />
+        <option value="$PROJECT_DIR$/_6_url_oracle.py" />
+        <option value="$PROJECT_DIR$/_7_make_dataset_for_spmf.py" />
+        <option value="$PROJECT_DIR$/_1_to_pcap_to_http.sh" />
+        <option value="$PROJECT_DIR$/_2_3_4_5_to_database.sh" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6245b710-c3b3-41cb-9c7f-7d3ef4c04329/console.sql" />
+        <option value="$PROJECT_DIR$/pcap_list.txt" />
+        <option value="$PROJECT_DIR$/_9_pattern_to_url_list.py" />
       </list>
     </option>
   </component>
@@ -181,10 +823,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="42" />
-    <option name="y" value="23" />
-    <option name="width" value="1238" />
-    <option name="height" value="777" />
+    <option name="x" value="-1630" />
+    <option name="y" value="-457" />
+    <option name="width" value="1630" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -211,6 +853,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -229,10 +873,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pcaptcpstream" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pcaptcpstream" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,7 +904,7 @@
       <recent name="$PROJECT_DIR$/old" />
     </key>
   </component>
-  <component name="RunManager" selected="Python._3_http_times_to_database">
+  <component name="RunManager" selected="Python._7_make_dataset_for_spmf">
     <configuration default="false" name="_3_http_times_to_database" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -264,6 +920,60 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_3_http_times_to_database.py" />
       <option name="PARAMETERS" value="$PROJECT_DIR$/test.db 2 $PROJECT_DIR$/data/tcptrace/2_http.times" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="urltree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pcaptcpstream" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/urltree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="_6_url_oracle" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pcaptcpstream" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_6_url_oracle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="_7_make_dataset_for_spmf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pcaptcpstream" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_7_make_dataset_for_spmf.py" />
+      <option name="PARAMETERS" value="$PROJECT_DIR$/test.db $PROJECT_DIR$/dataset4spmf3.txt $PROJECT_DIR$/dataset4spmf3.map.txt" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -460,12 +1170,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python._3_http_times_to_database" />
+      <item index="1" class="java.lang.String" itemvalue="Python.urltree" />
+      <item index="2" class="java.lang.String" itemvalue="Python._6_url_oracle" />
+      <item index="3" class="java.lang.String" itemvalue="Python._7_make_dataset_for_spmf" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python._3_http_times_to_database" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python._7_make_dataset_for_spmf" />
+        <item index="1" class="java.lang.String" itemvalue="Python._6_url_oracle" />
+        <item index="2" class="java.lang.String" itemvalue="Python.urltree" />
+        <item index="3" class="java.lang.String" itemvalue="Python._3_http_times_to_database" />
       </list>
     </recent_temporary>
   </component>
@@ -504,7 +1220,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461310640823</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="感觉tcptrace提取的http信息非常不好,保存一下,全部改成用dpkt.http提取">
+      <created>1461829497795</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1461829497795</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -517,28 +1239,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="23" width="1238" height="777" extended-state="0" />
+    <frame x="-1630" y="-457" width="1630" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24749164" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23494983" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4029197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34117648" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33368984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22355163" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18261965" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25771475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13430656" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3580786" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -558,7 +1280,8 @@
     <MESSAGE value="存一存" />
     <MESSAGE value="做好了用dpkt解析" />
     <MESSAGE value="加了注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="加了注释" />
+    <MESSAGE value="感觉tcptrace提取的http信息非常不好,保存一下,全部改成用dpkt.http提取" />
+    <option name="LAST_COMMIT_MESSAGE" value="感觉tcptrace提取的http信息非常不好,保存一下,全部改成用dpkt.http提取" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -573,6 +1296,16 @@
           <line>47</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/urltree.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/urltree.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -581,116 +1314,30 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="42" />
+      <option name="time" value="60" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="url" />
+        <watch expression="url.args" language="Python" />
+        <watch expression="list(url.args)" language="Python" />
+        <watch expression="sorted(list(url.args.items()))" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_4_extract_headers_from_http_times.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urltree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/urlparse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="183" column="13" selection-start-line="183" selection-start-column="13" selection-end-line="183" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/http.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_3_http_times_to_database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#184#194#0" expanded="true" />
-            <marker date="1461829355000" expanded="true" signature="702:742" placeholder="DELETE FROM " />
-            <marker date="1461829355000" expanded="true" signature="777:815" placeholder="DELETE FROM " />
-            <marker date="1461829355000" expanded="true" signature="1376:1685" placeholder="INSERT INTO tbl_conn" />
-            <marker date="1461829355000" expanded="true" signature="1376:1702" placeholder="insert into tbl_conn... " />
-            <marker date="1461829355000" expanded="true" signature="1376:1724" placeholder="insert into tbl_conn... " />
-            <marker date="1461829355000" expanded="true" signature="2693:3036" placeholder="insert into tbl_reqrep... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/3dcfa4c2/6245b710-c3b3-41cb-9c7f-7d3ef4c04329/tbl_reqrep">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_5_append_headers_to_database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#37#47#0" expanded="true" />
-            <marker date="1461829370000" expanded="true" signature="502:528" placeholder="SELECT label... tbl_conn" />
-            <marker date="1461829370000" expanded="true" signature="502:546" placeholder="SELECT label... tbl_conn" />
-            <marker date="1461829370000" expanded="true" signature="950:1054" placeholder="SELECT * FRO... tbl_reqrep" />
-            <marker date="1461829370000" expanded="true" signature="1294:1361" placeholder="UPDATE tbl_r... " />
-            <marker date="1461829370000" expanded="true" signature="1768:1892" placeholder="SELECT reqre... tbl_reqrep" />
-            <marker date="1461829370000" expanded="true" signature="2293:2376" placeholder="UPDATE tbl_r... " />
-            <marker date="1461829370000" expanded="true" signature="2602:2619" placeholder="UPDATE tbl_r... " />
-            <marker date="1461829370000" expanded="true" signature="2602:2806" placeholder="UPDATE tbl_r... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_4_extract_headers_from_http_times.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/http.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_3_http_times_to_database.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
           <folding>
             <element signature="e#184#194#0" expanded="true" />
-            <marker date="1461829355000" expanded="true" signature="702:742" placeholder="DELETE FROM " />
-            <marker date="1461829355000" expanded="true" signature="777:815" placeholder="DELETE FROM " />
-            <marker date="1461829355000" expanded="true" signature="1376:1685" placeholder="INSERT INTO tbl_conn" />
-            <marker date="1461829355000" expanded="true" signature="1376:1702" placeholder="insert into tbl_conn... " />
-            <marker date="1461829355000" expanded="true" signature="1376:1724" placeholder="insert into tbl_conn... " />
-            <marker date="1461829355000" expanded="true" signature="2693:3036" placeholder="insert into tbl_reqrep... " />
+            <marker date="1461829577000" expanded="true" signature="702:742" placeholder="DELETE FROM " />
+            <marker date="1461829577000" expanded="true" signature="777:815" placeholder="DELETE FROM " />
+            <marker date="1461829577000" expanded="true" signature="1376:1685" placeholder="INSERT INTO tbl_conn" />
+            <marker date="1461829577000" expanded="true" signature="1376:1702" placeholder="insert into tbl_conn... " />
+            <marker date="1461829577000" expanded="true" signature="1376:1724" placeholder="insert into tbl_conn... " />
+            <marker date="1461829577000" expanded="true" signature="2519:2748" placeholder="insert into tbl_reqrep... " />
           </folding>
         </state>
       </provider>
@@ -713,7 +1360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +1367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -731,12 +1376,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#184#194#0" expanded="true" />
-            <marker date="1461829355000" expanded="true" signature="702:742" placeholder="DELETE FROM " />
-            <marker date="1461829355000" expanded="true" signature="777:815" placeholder="DELETE FROM " />
-            <marker date="1461829355000" expanded="true" signature="1376:1685" placeholder="INSERT INTO tbl_conn" />
-            <marker date="1461829355000" expanded="true" signature="1376:1702" placeholder="insert into tbl_conn... " />
-            <marker date="1461829355000" expanded="true" signature="1376:1724" placeholder="insert into tbl_conn... " />
-            <marker date="1461829355000" expanded="true" signature="2693:3036" placeholder="insert into tbl_reqrep... " />
+            <marker date="1461829577000" expanded="true" signature="702:742" placeholder="DELETE FROM " />
+            <marker date="1461829577000" expanded="true" signature="777:815" placeholder="DELETE FROM " />
+            <marker date="1461829577000" expanded="true" signature="1376:1685" placeholder="INSERT INTO tbl_conn" />
+            <marker date="1461829577000" expanded="true" signature="1376:1702" placeholder="insert into tbl_conn... " />
+            <marker date="1461829577000" expanded="true" signature="1376:1724" placeholder="insert into tbl_conn... " />
+            <marker date="1461829577000" expanded="true" signature="2519:2748" placeholder="insert into tbl_reqrep... " />
           </folding>
         </state>
       </provider>
@@ -899,13 +1544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urltree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13546424">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python2.7/urlparse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03348554">
@@ -920,10 +1558,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_4_extract_headers_from_http_times.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3326226">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5357686">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.052009456">
+          <caret line="1801" column="0" selection-start-line="1801" selection-start-column="0" selection-end-line="1801" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urltree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.052009456">
+          <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_2_create_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.052009456">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+            <marker date="1461829508000" expanded="true" signature="107:136" placeholder="DROP TABLE I... " />
+            <marker date="1461829508000" expanded="true" signature="160:191" placeholder="DROP TABLE I... " />
+            <marker date="1461829508000" expanded="true" signature="330:839" placeholder="CREATE TABLE... tbl_conn" />
+            <marker date="1461829508000" expanded="true" signature="889:1386" placeholder="CREATE TABLE... tbl_reqrep" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_5_append_headers_to_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding>
+            <marker date="1461832518000" expanded="true" signature="526:552" placeholder="SELECT label... tbl_conn" />
+            <marker date="1461832518000" expanded="true" signature="526:570" placeholder="SELECT label... tbl_conn" />
+            <marker date="1461832518000" expanded="true" signature="974:1078" placeholder="SELECT * FRO... tbl_reqrep" />
+            <marker date="1461832518000" expanded="true" signature="1318:1385" placeholder="UPDATE tbl_r... " />
+            <marker date="1461832518000" expanded="true" signature="1792:1916" placeholder="SELECT reqre... tbl_reqrep" />
+            <marker date="1461832518000" expanded="true" signature="3207:3290" placeholder="UPDATE tbl_r... " />
+            <marker date="1461832518000" expanded="true" signature="3469:3734" placeholder="UPDATE tbl_r... " />
+            <marker date="1461832518000" expanded="true" signature="3469:4056" placeholder="UPDATE tbl_r... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_1_to_pcap_to_http.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33958104">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="dbDummy://dbtable:/3dcfa4c2/6245b710-c3b3-41cb-9c7f-7d3ef4c04329/tbl_conn">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -932,14 +1647,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pcap_list.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09166667">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/_all.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -947,68 +1655,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6245b710-c3b3-41cb-9c7f-7d3ef4c04329/console.sql">
+    <entry file="file://$PROJECT_DIR$/dataset4spmf.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.054862842">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.14691152">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_4_extract_headers_from_http_times.py">
+    <entry file="file://$PROJECT_DIR$/dataset4spmf.map">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326226">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_1_to_pcap_to_http.sh">
+    <entry file="file://$PROJECT_DIR$/_7_make_dataset_for_spmf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5607676">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/http.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8017058">
-          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
-          <folding />
+        <state vertical-scroll-proportion="2.2771285">
+          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+          <folding>
+            <element signature="e#37#47#0" expanded="true" />
+            <marker date="1462343157000" expanded="true" signature="498:537" placeholder="SELECT DISTI... tbl_reqrep" />
+            <marker date="1462343157000" expanded="true" signature="498:553" placeholder="SELECT DISTI... tbl_reqrep" />
+            <marker date="1462343157000" expanded="true" signature="498:555" placeholder="SELECT DISTI... tbl_reqrep" />
+            <marker date="1462343157000" expanded="true" signature="645:1005" placeholder="SELECT x_req... tbl_reqrep" />
+            <marker date="1462343157000" expanded="true" signature="645:1042" placeholder="SELECT \n x_... tbl_reqrep" />
+            <marker date="1462343157000" expanded="true" signature="645:1247" placeholder="SELECT x_req... tbl_reqrep" />
+            <marker date="1462343157000" expanded="true" signature="645:1381" placeholder="SELECT x_req... tbl_reqrep" />
+            <marker date="1462343157000" expanded="true" signature="645:1421" placeholder="SELECT x_req... tbl_reqrep" />
+            <marker date="1462343157000" expanded="true" signature="645:1423" placeholder="SELECT x_req... tbl_reqrep" />
+            <marker date="1462343157000" expanded="true" signature="671:996" placeholder="SELECT x_req... tbl_reqrep" />
+            <marker date="1462343157000" expanded="true" signature="671:1005" placeholder="SELECT x_req... tbl_reqrep" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_3_http_times_to_database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.0734558">
+          <caret line="140" column="32" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
           <folding>
             <element signature="e#184#194#0" expanded="true" />
-            <marker date="1461829355000" expanded="true" signature="702:742" placeholder="DELETE FROM " />
-            <marker date="1461829355000" expanded="true" signature="777:815" placeholder="DELETE FROM " />
-            <marker date="1461829355000" expanded="true" signature="1376:1685" placeholder="INSERT INTO tbl_conn" />
-            <marker date="1461829355000" expanded="true" signature="1376:1702" placeholder="insert into tbl_conn... " />
-            <marker date="1461829355000" expanded="true" signature="1376:1724" placeholder="insert into tbl_conn... " />
-            <marker date="1461829355000" expanded="true" signature="2693:3036" placeholder="insert into tbl_reqrep... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_5_append_headers_to_database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding>
-            <element signature="e#37#47#0" expanded="true" />
-            <marker date="1461829370000" expanded="true" signature="502:528" placeholder="SELECT label... tbl_conn" />
-            <marker date="1461829370000" expanded="true" signature="502:546" placeholder="SELECT label... tbl_conn" />
-            <marker date="1461829370000" expanded="true" signature="950:1054" placeholder="SELECT * FRO... tbl_reqrep" />
-            <marker date="1461829370000" expanded="true" signature="1294:1361" placeholder="UPDATE tbl_r... " />
-            <marker date="1461829370000" expanded="true" signature="1768:1892" placeholder="SELECT reqre... tbl_reqrep" />
-            <marker date="1461829370000" expanded="true" signature="2293:2376" placeholder="UPDATE tbl_r... " />
-            <marker date="1461829370000" expanded="true" signature="2602:2619" placeholder="UPDATE tbl_r... " />
-            <marker date="1461829370000" expanded="true" signature="2602:2806" placeholder="UPDATE tbl_r... " />
+            <marker date="1461829577000" expanded="true" signature="702:742" placeholder="DELETE FROM " />
+            <marker date="1461829577000" expanded="true" signature="777:815" placeholder="DELETE FROM " />
+            <marker date="1461829577000" expanded="true" signature="1376:1685" placeholder="INSERT INTO tbl_conn" />
+            <marker date="1461829577000" expanded="true" signature="1376:1702" placeholder="insert into tbl_conn... " />
+            <marker date="1461829577000" expanded="true" signature="1376:1724" placeholder="insert into tbl_conn... " />
+            <marker date="1461829577000" expanded="true" signature="2519:2748" placeholder="insert into tbl_reqrep... " />
           </folding>
         </state>
       </provider>
@@ -1022,21 +1717,62 @@
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true" />
+          <filtering enabled="true">
+            <filter text="t.x_request_url like '%STK_146035978463412%'" />
+            <filter text="url like '%STK_146035978463412%'" />
+            <filter text="x_response_headers  like '%cookies%'" />
+            <filter text="x_response_headers like '%set-cookies%'" />
+          </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_2_create_database.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6245b710-c3b3-41cb-9c7f-7d3ef4c04329/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49380532">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.038664322">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_2_3_4_5_to_database.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18363939">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_6_url_oracle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset4spmf.ans">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_9_pattern_to_url_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1461735375000" expanded="true" signature="107:136" placeholder="DROP TABLE I... " />
-            <marker date="1461735375000" expanded="true" signature="160:191" placeholder="DROP TABLE I... " />
-            <marker date="1461735375000" expanded="true" signature="330:839" placeholder="CREATE TABLE... tbl_conn" />
-            <marker date="1461735375000" expanded="true" signature="889:1638" placeholder="CREATE TABLE... tbl_reqrep" />
+            <element signature="e#37#47#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcap_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29579833">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
